@@ -1,12 +1,8 @@
 <!doctype html>
 <html>
-
 <head>
-    <link rel="stylesheet" href="xterm.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"
-        integrity="sha512-aMGMvNYu8Ue4G+fHa359jcPb1u+ytAF+P2SCb+PxrjCdO3n3ZTxJ30zuH39rimUggmTwmh2u7wvQsDTHESnmfQ=="
-        crossorigin="anonymous"></script>
-    <script src="xterm.js"></script>
+    <link rel="stylesheet" href="assets/css/xterm.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
     <title>Python Terminal by Code Institute</title>
 </head>
 
@@ -14,7 +10,12 @@
     <!-- <button onclick="window.location.reload()">Run Program</button> -->
     <div id="terminal"></div>
     <button onclick="window.location.reload()">Let's Play</button>
-    <script>
+    
+    
+    
+    <!-- Moved script below to external js page -->
+    
+    <!-- <script>
         var socket = null;
         var term = null;
         var buffer = '';
@@ -91,9 +92,12 @@
         document.addEventListener("DOMContentLoaded", function () {
             init_socket();
             init_terminal();
-        });
-    </script>
-
+        }); -->
+    <!-- </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"
+     integrity="sha512-aMGMvNYu8Ue4G+fHa359jcPb1u+ytAF+P2SCb+PxrjCdO3n3ZTxJ30zuH39rimUggmTwmh2u7wvQsDTHESnmfQ=="
+     crossorigin="anonymous"></script>
+    <script src="assets/js/xterm.js"></script>
+    <script src="assets/js/terminal.js"></script>
 </body>
-
 </html>
