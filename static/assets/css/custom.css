@@ -1,5 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Roboto&display=swap');
+
+h1, h2, h3, h4 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+}
+
+p {   
+    font-family: 'Roboto', sans-serif;
+}
+
 #body-style {
-
     background-color: greenyellow;
+}
 
+button {
+    /* width: 200px;
+    height: 40px;
+    background-color: #E84610;
+    border: 1px solid grey;
+    color: white;
+    text-transform: uppercase;
+    margin: 10px;
+    border-radius: 8px; */
+    width: 400px;
+    height: 40px;
+    background-color: #E84610;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    margin: 10px;
+    border-radius: 60px;
+    /* align-items: center; */
+    letter-spacing: .20rem;
+    padding: 10px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+
+button:hover{
+    box-shadow: 0 5px 5px 0 rgb(8, 8, 8, .7); 
 }

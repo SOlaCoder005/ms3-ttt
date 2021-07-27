@@ -43,7 +43,7 @@ function init_terminal() {
 
         term._initialized = true;
 
-        term.writeln('Running your file: run.py');
+        term.writeln('Welcome to T*3 the interactive tic-tac-toe game! Are you ready to play?');
         term.writeln('');
         term_prompt(term);
 
