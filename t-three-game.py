@@ -6,8 +6,8 @@ import emoji
 # O = "\U0001F608" # devil symbol
 # print(X, O)
 
-X = "X" #"\U0001F4AA" human arm symbol 
-O = "O" # "\U0001F9BE"  mechanical arm symbol
+human = "X" #"\U0001F4AA" human arm symbol 
+ai = "O" # "\U0001F9BE"  mechanical arm symbol
 PlayerWon = ""
 PlayerLost = ""
 PlayerTie = ""
@@ -15,7 +15,7 @@ GREETING_MESSAGE = "\nHello, and Welocome to the T*3 game!\n"
 
 # print(X, O)
 
-def welcome_message():
+def welcome():
     """
     This message greets the user when they initially run the game.
     """
@@ -52,25 +52,14 @@ def game_guides():
     )
    
 
-# def take_turns():
-#     """
-#     This allows game to switch turns between users
-#     """
-    
-#     if user == X:
-#         return O
-#     else: 
-#         return X
 
 
-# take_turns()
 
+def main(): 
 
-# def main(): 
+    welcome()
+    game_guides()
+    # take_turns() 
 
-#     welcome_message()
-#     game_guides()
-#     take_turns() 
-
-# print(GREETING_MESSAGE.upper())
-# main()
+print(GREETING_MESSAGE.upper())
+main()
