@@ -15,13 +15,15 @@ O = "\U0001F9BE"  # mechanical arm symbol
 PlayerWon = ""
 PlayerLost = ""
 PlayerTie = ""
-GREETING_MESSAGE = "\nBasically, T*3 is a game of Tic-Tac-Toe. \U0001F609 \n"
+BOARD_SQUARES = 9
+GAME_NAME = "\ntic-tac-toe!\n"
 
 
 def welcome():
     """
     This message greets the user when they initially run the game.
     """
+    print("\nWELCOME TO TIC-TAC-TOE! \U0001F609\n")
     print("This is a place where great minds meet to engage in digital strategic sparing!\n")
     print("This is one of the last places where you are able to put AI in it's place and show it whos boss.\n")
     time.sleep(2.5)
@@ -34,8 +36,8 @@ def game_guides():
     print(
     
         """
-        \U0001F4DC The Instuctions:
-        ---------------
+        \U0001F4DC How it works
+        -----------------------
         """
     )
 
@@ -49,21 +51,61 @@ def game_guides():
                             --------------
                             6  |  7  |  8
 
-    
+      
+        \U0001F449 You can play either as X or O\n
+        \U0001F449 You must align three Xs or Os in a row in order to win the game\n
+        \U0001F449 If you and the computer run out of moves it you shall daraw a tie!\n
         """
     )
+    time.sleep(1.5)
+
+
+def r_u_ready_to_play():
+    """
+    Asks the user if they are ready to play
+    """
+    #TO DO!!!! - You need to create an error catacher for this fucntion so it doen't take invalid response
+    answer = input("\nAre you ready to play? (y/n): ")
+    yes = "y"
+    no = "n"
     
-   
+    if answer == yes:
+        print("\nOkay! lets play")
+        return present_game_board()
+        time.sleep(1.5)
+    else: 
+        print("\nWhy not? Okay, maybe next time.\n")
+        time.sleep(1.5)
+        return welcome()
+
+def game_board():
+    board = [] 
+    for square in range(BOARD_SQUARES):
+        board.append(EMPTY)
+        return board
+
+def present_game_board(board):
+    """
+    This creates a new game board to the use r
+    """
+    print("\n\t",board[0],"|",board[1],"|",board[2])
+    print("\t", "-----------")
+    print("\n\t",board[3],"|",board[4],"|",board[5])
+    print("\t", "-----------")
+    print("\n\t",board[6],"|",board[7],"|",board[8],"\n")
 
 
 
-
+        
+    
 def main(): 
 
     welcome()
     game_guides()
+    r_u_ready_to_play()
+    present_game_board()
 
-print(GREETING_MESSAGE.upper())
+print(GAME_NAME.upper())
 main()
 
 
