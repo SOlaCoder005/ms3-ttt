@@ -6,8 +6,8 @@ import emoji
 # O = "\U0001F608" # devil symbol
 # print(X, O)
 
-human = "X" #"\U0001F4AA" human arm symbol 
-ai = "O" # "\U0001F9BE"  mechanical arm symbol
+X = "\U0001F4AA" # human arm symbol 
+O = "\U0001F9BE"  # mechanical arm symbol
 PlayerWon = ""
 PlayerLost = ""
 PlayerTie = ""
@@ -59,7 +59,6 @@ def main():
 
     welcome()
     game_guides()
-    # take_turns() 
 
 print(GREETING_MESSAGE.upper())
 main()
