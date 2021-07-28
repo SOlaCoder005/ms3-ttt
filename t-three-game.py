@@ -6,8 +6,8 @@ import emoji
 # O = "\U0001F608" # devil symbol
 # print(X, O)
 
-X = "\U0001F4AA" # human arm symbol 
-O = "\U0001F9BE" # mechanical arm symbol
+X = "X" #"\U0001F4AA" human arm symbol 
+O = "O" # "\U0001F9BE"  mechanical arm symbol
 PlayerWon = ""
 PlayerLost = ""
 PlayerTie = ""
@@ -56,17 +56,21 @@ def game_guides():
 #     """
 #     This allows game to switch turns between users
 #     """
+    
 #     if user == X:
 #         return O
 #     else: 
 #         return X
 
 
-def main(): 
+# take_turns()
 
-    welcome_message()
-    game_guides()
-    take_turns() 
 
-print(GREETING_MESSAGE.upper())
-main()
+# def main(): 
+
+#     welcome_message()
+#     game_guides()
+#     take_turns() 
+
+# print(GREETING_MESSAGE.upper())
+# main()
