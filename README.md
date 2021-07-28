@@ -272,9 +272,16 @@ Below is an overview on how to deploy a project via GitHub’s GitHub Pages. Thi
 
 - **Docs.python.org. 2021.** - [Python Module Index — Python 3.9.6 documentation](https://docs.python.org/3/py-modindex.html)
 
+- **Unicode.org. 2021.** - [Emoji List, v13.1.](https://unicode.org/emoji/charts/emoji-list.html#1f926_200d_2642_fe0f)
+
+- **Prajapati, K., 2020.** - [How to print 😁😛😋🤣emojis using python🐍](https://medium.com/analytics-vidhya/how-to-print-emojis-using-python-2e4f93443f7e)
+
+- **Pythonprinciples.com. 2021.** - [Print Vs Return – Python Principles](https://pythonprinciples.com/blog/print-vs-return)
+
+- **Python.org. 2021.** - [Python Release Python 3.9.6.](https://www.python.org/downloads/release/python-396/)
+
 - **Pythondocs.readthedocs.io. 2021.**- [Python Intro 1.0 documentation](https://pythondocs.readthedocs.io/en/latest/)
 
-- **Pythonprinciples.com. 2021.** - [Print Vs Return – Python Principles](https://pythonprinciples.com/blog/print-vs-return) 
 
 
 

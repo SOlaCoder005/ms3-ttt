@@ -13,9 +13,8 @@ O = "\U0001F9BE"  # mechanical arm symbol
 PlayerWon = ""
 PlayerLost = ""
 PlayerTie = ""
-GREETING_MESSAGE = "\nHello, and Welocome to the T*3 game!\n"
+GREETING_MESSAGE = "\nBasically, T*3 is a game of Tic-Tac-Toe. \U0001F609 \n"
 
-# print(X, O)
 
 def welcome():
     """
