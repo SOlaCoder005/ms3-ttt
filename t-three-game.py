@@ -71,6 +71,3 @@ main()
 
 
 
-# X = "\U0001F607" # angel symbol 
-# O = "\U0001F608" # devil symbol
-# print(X, O)

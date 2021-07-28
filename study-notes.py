@@ -13,3 +13,10 @@ def birthday1(name, age):
 
 # birthday1(name = "Jack", age = 4) | Happy birthday , Jack ! You are  4  today. | Default values
 # birthday1("Jack", 4) | Happy birthday , Jack ! You are  4  today. | Positional Parameters
+
+
+
+
+# X = "\U0001F607" # angel symbol 
+# O = "\U0001F608" # devil symbol
+# print(X, O)
