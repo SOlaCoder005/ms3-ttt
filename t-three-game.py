@@ -11,20 +11,18 @@ O = "\U0001F9BE" # mechanical arm symbol
 PlayerWon = ""
 PlayerLost = ""
 PlayerTie = ""
+GREETING_MESSAGE = "\nHello, and Welocome to the T*3 game!\n"
+
 # print(X, O)
 
 def welcome_message():
     """
     This message greets the user when they initially run the game.
     """
-    print("\nHello, and Welocome to the T*3 game!\n")
-    print("Basically, T*3 is a game of Tic-Tac-Toe.\n")
+    print("\nBasically, T*3 is a game of Tic-Tac-Toe.\n")
     print("This is a place where great minds meet to engage in digital strategic sparing!\n")
     print("This is one of the last places where you are able to put AI in it's place and show it whos boss.\n")
     # print("Are you ready to play?")
-
-
-welcome_message()
 
 
 def game_guides():
@@ -54,23 +52,21 @@ def game_guides():
     )
    
 
-game_guides()
+# def take_turns():
+#     """
+#     This allows game to switch turns between users
+#     """
+#     if user == X:
+#         return O
+#     else: 
+#         return X
 
 
-def take_turns():
-    """
-    This allows game to switch turns between users
-    """
-    if user_turn == X:
-        return O
-    else: 
-        return X
+def main(): 
 
-take_turns() 
+    welcome_message()
+    game_guides()
+    take_turns() 
 
-
-
-# def main(): 
-
-
-# main()
+print(GREETING_MESSAGE.upper())
+main()
