@@ -1,13 +1,15 @@
 # Tic-Tac-Toe Game
-import emoji
+
+"""
+Imported Libraries and Modules 
+"""
+import emoji # Credit Unicode
 import time #Credit: Guru99
 
 
-
-# X = "\U0001F607" # angel symbol 
-# O = "\U0001F608" # devil symbol
-# print(X, O)
-
+"""
+CONST variables
+"""
 X = "\U0001F4AA" # human arm symbol 
 O = "\U0001F9BE"  # mechanical arm symbol
 PlayerWon = ""
@@ -63,3 +65,12 @@ def main():
 
 print(GREETING_MESSAGE.upper())
 main()
+
+
+
+
+
+
+# X = "\U0001F607" # angel symbol 
+# O = "\U0001F608" # devil symbol
+# print(X, O)
