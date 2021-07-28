@@ -20,7 +20,6 @@ def welcome():
     """
     This message greets the user when they initially run the game.
     """
-    print("\nBasically, T*3 is a game of Tic-Tac-Toe.\n")
     print("This is a place where great minds meet to engage in digital strategic sparing!\n")
     print("This is one of the last places where you are able to put AI in it's place and show it whos boss.\n")
     time.sleep(2.5)
