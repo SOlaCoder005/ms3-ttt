@@ -1,18 +1,4 @@
 # Tic-Tac-Toe Game
-# Refs below (will move to Readme.md later):
-# https://unicode.org/emoji/charts/emoji-list.html - list of emoji unicodes
-# https://medium.com/analytics-vidhya/how-to-print-emojis-using-python-2e4f93443f7e - article explaining how to use unicode with Python    
-
-# Template code
-
-    # def fucntion_template():
-    #     """
-    #     Doc String
-    #     """
-    #     print()
-
-    # fucntion_template()
-
 import emoji
 
 
@@ -69,6 +55,19 @@ def game_guides():
    
 
 game_guides()
+
+
+def take_turns():
+    """
+    This allows game to switch turns between users
+    """
+    if user_turn == X:
+        return O
+    else: 
+        return X
+
+take_turns() 
+
 
 
 # def main(): 

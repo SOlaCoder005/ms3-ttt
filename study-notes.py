@@ -1,3 +1,10 @@
+"""
+Refs below (will move to Readme.md later):
+- https://unicode.org/emoji/charts/emoji-list.html - list of emoji unicodes
+- https://medium.com/analytics-vidhya/how-to-print-emojis-using-python-2e4f93443f7e - article explaining how to use unicode with Python    
+- Dawson 2010, pp. 157-58 and pp.175-187
+"""
+
 # Ref: Dawson, 2010 pp. 169-70 
 
 def birthday1(name, age):
