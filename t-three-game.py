@@ -1,5 +1,7 @@
 # Tic-Tac-Toe Game
 import emoji
+import time #Credit: Guru99
+
 
 
 # X = "\U0001F607" # angel symbol 
@@ -22,7 +24,7 @@ def welcome():
     print("\nBasically, T*3 is a game of Tic-Tac-Toe.\n")
     print("This is a place where great minds meet to engage in digital strategic sparing!\n")
     print("This is one of the last places where you are able to put AI in it's place and show it whos boss.\n")
-    # print("Are you ready to play?")
+    time.sleep(2.5)
 
 
 def game_guides():
@@ -50,6 +52,7 @@ def game_guides():
     
         """
     )
+    
    
 
 
