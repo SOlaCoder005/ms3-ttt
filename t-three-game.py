@@ -11,6 +11,8 @@
 
     # fucntion_template()
 
+import emoji
+
 def welcome_message():
     """
     This message greets the user when they initially run the game.
