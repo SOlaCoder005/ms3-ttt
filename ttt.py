@@ -18,7 +18,6 @@ PlayerTie = ""
 BOARD_SQUARES = 9
 GAME_NAME = "\ntic-tac-toe!\n"
 
-
 def welcome():
     """
     TGreets user when they initially run the game.
@@ -80,8 +79,8 @@ def r_u_ready_to_play():
             elif answer == no: 
                 print("\n\U0001F92F What! Why not?\n")
                 print("\n\U0001F612 Okay, maybe next time.\n")
-                time.sleep(1.5)
-                return welcome()
+                time.sleep(.5)
+                return exit()
 
             else: 
                 raise ValueError()
@@ -111,18 +110,23 @@ def r_u_ready_to_play():
 #     print("\n\t",board[6],"|",board[7],"|",board[8],"\n")
 
 
+def exit():
+    print(input("\nPlease press ENTER on your keyboard to exit"))
+    time.sleep(.5) 
+    print("Exiting Game mode...") 
+    time.sleep(1)
+    return welcome()
 
-        
     
 def main(): 
     """
     Contains key functions that allows the game to run. 
     """
-
     welcome()
     game_guides()
     r_u_ready_to_play()
     present_game_board()
+    exit()
 
 print(GAME_NAME.upper())
 main()
