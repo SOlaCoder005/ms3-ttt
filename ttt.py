@@ -64,10 +64,11 @@ def r_u_ready_to_play():
     """
     Asks the user if they are ready to play
     """
-    #TO DO!!!! - You need to create an error catacher for this fucntion so it doen't take invalid response
-    answer = input("\nAre you ready to play? (y/n): ")
     yes = "y"
     no = "n"
+    
+    #TO DO!!!! - You need to create an error catacher for this fucntion so it doen't take invalid response
+    answer = input("\nAre you ready to play? (y/n): ")
     
     if answer == yes:
         print("\nOkay! lets play")
