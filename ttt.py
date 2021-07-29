@@ -3,8 +3,8 @@
 """
 Imported Libraries and Modules 
 """
-import emoji # Credit Unicode
-import time #Credit: Guru99
+import emoji # Credit: Unicode
+import time # Credit: Guru99
 
 
 """
@@ -130,9 +130,4 @@ def main():
 
 print(GAME_NAME.upper())
 main()
-
-
-
-
-
 
