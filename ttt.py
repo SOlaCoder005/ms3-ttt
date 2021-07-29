@@ -60,6 +60,27 @@ def game_guides():
     time.sleep(1.5)
 
 
+# def r_u_ready_to_play():
+#     """
+#     Asks the user if they are ready to play
+#     """
+#     yes = "y"
+#     no = "n"
+    
+#     #TO DO!!!! - You need to create an error catacher for this fucntion so it doen't take invalid response
+#     answer = input("\nAre you ready to play? (y/n): ")
+    
+#     if answer == yes:
+#         print("\nOkay! lets play")
+#         return present_game_board()
+#         time.sleep(1.5)
+#     else: 
+#         print("\nWhy not? Okay, maybe next time.\n")
+#         time.sleep(1.5)
+#         return welcome()
+
+
+
 def r_u_ready_to_play():
     """
     Asks the user if they are ready to play
@@ -67,17 +88,31 @@ def r_u_ready_to_play():
     yes = "y"
     no = "n"
     
-    #TO DO!!!! - You need to create an error catacher for this fucntion so it doen't take invalid response
-    answer = input("\nAre you ready to play? (y/n): ")
-    
-    if answer == yes:
-        print("\nOkay! lets play")
-        return present_game_board()
-        time.sleep(1.5)
-    else: 
-        print("\nWhy not? Okay, maybe next time.\n")
-        time.sleep(1.5)
-        return welcome()
+    while True: 
+        
+        try: 
+            answer = input("\nAre you ready to play (y/n)?: ")
+
+            if answer == yes:
+                print("\nOkay! lets play \U0001F60E")
+                return present_game_board()
+                time.sleep(1.5)
+
+            elif answer == no: 
+                print("\n\U0001F92F What! Why not?\n")
+                print("\n\U0001F612 Okay, maybe next time.\n")
+                time.sleep(1.5)
+                return welcome()
+
+            else: 
+                raise ValueError()
+
+        except ValueError:
+            print(
+                f"\nSorry, didn't recognise yourt respnse '{answer}'. Please try again..."
+            )
+        #OUTSTANDING ACTION(s)- Create statementent that times out/ allows only 3 incorrect repsonses 
+
 
 def game_board():
     board = [] 
