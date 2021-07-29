@@ -21,7 +21,7 @@ GAME_NAME = "\ntic-tac-toe!\n"
 
 def welcome():
     """
-    This message greets the user when they initially run the game.
+    TGreets user when they initially run the game.
     """
     print("\nWELCOME TO TIC-TAC-TOE! \U0001F609\n")
     print("This is a place where great minds meet to engage in digital strategic sparing!\n")
@@ -31,7 +31,7 @@ def welcome():
 
 def game_guides():
     """
-    This message tell the user how to play the game
+    Tells user how to play the game
     """
     print(
     
@@ -60,30 +60,9 @@ def game_guides():
     time.sleep(1.5)
 
 
-# def r_u_ready_to_play():
-#     """
-#     Asks the user if they are ready to play
-#     """
-#     yes = "y"
-#     no = "n"
-    
-#     #TO DO!!!! - You need to create an error catacher for this fucntion so it doen't take invalid response
-#     answer = input("\nAre you ready to play? (y/n): ")
-    
-#     if answer == yes:
-#         print("\nOkay! lets play")
-#         return present_game_board()
-#         time.sleep(1.5)
-#     else: 
-#         print("\nWhy not? Okay, maybe next time.\n")
-#         time.sleep(1.5)
-#         return welcome()
-
-
-
 def r_u_ready_to_play():
     """
-    Asks the user if they are ready to play
+    Asks user if they are ready to play
     """
     yes = "y"
     no = "n"
@@ -114,27 +93,31 @@ def r_u_ready_to_play():
         #OUTSTANDING ACTION(s)- Create statementent that times out/ allows only 3 incorrect repsonses 
 
 
-def game_board():
-    board = [] 
-    for square in range(BOARD_SQUARES):
-        board.append(EMPTY)
-        return board
+# def game_board():
+#     board = [] 
+#     for square in range(BOARD_SQUARES):
+#         board.append(EMPTY)
+#         return board
 
-def present_game_board(board):
-    """
-    This creates a new game board to the use r
-    """
-    print("\n\t",board[0],"|",board[1],"|",board[2])
-    print("\t", "-----------")
-    print("\n\t",board[3],"|",board[4],"|",board[5])
-    print("\t", "-----------")
-    print("\n\t",board[6],"|",board[7],"|",board[8],"\n")
+# def present_game_board(board):
+#     """
+#     - Creates new game board. 
+#     - This is presented to user.
+#     """
+#     print("\n\t",board[0],"|",board[1],"|",board[2])
+#     print("\t", "-----------")
+#     print("\n\t",board[3],"|",board[4],"|",board[5])
+#     print("\t", "-----------")
+#     print("\n\t",board[6],"|",board[7],"|",board[8],"\n")
 
 
 
         
     
 def main(): 
+    """
+    Contains key functions that allows the game to run. 
+    """
 
     welcome()
     game_guides()
