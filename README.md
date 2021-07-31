@@ -305,11 +305,17 @@ Particular mention is paid to the following creators and their content as the re
 
 ### **8.3 Language, Scripts and Modules**
 
-- **JavaScript:** The JavaScript used within the code was part of the  Code Institute’s [Python Essentials repository template]( https://github.com/Code-Institute-Org/python-essentials-template). It has not been edited for the programme to function effectively. 
+- **JavaScript:** 
 
-- **Emoji Module:** The Emoji module was imported into the Python script  in order for the emoji icons to be displayed in the terminal. The module was sourced from [Emoji by PyPi](https://pypi.org/project/emoji/) ( PyPI , 2021).
+    The JavaScript used within the code was part of the  Code Institute’s [Python Essentials repository template]( https://github.com/Code-Institute-Org/python-essentials-template). It has not been edited for the programme to function effectively. 
 
-- **Font Awesome:** FontAwesome’s CDN - https://kit.fontawesome.com/1699136767.js, was used in order for it to support the icon elements used on the index page.  
+- **Emoji Module:** 
+
+    The Emoji module was imported into the Python script  in order for the emoji icons to be displayed in the terminal. The module was sourced from [Emoji by PyPi](https://pypi.org/project/emoji/) ( PyPI , 2021).
+
+- **Font Awesome:** 
+    
+    FontAwesome’s CDN - https://kit.fontawesome.com/1699136767.js, was used in order for it to support the icon elements used on the index page.  
 
 
 ### **8.4 Media** 
