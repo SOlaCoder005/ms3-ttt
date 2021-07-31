@@ -11,7 +11,7 @@ import time # Credit: Guru99
 CONST variables
 """
 X = "\U0001F4AA" # human arm symbol 
-O = "\U0001F9BE"  # mechanical arm symbol
+O = "\U0001F9BE" # mechanical arm symbol
 PlayerWon = ""
 PlayerLost = ""
 PlayerTie = ""
