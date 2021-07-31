@@ -12,14 +12,33 @@
 </head>
 
 <body>
-    <div class="game-view-cont">
-        <nav>PLACEHOLDER</nav>
+    <div id="view-cont">
+        <nav>
+            <h1 id="game-name">TIC-TAC-TOE</h1>
+        </nav>
         <main>
-            <div id="terminal"></div>
-            <button onclick="window.location.reload()">LETS PLAY</button>
+            <div id="terminal"></div>          
         </main>
-        <section>PLACEHOLDER</section>
-        <footer>PLACEHOLDER</footer>
+
+        <section class="btn-cont">
+            <button onclick="window.location.reload()">LETS PLAY</button>
+        </section>  
+        
+        <footer>
+            <div class="game-pad">
+                <i class="fas fa-gamepad"></i>
+                <i class="fas fa-gamepad"></i>
+                <i class="fas fa-gamepad"></i>
+                <i class="fas fa-gamepad"></i>
+                <i class="fas fa-gamepad"></i>
+                <i class="fas fa-gamepad"></i>
+                <i class="fas fa-gamepad"></i>
+                <i class="fas fa-gamepad"></i>
+                <i class="fas fa-gamepad"></i>
+                <i class="fas fa-gamepad"></i>
+                <i class="fas fa-gamepad"></i>  
+            </div>
+        </footer>
     </div>
     <script>
         var socket = null;
@@ -100,6 +119,8 @@
             init_terminal();
         });
     </script>
+    <!-- FontAwesome CDN is below -->
+    <script src="https://kit.fontawesome.com/1699136767.js" crossorigin="anonymous"></script>
 
 </body>
 
