@@ -268,6 +268,8 @@ Below is an overview on how to deploy a project via Heroku. This method was used
 
 |The Process| 
 |-------------|
+|**NOTE:** Prior to deploying, the repository had all changes saved and the following code - _**'pip freeze > requirements.txt'**_ was typed into the terminal. Running this command through the terminal updtated the 'requiremnet.txt' with all the imported modules. Final commit and push commands were made to the repo. From this point the programme was deployed online via Heroku (with Git).|
+||
 | 1. Once signing up to the free version of Heroku; create a new app via [Heroku’s landing page](https://dashboard.heroku.com/apps). This can be done by clicking the **’New’ button** on the landing page and **’Create a new app’** from the drop-down menu. |
 |2. Fill out the requested information. |
 ||
