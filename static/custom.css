@@ -4,7 +4,48 @@
 - All code on this sheet is my own. 
 */
 
-.body {
+
+* {
+	margin: 0; 
+	padding: 0;
+	box-sizing: border-box; 
+}
+
+/*CONTAINER*/
+.game-view-cont {
+	display: grid;
+	height:  auto;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: auto;
+	grid-template-areas:
+	"nav nav nav"
+	"main main main"
+	"section section section"
+	"footer footer footer";
+}  
+
+nav {
+    grid-area: nav;
+    background-color: red;
+}
+
+main {
+    grid-area: main;
+    background-color: orange;
+}
+
+section {
+    grid-area: section;
+    background-color: yellow;
+}
+
+footer{
+    grid-area: footer;
+    background-color: yellowgreen;
+}
+
+body {
     background-color: black;
 }
 
@@ -18,3 +59,4 @@ button {
     margin: 10px;
     border-radius: 8px;
 }
+
