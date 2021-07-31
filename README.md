@@ -225,13 +225,13 @@ The __________________ Programme was deployed locally via the use of GitHub (web
 |12. Select the folder you want to clone your repo to.|
 |13. In the terminal box, type **‘git clone’**.|
 |14. Then copy your SSH key after the git clone command. Then press enter.|
-|15. The terminal should present the pathway to your cloned repository. For instance, this “Ba Mi Soro!” project will display the following in the VSCode’s terminal:| 
+|15. The terminal should present the pathway to your cloned repository. For instance, this _____ project will display the following in the VSCode’s terminal:| 
 |- **…C:\Users\missm\Documents\GIT\ba-mi-soro>**|
 |16. Once cloned, you will be able to edit your repo locally and commit, pull and push changes to your online GitHub repo (remote repository) using terminal commands (e.g. 'git push', 'git add .' and 'git pull').| 
 
 ### 7.2 Deployment: GitHub Pages
 
-Below is an overview on how to deploy a project via GitHub’s GitHub Pages. This method was used to deploy the “Ba Mi Soro!” Programme:
+Below is an overview on how to deploy a project via GitHub’s GitHub Pages. This method was used to deploy the _____ Programme:
 
 |The Process| 
 |-------------|
