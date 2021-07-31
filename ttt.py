@@ -69,7 +69,7 @@ def r_u_ready_to_play():
     while True: 
         
         try: 
-            answer = input("\nAre you ready to play (y/n)?: ")
+            answer = input("\nAre you ready to play (y/n)?:\n")
 
             if answer == yes:
                 print("\nOkay! lets play \U0001F60E")
@@ -111,7 +111,7 @@ def r_u_ready_to_play():
 
 
 def exit():
-    print(input("\nPlease press ENTER on your keyboard to exit"))
+    print(input("\nPlease press ENTER on your keyboard to exit:\n"))
     time.sleep(.5) 
     print("Exiting Game mode...\n") 
     time.sleep(1)
