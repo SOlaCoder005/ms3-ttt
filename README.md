@@ -191,7 +191,7 @@ While there were several bugs that arose through the duration of the project, th
 
 The __________________ programme was deployed locally via the use of GitHub (web application), Git Bash, Python and an IDE such as VS Code (desktop application, and the use of a ‘repo’ - specific SSH Key. An overview of how the programme was deployed locally is discussed in more detail below: 
 
-### 7.1 Access: Local Clone :unlock: 
+### :unlock: 7.1 Access: Local Clone 
 
 |The Process – :key: SSH Key| 
 |-------------|
