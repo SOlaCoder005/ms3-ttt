@@ -203,12 +203,16 @@ The __________________ programme was deployed locally via the use of GitHub (web
 |5.	Click **‘New SSH Key’**, then copy and paste your key code (created via GitBash) into the box under the **’Key’** title.|
 |6.	Click **’Add SSH Key’**, and then your key will then be ready to use!|
 
+
 |The Process – Local Clone to an IDE of choice| 
 |-------------|
 |1.	Click the **’+’** icon in the top-right icon on the web browser and select **‘New Repository’**. You will then be directed to a webpage titled ‘Create a new repository’.| 
 |2. Fill out the required areas. Ensure the repository has been assigned a name and has a README.md created. The README file can be added by selecting the **'Add a README file'** option at the bottom of the ‘Create a new repository’ form.|
 |3.  Copy your SSH key from your repo. See blow on how to do this: |
-| |
+
+
+| :key: Implementing SSH Key |
+|-------------|
 |3.1 Open GitHub and navigate to the repo you want to clone.|
 |3.2 Click the **’Code’** button in the top-right corner of your repo window.|
 |3.3 Click the SSH Key tab.|
