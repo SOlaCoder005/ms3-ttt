@@ -72,11 +72,11 @@ Creating the mock-ups of the programme helped to highlight the limitations and s
 
 ![](IMAGE GOES HERE) -->
 
-The logo for the programme was created and illustrated through the following software:
+<!-- The logo for the programme was created and illustrated through the following software:
 
 - Adobe Illustrator
 - Adobe Photoshop
-- Adobe InDesign 
+- Adobe InDesign  -->
 
 ### **3.3 Fonts**
 
@@ -91,7 +91,7 @@ The logo for the programme was created and illustrated through the following sof
 
 ## 4. Features
 
-This section provides an overview of the features on the Programme, and where relevant, the way in which theses feature(s) address the users’ stories, mentioned in prior sections.
+<!-- This section provides an overview of the features on the Programme, and where relevant, the way in which theses feature(s) address the users’ stories, mentioned in prior sections. -->
 
 ### **programme-wide features**
 
