@@ -281,7 +281,7 @@ Below is an overview on how to deploy a project via Heroku. This method was used
 |4. Once selecting the method, log into the respective account and select the repo that is to be shared. |
 |5. Once connected, select either the automatic or manual deployment option. This can be fount on the last two rows of the Deploy page. For the ______programme app, the manual deploy option was selected by clicking the **’Deploy Branch** button.  The domain for the programme can be accessed via the Settings and Deploy pages, this is in the ‘Domains’ and ‘Manual Deploy’ rows of each respective page. |
 ||
-|**NOTE:** As this is an overview of deploying a programme via Heroku (with Git) - further guidance on deployment practice can be found [here](https://devcenter.heroku.com/articles/git) |
+|**NOTE:** As this is an overview of deploying a programme via Heroku (with Git) - further guidance on deployment practice can be found [here](https://devcenter.heroku.com/articles/git). |
 
 
 ## 8. Credits
@@ -293,8 +293,24 @@ Below is an overview on how to deploy a project via Heroku. This method was used
 #### **8.1.2 Chosen Project Idea** 
 
 ### **8.2 Content** 
+Particular mention is paid to the following creators and their content as the resources assisted in the overall execution of the project.
 
-### **8.3 Language and Scripts**
+-	Repository Elements
+
+    Code Institute’s [Python Essentials repository template]( https://github.com/Code-Institute-Org/python-essentials-template) was adopted and amended. The repository includes some existing, HTML, CSS, JS and JSON code which has not been changed or removed from the repo. It was essential to utilise this template for the python code to function effectively.
+
+-	Game Concept & Structural Planning 
+
+    Dawson (2010) – Specifically, pages 157-58 and 175-1987 of Dawson’s booked assisted greatly in approaching the  planning stages of the project.  
+
+### **8.3 Language, Scripts and Modules**
+
+- **JavaScript:** The JavaScript used within the code was part of the  Code Institute’s [Python Essentials repository template]( https://github.com/Code-Institute-Org/python-essentials-template). It has not been edited for the programme to function effectively. 
+
+- **Emoji Module:** The Emoji module was imported into the Python script  in order for the emoji icons to be displayed in the terminal. The module was sourced from [Emoji by PyPi](https://pypi.org/project/emoji/) ( PyPI , 2021).
+
+- **Font Awesome:** FontAwesome’s CDN - https://kit.fontawesome.com/1699136767.js, was used in order for it to support the icon elements used on the index page.  
+
 
 ### **8.4 Media** 
 
@@ -313,6 +329,8 @@ Below is an overview on how to deploy a project via Heroku. This method was used
 - **Docs.python.org. 2021.** - [Python Module Index — Python 3.9.6 documentation](https://docs.python.org/3/py-modindex.html)
 
 - **Guru99.com. 2021.** - [Python time.sleep(): Add Delay to the Code (Example)](https://www.guru99.com/python-time-sleep-delay.html#2)
+
+- **PyPI. 2021.** - [emoji](https://pypi.org/project/emoji/)
 
 - **Prajapati, K., 2020.** - [How to print 😁😛😋🤣emojis using python🐍](https://medium.com/analytics-vidhya/how-to-print-emojis-using-python-2e4f93443f7e)
 
