@@ -8,7 +8,7 @@
 4. [Features](#4-Features)
 5. [Technologies Used](#5-Technologies-Used) 
 6. [Testing](#6-Testing)
-7. [Deployment](#7-Deployment)
+7. [Deployment, Access & Extensions](#7-Deployment-Access-and-Extensions)
 8. [Credits](#8-Credits)
 9. [Acknowledgements](#9-Acknowledgements)
 10. [References](#10-References)
@@ -187,13 +187,53 @@ While there were several bugs that arose through the duration of the project, th
 - **Reason:** 
 - **Potential Fix:** 
 
-## 7. Deployment
+## 7. Deployment, Access and Extensions
 
-The __________________ Programme was deployed locally via the use of GitHub (web application), Git Bash, Python and an IDE such as VS Code (desktop application, and the use of a ‘repo’ - specific SSH Key. An overview of how the programme was deployed locally is discussed in more detail below: 
+The __________________ programme was deployed locally via the use of GitHub (web application), Git Bash, Python and an IDE such as VS Code (desktop application, and the use of a ‘repo’ - specific SSH Key. An overview of how the programme was deployed locally is discussed in more detail below: 
 
+### 7.1 Access: Local Clone :unlock: 
 
-### 7.1 Deployment: Local Clone 
+|The Process – :key: SSH Key| 
+|-------------|
+|Note: You will need this key to clone your repo to your local space (e.g. on your desktop).|
+|1.	Download the GitBash application and create a SSH key. How to create a SSH key can be found [here]( https://inchoo.net/dev-talk/how-to-generate-ssh-keys-for-git-authorization/).|
+|2.	Sign into [GitHub](https://github.com/).|
+|3.	Click your profile icon in the top-right corner of the GitHub webpage, click **Settings**.|
+|4.	Click SSH and GPG Keys tab on the left-hand menu.|
+|5.	Click **‘New SSH Key’**, then copy and paste your key code (created via GitBash) into the box under the **’Key’** title.|
+|6.	Click **’Add SSH Key’**., your key will then be ready to use!|
 
+|The Process – Local Clone to an IDE of choice| 
+|-------------|
+|1.	Click the **’+’** icon in the top-right icon on the web browser and select **‘New Repository’**. You will then be directed to a webpage titled ‘Create a new repository’.| 
+|2. Fill out the required areas. Ensure the repository has been assigned a name and has a README.md created. The README file can be added by selecting the **'Add a README file'** option at the bottom of the ‘Create a new repository’ form.|
+|3.  Copy your SSH key from your repo. See blow on how to do this.|
+|3.1 Open GitHub and navigate to the repo you want to clone.|
+|3.2 Click the **’Code’** button in the top-right corner of your repo window.|
+|3.3 Click the SSH Key tab.|
+|3.4 Copy the SSH key via right click and copy or clicking the clipboard icon.|
+|3.5 On your desktop, open VSCode.|
+|3.6 On the taskbar at the top of tab, click the **File** tab.|
+|3.7 Select the folder you want to clone your repo to.|
+|3.8 In the terminal box, type **‘git clone’**.|
+|3.9 Then copy your SSH key after the git clone command. Then press enter.|
+|3.10 The terminal should present the pathway to your cloned repository. For instance, this ___________ project will display the following in the VSCode’s terminal:| 
+|- **…C:\Users\missm\Documents\GIT\__________>**|
+|3.11 Once cloned, you will be able to edit your repo locally and commit, pull and push changes to your online GitHub repo (remote repository) using terminal commands (e.g. 'git push', 'git add .' and 'git pull').| 
+
+### :unlock: 7.1.1 Access: GitPod Workspaces
+
+Below is an overview on how to access project via [GitPod](https://gitpod.io/workspaces) which can be accessed directly via the main site or via GitHub. This method was used in the process of writing the code for the ______________ programme:
+
+|The Process| 
+|-------------|
+| 1. Create a project **repository** on [GitHub](https://github.com/) using a registered GitHub account.|
+|2. Once the repository is created, on the repo page, click on the GitPod icon above your repo, this will then direct you to GitPod. Further information on how to get started with GitPod can be found [here](https://www.gitpod.io/docs/getting-started).|
+|3. Once you have accessed (and signed in, if prompted) GitPod, open a new tab. Type or paste the following URL into the new tab: **https://gitpod.io/workspaces** . |
+|3.1 **‘Pin’** your unique repo name on the GitPod Workspace. nThis can be accessed by the ellipses button on the right-hand side of your unique repo name. **NOTE:** This pin will be deleted automatically if it has not been accessed within 7 – 14 days.|
+|4. Once these steps are taken, you can the access, edit and create changes to your repo using commit, pull and push commands (e.g. 'git push', 'git add .' and 'git pull'). These will update your online GitHub repo (remote repository) also.| 
+
+### 7.2 Extensions Install:  Python Extensions
 |The Process – Installing Python v3 and later| 
 |-------------|
 ||
@@ -203,35 +243,7 @@ The __________________ Programme was deployed locally via the use of GitHub (web
 |-----------|
 |Notes on interpreter selection too|
 
-
-|The Process – Local Clone| 
-|-------------|
-|Note: You will need this key to clone your repo to your local space (e.g. on your desktop).|
-|1.	Download the GitBash application and create a SSH key. How to create a SSH key can be found [here]( https://inchoo.net/dev-talk/how-to-generate-ssh-keys-for-git-authorization/).|
-|2.	Sign into [GitHub](https://github.com/).|
-|3.	Click your profile icon in the top-right corner of the GitHub webpage, click **Settings**.|
-|4.	Click SSH and GPG Keys tab on the left-hand menu.|
-|5.	Click **‘New SSH Key’**, then copy and paste your key code (created via GitBash) into the box under the **’Key’** title.|
-|6.	Click **’Add SSH Key’**., your key will then be ready to use!|
-|7.	Click the **’+’** icon in the top-right icon on the web browser and select **‘New Repository’**. You will then be directed to a webpage titled ‘Create a new repository’.| 
-|8	Fill out the required areas. Ensure the repository has been assigned a name and has a README.md created. The README file can be added by selecting the **'Add a README file'** option at the bottom of the ‘Create a new repository’ form.|
-|9. Copy your SSH key from your repo. To do this:
-|9.1 Open GitHub and navigate to the repo you want to clone.|
-|9.2 Click the **’Code’** button in the top-right corner of your repo window.|
-|9.3 Click the SSH Key tab.|
-|9.4 Copy the SSH key via right click and copy or clicking the clipboard icon.|
-|10. On your desktop, open VSCode.|
-|11. On the taskbar at the top of tab, click the **File** tab.|
-|12. Select the folder you want to clone your repo to.|
-|13. In the terminal box, type **‘git clone’**.|
-|14. Then copy your SSH key after the git clone command. Then press enter.|
-|15. The terminal should present the pathway to your cloned repository. For instance, this _____ project will display the following in the VSCode’s terminal:| 
-|- **…C:\Users\missm\Documents\GIT\ba-mi-soro>**|
-|16. Once cloned, you will be able to edit your repo locally and commit, pull and push changes to your online GitHub repo (remote repository) using terminal commands (e.g. 'git push', 'git add .' and 'git pull').| 
-
-### 7.2 Deployment: GitHub Pages
-
-Below is an overview on how to deploy a project via GitHub’s GitHub Pages. This method was used to deploy the _____ Programme:
+Below is an overview on how to deploy a project via GitHub’s GitHub Pages. This method was used to deploy the __________ Programme:
 
 |The Process| 
 |-------------|
@@ -242,7 +254,23 @@ Below is an overview on how to deploy a project via GitHub’s GitHub Pages. Thi
 |5. Then click **Save**.|
 |6. Wait for a minute and then **refresh** the webpage.|
 |7. Once refreshing, a green box with the text and clickable link; **'Your programme is published at...'**.| 
-|8. Clicking on the Programme’s hyperlink in the green box will direct to the live deployedprogramme.|
+|8. Clicking on the Programme’s hyperlink in the green box will direct to the live deployed
+programme.|
+
+### 7.3 Deployment: Heroku
+
+Below is an overview on how to deploy a project via GitHub’s GitHub Pages. This method was used to deploy the ________________Programme:
+
+|The Process| 
+|-------------|
+| 1. Create a project **repository** on [GitHub](https://github.com/) using a registered GitHub account.|
+|2. Once the repository is created, click on the repository, then the **Settings** tab, this is the last tab in the top right of the repository’s **navigation bar**.|
+|3. Once on the settings page, navigate to and click on **Pages** (titled as ‘Pages’ as of May 2021) listed in the left-hand menu pane.|
+|4. Under the header - **Source**, select **master branch**  from the drop-down list. This will change the neighbouring selector box to **/(root)**.|
+|5. Then click **Save**.|
+|6. Wait for a minute and then **refresh** the webpage.|
+|7. Once refreshing, a green box with the text and clickable link; **'Your programme is published at...'**.| 
+|8. Clicking on the Programme’s hyperlink in the green box will direct to the live deployed programme.|
 
 ## 8. Credits
 
