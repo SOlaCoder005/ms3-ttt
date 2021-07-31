@@ -16,7 +16,7 @@ PlayerWon = ""
 PlayerLost = ""
 PlayerTie = ""
 BOARD_SQUARES = 9
-GAME_NAME = "\ntic-tac-toe!\n"
+
 
 def welcome():
     """
@@ -113,7 +113,7 @@ def r_u_ready_to_play():
 def exit():
     print(input("\nPlease press ENTER on your keyboard to exit"))
     time.sleep(.5) 
-    print("Exiting Game mode...") 
+    print("Exiting Game mode...\n") 
     time.sleep(1)
     return welcome()
 
@@ -128,6 +128,5 @@ def main():
     present_game_board()
     exit()
 
-print(GAME_NAME.upper())
 main()
 
