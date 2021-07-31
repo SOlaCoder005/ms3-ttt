@@ -318,13 +318,13 @@ Particular mention is paid to the following creators and their content as the re
 
 ## 10. References
 
-### Books
+### :books: Books
 - **Ascher, D., Martelli Ravenscroft, A. and Martelli, A., 2005. Python cookbook edited by Alex Martelli and David Ascher. United States: O'Reilly.**
 - **Dawson, M., 2010. Python programming for the absolute beginner. Boston, Mass.: Course Technology.**
 - ** Martelli., A., 2006. Python in a Nutshell. O'Reilly Media.**
 - **Nixon, R., 2018. Learning PHP, MySQL et JavaScript. O'Riley Media Inc.**
 
-### Online Resources 
+### :computer: Online Resources 
 
 - **Docs.python.org. 2021.** - [Python Module Index — Python 3.9.6 documentation](https://docs.python.org/3/py-modindex.html)
 
