@@ -21,7 +21,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #F1F7ED;
-    
+    display: flex;
+    justify-content: center; 
 }
 
 h1, h2, h3, h4 {
@@ -39,7 +40,7 @@ p {
     height: auto;
     grid-gap: 1rem;
     /* grid-template-columns: 2fr 1fr 1fr; */
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
     "header header header"
@@ -58,10 +59,10 @@ main {
     /* background-color: blue; */
 }
 
-content {
+.content {
     grid-area: content;
-    display: flex;
-    justify-content: center; 
+    /* display: flex;
+    justify-content: center; */
 }
 
 aside {
@@ -88,12 +89,20 @@ footer {
     color: #F7B15C;
 }
 
-#game-window > div {
+.game-window {
     display: flex;
+    justify-content: center; 
+    /* margin-left: auto;
+    margin-right: auto;
+    padding: 10px; */
+}
+
+.game-window > div {
+    /* display: flex;
     justify-content: center; 
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
+    padding: 10px; */
 }
 
 #terminal {
@@ -158,6 +167,10 @@ button:hover{
         "content"
         "aside"
         "footer";
+    }
+
+    .game-window {
+        display: block; 
     }
 
 }
