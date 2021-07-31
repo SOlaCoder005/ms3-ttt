@@ -189,42 +189,42 @@ While there were several bugs that arose through the duration of the project, th
 
 ## 7. Deployment, Access and Extensions
 
-The __________________ programme was deployed locally via the use of GitHub (web application), Git Bash, Python and an IDE such as VS Code (desktop application, and the use of a ‘repo’ - specific SSH Key. An overview of how the programme was deployed locally is discussed in more detail below: 
+The __________________ programme was deployed locally and online via the use of GitHub (web application), GitPod, Git Bash, Heroku and an IDE such as VS Code. In order to access the repo locally, a ‘repo’ - specific SSH Key was created and used also. An overview of how the programme was accessed and deployed are outlined in the sections below. 
 
 ### :unlock: 7.1 Access: Local Clone 
 
 |The Process – :key: SSH Key| 
 |-------------|
-|Note: You will need this key to clone your repo to your local space (e.g. on your desktop).|
+|Note: You will need this key to clone the repo to the local space (e.g. on the desktop).|
 |1.	Download the GitBash application and create a SSH key. How to create a SSH key can be found [here]( https://inchoo.net/dev-talk/how-to-generate-ssh-keys-for-git-authorization/).|
 |2.	Sign into [GitHub](https://github.com/).|
-|3.	Click your profile icon in the top-right corner of the GitHub webpage, click **Settings**.|
+|3.	Click the profile icon in the top-right corner of the GitHub webpage, click **Settings**.|
 |4.	Click SSH and GPG Keys tab on the left-hand menu.|
-|5.	Click **‘New SSH Key’**, then copy and paste your key code (created via GitBash) into the box under the **’Key’** title.|
-|6.	Click **’Add SSH Key’**, and then your key will then be ready to use!|
+|5.	Click **‘New SSH Key’**, then copy and paste the key code (created via GitBash) into the box under the **’Key’** title.|
+|6.	Click **’Add SSH Key’**, and then the key will then be ready to use!|
 
 
 |The Process – Local Clone to an IDE of choice| 
 |-------------|
 |1.	Click the **’+’** icon in the top-right icon on the web browser and select **‘New Repository’**. You will then be directed to a webpage titled ‘Create a new repository’.| 
 |2. Fill out the required areas. Ensure the repository has been assigned a name and has a README.md created. The README file can be added by selecting the **'Add a README file'** option at the bottom of the ‘Create a new repository’ form.|
-|3.  Copy your SSH key from your repo. See blow on how to do this: |
+|3.  Copy the SSH key from the repo. See blow on how to do this: |
 
 
 | :key: Implementing SSH Key |
 |-------------|
 |3.1 Open GitHub and navigate to the repo you want to clone.|
-|3.2 Click the **’Code’** button in the top-right corner of your repo window.|
+|3.2 Click the **’Code’** button in the top-right corner of the repo window.|
 |3.3 Click the SSH Key tab.|
 |3.4 Copy the SSH key via right click and copy or clicking the clipboard icon.|
-|3.5 On your desktop, open VSCode.|
+|3.5 On the desktop, open VSCode.|
 |3.6 On the taskbar at the top of tab, click the **File** tab.|
-|3.7 Select the folder you want to clone your repo to.|
+|3.7 Select the folder you want to clone the repo to.|
 |3.8 In the terminal box, type **‘git clone’**.|
-|3.9 Then copy your SSH key after the git clone command. Then press enter.|
-|3.10 The terminal should present the pathway to your cloned repository. For instance, this ___________ project will display the following in the VSCode’s terminal:| 
+|3.9 Then copy the SSH key after the git clone command. Then press enter.|
+|3.10 The terminal should present the pathway to the cloned repository. For instance, this ___________ project will display the following in the VSCode’s terminal:| 
 |- **…C:\Users\missm\Documents\GIT\__________>**|
-|3.11 Once cloned, you will be able to edit your repo locally and commit, pull and push changes to your online GitHub repo (remote repository) using terminal commands (e.g. 'git push', 'git add .' and 'git pull').| 
+|3.11 Once cloned, you will be able to edit the repo locally and commit, pull and push changes to the online GitHub repo (remote repository) using terminal commands (e.g. 'git push', 'git add .' and 'git pull').| 
 
 ### :unlock: 7.1.1 Access: GitPod Workspaces
 
@@ -233,12 +233,12 @@ Below is an overview on how to access project via [GitPod](https://gitpod.io/wor
 |The Process| 
 |-------------|
 | 1. Create a project **repository** on [GitHub](https://github.com/) using a registered GitHub account.|
-|2. Once the repository is created, on the repo page, click on the GitPod icon above your repo. This will then direct you to GitPod. Further information on how to get started with GitPod can be found [here](https://www.gitpod.io/docs/getting-started).|
-|3. Once you have accessed (and signed in, if prompted) GitPod, open a new tab. Type or paste the following URL into the new tab: **https://gitpod.io/workspaces** . |
-|3.1 **‘Pin’** your unique repo name on the GitPod Workspace. nThis can be accessed by the ellipses button on the right-hand side of your unique repo name. **NOTE:** This pin will be deleted automatically if it has not been accessed within 7 – 14 days.|
-|4. Once these steps are taken, you can the access, edit and create changes to your repo using commit, pull and push commands (e.g. 'git push', 'git add .' and 'git pull'). These will update your online GitHub repo (remote repository) also.| 
+|2. Once the repository is created, on the repo page, click on the GitPod icon above the repo. This will then direct you to GitPod. Further information on how to get started with GitPod can be found [here](https://www.gitpod.io/docs/getting-started).|
+|3. Once you have accessed (and signed in, if prompted) GitPod, open a new tab. Type or paste the following URL into the new tab: **https://gitpod.io/workspaces**.|
+|3.1 **‘Pin’** the unique repo name on the GitPod Workspace. nThis can be accessed by the ellipses button on the right-hand side of the unique repo name. This pin will be deleted automatically if it has not been accessed within 7 – 14 days. |
+|4. Once these steps are taken, you can the access, edit and create changes to the repo using commit, pull and push commands (e.g. 'git push', 'git add .' and 'git pull'). These will update the online GitHub repo (remote repository) also.| 
 
-### 7.2 Extensions Install:  Python Extensions
+<!-- ### 7.2 Extensions Install:  Python Extensions
 |The Process – Installing Python v3 and later| 
 |-------------|
 ||
@@ -252,30 +252,37 @@ Below is an overview on how to deploy a project via GitHub’s GitHub Pages. Thi
 
 |The Process| 
 |-------------|
-| 1. Create a project **repository** on [GitHub](https://github.com/) using a registered GitHub account.|
-|2. Once the repository is created, click on the repository, then the **Settings** tab, this is the last tab in the top right of the repository’s **navigation bar**.|
-|3. Once on the settings page, navigate to and click on **Pages** (titled as ‘Pages’ as of May 2021) listed in the left-hand menu pane.|
-|4. Under the header - **Source**, select **master branch**  from the drop-down list. This will change the neighbouring selector box to **/(root)**.|
-|5. Then click **Save**.|
-|6. Wait for a minute and then **refresh** the webpage.|
-|7. Once refreshing, a green box with the text and clickable link; **'Your programme is published at...'**.| 
+| 1. Create a project **repository** on [GitHub](https://github.com/) using a registered GitHub account. |
+|2. Once the repository is created, click on the repository, then the **Settings** tab, this is the last tab in the top right of the repository’s **navigation bar**. |
+|3. Once on the settings page, navigate to and click on **Pages** (titled as ‘Pages’ as of May 2021) listed in the left-hand menu pane. |
+|4. Under the header - **Source**, select **master branch** from the drop-down list. This will change the neighbouring selector box to **/(root)**. |
+|5. Then click **Save**. |
+|6. Wait for a minute and then **refresh** the webpage. |
+|7. Once refreshing, a green box with the text and clickable link; **'the programme is published at...'**. | 
 |8. Clicking on the Programme’s hyperlink in the green box will direct to the live deployed
-programme.|
+programme. | -->
 
 ### 7.3 Deployment: Heroku
 
-Below is an overview on how to deploy a project via GitHub’s GitHub Pages. This method was used to deploy the ________________Programme:
+Below is an overview on how to deploy a project via Heroku. This method was used to deploy the ________________Programme. 
 
 |The Process| 
 |-------------|
-| 1. Create a project **repository** on [GitHub](https://github.com/) using a registered GitHub account.|
-|2. Once the repository is created, click on the repository, then the **Settings** tab, this is the last tab in the top right of the repository’s **navigation bar**.|
-|3. Once on the settings page, navigate to and click on **Pages** (titled as ‘Pages’ as of May 2021) listed in the left-hand menu pane.|
-|4. Under the header - **Source**, select **master branch**  from the drop-down list. This will change the neighbouring selector box to **/(root)**.|
-|5. Then click **Save**.|
-|6. Wait for a minute and then **refresh** the webpage.|
-|7. Once refreshing, a green box with the text and clickable link; **'Your programme is published at...'**.| 
-|8. Clicking on the Programme’s hyperlink in the green box will direct to the live deployed programme.|
+| 1. Once signing up to the free version of Heroku; create a new app via [Heroku’s landing page](https://dashboard.heroku.com/apps). This can be done by clicking the **’New’ button** on the landing page and **’Create a new app’** from the drop-down menu. |
+|2. Fill out the requested information. |
+||
+|**NOTE:** If the programme has specialised/ secured content (e.g. personal data or uses a API), there is need to supply the appropriate configuration settings. This can be done by accessing the **Settings** page of the app. [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/e3b664e16366444c8d722c5d8340b340/?child=last) provides further guidance on how to apply such settings. However, no configuration settings were set for the __________ programme as it was not needed. |
+||
+|2.1 In order for the _______ programme to run, the **Heroku/python and Heroku/nodejs** were selected as part of the Buildpacks option. This allowed the python code to run in the terminal whilst being hoseted on Heroku.|
+||
+|**NOTE:** As outlined in  [Code Institute’s](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/e3b664e16366444c8d722c5d8340b340/?child=last) guidance, the **Heroku/python and Heroku/nodejs**  Buildpacks **must** be selected in this order in order for the code to run optimally. |
+||
+|3. Once the settings are configured, navigate to the **Deploy page** via the neighbouring tab of the app. On this page choose the appropriate ‘Deployment Method’ (e.g. GitHub). |
+|4. Once selecting the method, log into the respective account and select the repo that is to be shared. |
+|5. Once connected, select either the automatic or manual deployment option. This can be fount on the last two rows of the Deploy page. For the ______programme app, the manual deploy option was selected by clicking the **’Deploy Branch** button.  The domain for the programme can be accessed via the Settings and Deploy pages, this is in the ‘Domains’ and ‘Manual Deploy’ rows of each respective page. |
+||
+|**NOTE:** As this is an overview of deploying a programme via Heroku (with Git) - further guidance on deployment practice can be found [here](https://devcenter.heroku.com/articles/git) |
+
 
 ## 8. Credits
 
@@ -305,7 +312,7 @@ Below is an overview on how to deploy a project via GitHub’s GitHub Pages. Thi
 
 - **Docs.python.org. 2021.** - [Python Module Index — Python 3.9.6 documentation](https://docs.python.org/3/py-modindex.html)
 
-- **Guru99.com. 2021.** - [Python time.sleep(): Add Delay to Your Code (Example)](https://www.guru99.com/python-time-sleep-delay.html#2)
+- **Guru99.com. 2021.** - [Python time.sleep(): Add Delay to the Code (Example)](https://www.guru99.com/python-time-sleep-delay.html#2)
 
 - **Prajapati, K., 2020.** - [How to print 😁😛😋🤣emojis using python🐍](https://medium.com/analytics-vidhya/how-to-print-emojis-using-python-2e4f93443f7e)
 
