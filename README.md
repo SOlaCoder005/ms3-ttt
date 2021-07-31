@@ -201,13 +201,14 @@ The __________________ programme was deployed locally via the use of GitHub (web
 |3.	Click your profile icon in the top-right corner of the GitHub webpage, click **Settings**.|
 |4.	Click SSH and GPG Keys tab on the left-hand menu.|
 |5.	Click **‘New SSH Key’**, then copy and paste your key code (created via GitBash) into the box under the **’Key’** title.|
-|6.	Click **’Add SSH Key’**., your key will then be ready to use!|
+|6.	Click **’Add SSH Key’**, and then your key will then be ready to use!|
 
 |The Process – Local Clone to an IDE of choice| 
 |-------------|
 |1.	Click the **’+’** icon in the top-right icon on the web browser and select **‘New Repository’**. You will then be directed to a webpage titled ‘Create a new repository’.| 
 |2. Fill out the required areas. Ensure the repository has been assigned a name and has a README.md created. The README file can be added by selecting the **'Add a README file'** option at the bottom of the ‘Create a new repository’ form.|
-|3.  Copy your SSH key from your repo. See blow on how to do this.|
+|3.  Copy your SSH key from your repo. See blow on how to do this: |
+| |
 |3.1 Open GitHub and navigate to the repo you want to clone.|
 |3.2 Click the **’Code’** button in the top-right corner of your repo window.|
 |3.3 Click the SSH Key tab.|
@@ -228,7 +229,7 @@ Below is an overview on how to access project via [GitPod](https://gitpod.io/wor
 |The Process| 
 |-------------|
 | 1. Create a project **repository** on [GitHub](https://github.com/) using a registered GitHub account.|
-|2. Once the repository is created, on the repo page, click on the GitPod icon above your repo, this will then direct you to GitPod. Further information on how to get started with GitPod can be found [here](https://www.gitpod.io/docs/getting-started).|
+|2. Once the repository is created, on the repo page, click on the GitPod icon above your repo. This will then direct you to GitPod. Further information on how to get started with GitPod can be found [here](https://www.gitpod.io/docs/getting-started).|
 |3. Once you have accessed (and signed in, if prompted) GitPod, open a new tab. Type or paste the following URL into the new tab: **https://gitpod.io/workspaces** . |
 |3.1 **‘Pin’** your unique repo name on the GitPod Workspace. nThis can be accessed by the ellipses button on the right-hand side of your unique repo name. **NOTE:** This pin will be deleted automatically if it has not been accessed within 7 – 14 days.|
 |4. Once these steps are taken, you can the access, edit and create changes to your repo using commit, pull and push commands (e.g. 'git push', 'git add .' and 'git pull'). These will update your online GitHub repo (remote repository) also.| 
