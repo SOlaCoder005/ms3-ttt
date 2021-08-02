@@ -82,10 +82,17 @@ These fonts were used as the default set by the bowser did not compliment the ov
 
 ### **3.3 Colour Pallet**
 ![](IMAGE GOES HERE)
-- []()
-- []()
-- []()
-- []()
+
+- [](#9900cc)
+<!-- purple -->
+- [](#03b7b7)
+<!-- aqua -->
+- [](#ffcc00) 
+<!-- yellow -->
+- [](#ff6600)
+<!-- orange -->
+- [](#202020)
+<!-- grey -->
 
 ## 4. Features
 
