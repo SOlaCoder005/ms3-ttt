@@ -64,25 +64,21 @@ This section discusses various design elements of the programme. Formulating and
 
 ### **3.1 Logistics: Flow Chart** 
 
-Creating the mock-ups of the programme helped to highlight the limitations and strengths and weakness of it's operation. It also allowed a more accurate analysis of which elements were feasible to execute within the project time frame and which could be implemented if the programme could be expanded on in further development. 
+Creating a Flow Chart for the programme helped to highlight the limitations and strengths of the programmes operation. It also allowed a more accurate analysis of which elements were feasible to execute within the project time frame and which could be implemented if the programme could be expanded on in further development. 
+
+![](/docs/readme-content/TTT-fc.png)
+
+
+### **3.2 Fonts**
 
 ![](IMAGE GOES HERE)
 
-<!-- ### **3.2 Logo**
+The following fonts were used for the programmes hosting page: 
 
-![](IMAGE GOES HERE) -->
 
-<!-- The logo for the programme was created and illustrated through the following software:
+These fonts were used as the default set by the bowser did not compliment the overall design of the hosting page. 
 
-- Adobe Illustrator
-- Adobe Photoshop
-- Adobe InDesign  -->
-
-### **3.3 Fonts**
-
-![](IMAGE GOES HERE)
-
-### **3.4 Colour Pallet**
+### **3.3 Colour Pallet**
 ![](IMAGE GOES HERE)
 - []()
 - []()
@@ -113,21 +109,13 @@ Creating the mock-ups of the programme helped to highlight the limitations and s
 
 ### **5.2 Applications, Libraries and Resources**
 
--  [Adobe Creative Cloud](https://www.adobe.com/uk/creativecloud.html): 
-    - Illustrator (AI)
-    - Photoshop (PS) 
--   [Balsamiq]( https://balsamiq.com/)
--   [Bootstrap](https://getbootstrap.com/)
 -   [Cite This for Me](https://www.citethisforme.com/)
+-   [Diagrams.net](https://www.diagrams.net/)
 -   [Font Awesome](https://fontawesome.com)
 -   [GitHub](https://github.com/)
 -   [GitPod](https://www.gitpod.io/)
 -   [Google (Chrome) Development Tools](https://developer.chrome.com/docs/devtools/open/)
 -   [Google Fonts](https://fonts.google.com/)
--   [Google Translate](https://translate.google.co.uk/)
--   [Pexels](https://www.pexels.com/)
--   [Pixabay](https://pixabay.com/) 
--   [Pinterest](https://www.pinterest.co.uk/) 
 -   [Responsively](https://responsively.app/download) 
 -   [Stack Overflow](https://stackoverflow.com/)
 -   [VSCode](https://code.visualstudio.com/)
@@ -140,11 +128,12 @@ Creating the mock-ups of the programme helped to highlight the limitations and s
 The following applications were used to test various aspects of theprogramme. Meeting these requirements were essential to the programme complying with accessibility, coding and performance standards within the programming industry.
 
 -   [Dillinger](https://dillinger.io/)
--   [(Jigsaw) Validator](https://jigsaw.w3.org/css-validator)
--   [JSHint](https://jshint.com/)
--   [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+-   [Online Python Compiler](https://www.programiz.com/python-programming/online-compiler/)
+<!-- -   [(Jigsaw) Validator](https://jigsaw.w3.org/css-validator)
+-   [JSHint](https://jshint.com/) -->
+<!-- -   [Lighthouse](https://developers.google.com/web/tools/lighthouse)
 -   [Wave](https://wave.webaim.org/)
--   [W3C Validator](https://validator.w3.org/)
+-   [W3C Validator](https://validator.w3.org/) -->
 
 ## 6. Testing
 

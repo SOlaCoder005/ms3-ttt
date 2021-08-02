@@ -4,6 +4,10 @@
 - All code on this sheet is my own. 
 */
 
+/*WEB PAGE SETTINGS*/
+/*Fonts imported from Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=VT323&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -12,6 +16,7 @@
 
 body {
     background-color: black;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /*CSS GRID*/
@@ -49,6 +54,10 @@ section {
 footer{
     grid-area: footer;
     /* background-color: yellowgreen; */
+}
+
+h1, h2, h3, h3 {
+    font-family: 'VT323', monospace;
 }
 
 #game-name {
