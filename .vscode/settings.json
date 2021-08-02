@@ -19,7 +19,7 @@
       "**/core.mongo*": true,
       "**/core.python*": true
    },
-   "files.autoSave": "afterDelay",
+   "files.autoSave": "off",
    "workbench.colorTheme": "Visual Studio Dark",
    "editor.defaultFormatter": "HookyQR.beautify",
    "editor.formatOnSave": true
