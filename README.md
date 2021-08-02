@@ -66,15 +66,17 @@ This section discusses various design elements of the programme. Formulating and
 
 Creating a Flow Chart for the programme helped to highlight the limitations and strengths of the programmes operation. It also allowed a more accurate analysis of which elements were feasible to execute within the project time frame and which could be implemented if the programme could be expanded on in further development. 
 
-![](/docs/readme-content/TTT-fc.png)
+![](static/docs/readme-content/TTT-fc.png)
 
 
 ### **3.2 Fonts**
 
-![](IMAGE GOES HERE)
+The following fonts were used for the programmes hosting page:
 
-The following fonts were used for the programmes hosting page: 
+- **VT323**
+- **Ubuntu**
 
+![](static/docs/readme-content/fonts.PNG)
 
 These fonts were used as the default set by the bowser did not compliment the overall design of the hosting page. 
 
