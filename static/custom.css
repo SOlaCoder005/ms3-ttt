@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #000000;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -61,9 +61,21 @@ h1, h2, h3, h3 {
 }
 
 #game-name {
-    color: white;
+    color: #f5f5f5;
     text-align: center;
     font-size: 50px;
+}
+
+#game-name > span:nth-child(1) {
+    color: #ff6600;
+}
+
+#game-name > span:nth-child(2) {
+    color: #03b7b7;
+}
+
+#game-name > span:nth-child(3) {
+    color: #ffcc00;
 }
 
 #terminal {
@@ -78,20 +90,20 @@ h1, h2, h3, h3 {
 }
 
 button {
-    width: 200px;
-    height: 40px;
+    width: 300px;
+    height: 60px;
     background-color: transparent;
-    color: white;
+    color: #f5f5f5;
     margin: 10px;
     border-radius: 50px;
-    border: 3px solid white;
+    border: 3px solid #f5f5f5;
     padding: 10px;
 }
 
 button:hover {
-   box-shadow: 0 0px 3px 0px rgb(255, 255, 0, .5);
-   border: 3px solid rgb(255, 255, 0);
-   color: rgb(255, 255, 0);
+   box-shadow: 0 5px 5px 0px #ffcc00;
+   border: 3px solid #ffcc00;
+   color: #ffcc00;
 }
 
 .game-pad {
@@ -100,10 +112,58 @@ button:hover {
 
 .game-pad > i {
     font-size: 45px;
-    color: rgb(240, 255, 255);
+    /* color: rgb(240, 255, 255); */
     padding: 5px;
     text-align: center;
 }
+
+.game-pad > i:nth-child(11) {
+    color: #ffcc00;
+}
+
+.game-pad > i:nth-child(10) {
+    color: #ff6600;
+}
+
+.game-pad > i:nth-child(9) {
+    color: #9900cc;
+}
+
+.game-pad > i:nth-child(8) {
+    color: #03b7b7;
+}
+
+.game-pad > i:nth-child(7) {
+    color: #f5f5f5;
+}
+
+.game-pad > i:nth-child(6) {
+    color: #ffcc00;
+}
+
+.game-pad > i:nth-child(5) {
+    color: #ff6600;
+}
+
+.game-pad > i:nth-child(4) {
+    color: #9900cc;
+}
+
+.game-pad > i:nth-child(3) {
+    color: #03b7b7;
+}
+
+.game-pad > i:nth-child(2) {
+    color: #f5f5f5;
+}
+
+.game-pad > i:nth-child(1) {
+    color: #ffcc00;
+}
+
+
+
+
 
 
 /*MEDIA QUERIES*/
@@ -129,7 +189,6 @@ button:hover {
     }
 
 }
-
 
 
 @media screen and (max-width: 768px) and (min-width: 321px) {

@@ -81,18 +81,24 @@ The following fonts were used for the programmes hosting page:
 These fonts were used as the default set by the bowser did not compliment the overall design of the hosting page. 
 
 ### **3.3 Colour Pallet**
-![](IMAGE GOES HERE)
 
-- [](#9900cc)
+The following [colours](https://coolors.co/000000-ff6600-ffcc00-03b7b7-9900cc-f5f5f5) were used for the theme of the TTT game's hosting page: 
+
+![](static/docs/readme-content/colorpalette.PNG)
+
+
+- **#F5F5F5**
+<!-- white-->
+- **#9900cc**
 <!-- purple -->
-- [](#03b7b7)
+- **#03b7b7**
 <!-- aqua -->
-- [](#ffcc00) 
+- **#ffcc00**
 <!-- yellow -->
-- [](#ff6600)
+- **#ff6600**
 <!-- orange -->
-- [](#202020)
-<!-- grey -->
+- **#000000**
+<!-- black -->
 
 ## 4. Features
 
@@ -119,6 +125,7 @@ These fonts were used as the default set by the bowser did not compliment the ov
 ### **5.2 Applications, Libraries and Resources**
 
 -   [Cite This for Me](https://www.citethisforme.com/)
+-   [Coolors](https://coolors.co/)
 -   [Diagrams.net](https://www.diagrams.net/)
 -   [Font Awesome](https://fontawesome.com)
 -   [GitHub](https://github.com/)
