@@ -123,7 +123,7 @@ def main():
     welcome()
     r_u_ready_to_play()
     # game_guides()
-    present_game_board()
+    # present_game_board()
     exit()
 
 main()
