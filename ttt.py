@@ -28,6 +28,38 @@ def welcome():
     time.sleep(2.5)
 
 
+def r_u_ready_to_play():
+    """
+    Asks user if they are ready to play
+    """
+    yes = "y"
+    no = "n"
+    
+    while True: 
+        
+        try: 
+            answer = input("\nAre you ready to play (y/n)?:\n")
+
+            if answer == yes:
+                print("\nOkay! Here's how to play... \U0001F60E")
+                return game_guides()
+                time.sleep(1.5)
+
+            elif answer == no: 
+                print("\n\U0001F92F What! Why not?\n")
+                print("\n\U0001F612 Okay, maybe next time.\n")
+                time.sleep(.5)
+                return exit()
+
+            else: 
+                raise ValueError()
+
+        except ValueError:
+            print(
+                f"\nSorry, didn't recognise yourt respnse '{answer}'. Please try again..."
+            )
+        #OUTSTANDING ACTION(s)- Create statementent that times out/ allows only 3 incorrect repsonses 
+
 def game_guides():
     """
     Tells user how to play the game
@@ -51,46 +83,12 @@ def game_guides():
                             6  |  7  |  8
 
       
-        \U0001F449 You can play either as X or O\n
-        \U0001F449 You must align three Xs or Os in a row in order to win the game\n
+        \U0001F449 You can play either as X or O.\n
+        \U0001F449 You must align three Xs (or Os) in either a horizontal, vertical or diagonal row in order to win the game.\n
         \U0001F449 If you and the computer run out of moves it you shall daraw a tie!\n
         """
     )
     time.sleep(1.5)
-
-
-def r_u_ready_to_play():
-    """
-    Asks user if they are ready to play
-    """
-    yes = "y"
-    no = "n"
-    
-    while True: 
-        
-        try: 
-            answer = input("\nAre you ready to play (y/n)?:\n")
-
-            if answer == yes:
-                print("\nOkay! lets play \U0001F60E")
-                return present_game_board()
-                time.sleep(1.5)
-
-            elif answer == no: 
-                print("\n\U0001F92F What! Why not?\n")
-                print("\n\U0001F612 Okay, maybe next time.\n")
-                time.sleep(.5)
-                return exit()
-
-            else: 
-                raise ValueError()
-
-        except ValueError:
-            print(
-                f"\nSorry, didn't recognise yourt respnse '{answer}'. Please try again..."
-            )
-        #OUTSTANDING ACTION(s)- Create statementent that times out/ allows only 3 incorrect repsonses 
-
 
 # def game_board():
 #     board = [] 
@@ -123,8 +121,8 @@ def main():
     Contains key functions that allows the game to run. 
     """
     welcome()
-    game_guides()
     r_u_ready_to_play()
+    # game_guides()
     present_game_board()
     exit()
 
