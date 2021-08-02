@@ -125,6 +125,7 @@ The following [colours](https://coolors.co/000000-ff6600-ffcc00-03b7b7-9900cc-f5
 ### **5.2 Applications, Libraries and Resources**
 
 -   [Cite This for Me](https://www.citethisforme.com/)
+-   [Coolors](https://coolors.co/)
 -   [Diagrams.net](https://www.diagrams.net/)
 -   [Font Awesome](https://fontawesome.com)
 -   [GitHub](https://github.com/)
