@@ -297,13 +297,13 @@ Below is an overview on how to deploy a project via Heroku. This method was used
 ### **8.2 Content** 
 Particular mention is paid to the following creators and their content as the resources assisted in the overall execution of the project.
 
--	Repository Elements
+-	**Repository Elements**
 
-    Code Institute’s [Python Essentials repository template]( https://github.com/Code-Institute-Org/python-essentials-template) was adopted and amended. The repository includes some existing, HTML, CSS, JS and JSON code which has not been changed or removed from the repo. It was essential to utilise this template for the python code to function effectively.
+    The fundamental content of Code Institute’s [Python Essentials repository template]( https://github.com/Code-Institute-Org/python-essentials-template) was amedned and used to form the base of this programme's repositoy. The repository includes some existing, HTML, CSS, JS and JSON code which has not been changed or removed from the repo. It was essential to utilise this template for the python code to function effectively.
 
--	Game Concept & Structural Planning 
+-	**Game Concept & Structural Planning** 
 
-    Dawson (2010) – Specifically, pages 157-58 and 175-1987 of Dawson’s booked assisted greatly in approaching the  planning stages of the project.  
+    Dawson (2010) – Specifically, page 157-58 and 175-1987 of Dawson’s book assisted greatly in approaching the  planning stages of the project.  
 
 ### **8.3 Language, Scripts and Modules**
 
@@ -329,7 +329,7 @@ Particular mention is paid to the following creators and their content as the re
 ### :books: Books
 - **Ascher, D., Martelli Ravenscroft, A. and Martelli, A., 2005. Python cookbook edited by Alex Martelli and David Ascher. United States: O'Reilly.**
 - **Dawson, M., 2010. Python programming for the absolute beginner. Boston, Mass.: Course Technology.**
-- ** Martelli., A., 2006. Python in a Nutshell. O'Reilly Media.**
+- **Martelli., A., 2006. Python in a Nutshell. O'Reilly Media.**
 - **Nixon, R., 2018. Learning PHP, MySQL et JavaScript. O'Riley Media Inc.**
 
 ### :computer: Online Resources 
