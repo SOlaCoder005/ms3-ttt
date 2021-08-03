@@ -13,9 +13,11 @@
 9. [Acknowledgements](#9-Acknowledgements)
 10. [References](#10-References)
 
+# **TIC-TAC-TOE**
+
 ## 1. Overview
 
-# The Programme: [TITLE HERE]! 
+The Tic-Tac-Toe programme intends to pay homage to a simpler time, where competitors would get a one-up on eachother through a simple match of Xs & Os. This programme operates as traditional TIC-TAC-TOE, however, it has incorporated some additional elements such as emojis instead of X and Os. Would you like to play?  
 
 **Features Overview** 
 
