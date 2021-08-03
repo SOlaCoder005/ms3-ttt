@@ -25,8 +25,10 @@ def welcome():
     """
     print("\nWELCOME TO TIC-TAC-TOE! \U0001F609\n")
     print("This is a place to engage in digital strategic sparing!\n")
-    print("and are able to put AI in it's place to show it whos boss.\n")
+    print("Can you put AI in it's place to show it who's boss?\n")
     time.sleep(2.5)
+    print("I hope so...\n")
+    time.sleep(3)
 
 
 def r_u_ready_to_play():
