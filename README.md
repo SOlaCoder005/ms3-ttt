@@ -17,7 +17,7 @@
 
 ## 1. Overview
 
-The Tic-Tac-Toe programme intends to pay homage to a simpler time, where competitors would get a one-up on eachother through a simple match of Xs & Os. This programme operates as traditional TIC-TAC-TOE, however, it has incorporated some additional elements such as emojis instead of X and Os. Would you like to play?  
+The Tic-Tac-Toe (TTT) programme intends to pay homage to a simpler time, where competitors would get a one-up on eachother through a simple match of Xs & Os. This programme operates as traditional TIC-TAC-TOE, however, it has incorporated some additional elements such as emojis instead of X and Os. Would you like to play?  
 
 **Features Overview** 
 
