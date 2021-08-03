@@ -85,7 +85,8 @@ def game_guides():
 
       
         \U0001F449 You can play either as X or O.\n
-        \U0001F449 You must align three Xs (or Os) in either a horizontal, vertical or diagonal row in order to win the game.\n
+        \U0001F449 You must align three Xs (or Os) in either a horizontal, vertical or diagonal row.\n
+        \U0001F449 If you are able to do this before the computer, you win the game!\n
         \U0001F449 If you and the computer run out of moves it you shall daraw a tie!\n
         """
     )
@@ -127,6 +128,5 @@ def main():
     # present_game_board()
     exit()
 
-print("testing")
 main()
 
