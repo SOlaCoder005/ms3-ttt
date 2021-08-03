@@ -24,8 +24,8 @@ def welcome():
     TGreets user when they initially run the game.
     """
     print("\nWELCOME TO TIC-TAC-TOE! \U0001F609\n")
-    print("This is a place where great minds meet to engage in digital strategic sparing!\n")
-    print("This is one of the last places where you are able to put AI in it's place and show it whos boss.\n")
+    print("This is a place to engage in digital strategic sparing!\n")
+    print("and are able to put AI in it's place to show it whos boss.\n")
     time.sleep(2.5)
 
 
@@ -57,7 +57,7 @@ def r_u_ready_to_play():
 
         except ValueError:
             print(
-                f"\nSorry, didn't recognise yourt respnse '{answer}'. Please try again..."
+                f"\nSorry, didn't recognise yourt respnse '{answer}'. Try again..."
             )
         #OUTSTANDING ACTION(s)- Create statementent that times out/ allows only 3 incorrect repsonses 
 
@@ -85,9 +85,10 @@ def game_guides():
 
       
         \U0001F449 You can play either as X or O.\n
-        \U0001F449 You must align three Xs (or Os) in either a horizontal, vertical or diagonal row.\n
-        \U0001F449 If you are able to do this before the computer, you win the game!\n
-        \U0001F449 If you and the computer run out of moves it you shall daraw a tie!\n
+        \U0001F449 You must align three Xs (or Os).\n
+        \U0001F449 They can be aligned horizontally, verticaly or diagonally.\n
+        \U0001F449 Do this before the computer and you win the game!\n
+        \U0001F449 If both of you run out of moves it you shall daraw a tie!\n
         """
     )
     time.sleep(1.5)
