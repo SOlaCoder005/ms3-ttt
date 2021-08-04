@@ -46,12 +46,12 @@ def r_u_ready_to_play():
             if answer == yes:
                 print("\nOkay! Here's how to play... \U0001F60E")
                 return game_guides()
-                time.sleep(1.5)
+                time.sleep(2.5)
 
             elif answer == no: 
                 print("\n\U0001F92F What! Why not?\n")
                 print("\n\U0001F612 Okay, maybe next time.\n")
-                time.sleep(.5)
+                time.sleep(1)
                 return exit()
 
             else: 
