@@ -86,11 +86,11 @@ def game_guides():
                             6  |  7  |  8
 
       
-        \U0001F449 You can play either as X or O.\n
-        \U0001F449 You must align three Xs (or Os).\n
-        \U0001F449 They can be aligned horizontally, verticaly or diagonally.\n
-        \U0001F449 Do this before the computer and you win the game!\n
-        \U0001F449 If both of you run out of moves it you shall daraw a tie!\n
+        \U0001F449  You can play either as X or O.\n
+        \U0001F449  You must align three Xs (or Os).\n
+        \U0001F449  They can be aligned horizontally, verticaly or diagonally.\n
+        \U0001F449  Do this before the computer and you win the game!\n
+        \U0001F449  If both of you run out of moves it you shall daraw a tie!\n
         """
     )
     time.sleep(1.5)
