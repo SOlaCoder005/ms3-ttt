@@ -190,6 +190,9 @@ While there were several bugs that arose through the duration of the project, th
 
 #### **6.5.2 Unfixed bugs**
 
+
+**[moving .j and .css to right file so programe would run]**
+
 - **Context:** 
 - **Reason:** 
 - **Potential Fix:** 
@@ -341,6 +344,8 @@ Particular mention is paid to the following creators and their content as the re
 
 ### :computer: Online Resources 
 
+- **cdnjs. 2021.** - [font-awesome - Libraries - cdnjs - The #1 free and open source CDN built to make life easier for developers](https://cdnjs.com/libraries/font-awesome)
+
 - **Docs.python.org. 2021.** - [Python Module Index — Python 3.9.6 documentation](https://docs.python.org/3/py-modindex.html)
 
 - **Guru99.com. 2021.** - [Python time.sleep(): Add Delay to the Code (Example)](https://www.guru99.com/python-time-sleep-delay.html#2)
@@ -358,6 +363,8 @@ Particular mention is paid to the following creators and their content as the re
 - **Seitz, T., 2012.** - [Picking a Color Palette for Your Game's Artwork | Game Development Envato Tuts+](https://gamedevelopment.tutsplus.com/articles/picking-a-color-palette-for-your-games-artwork--gamedev-1174)
 
 - **Unicode.org. 2021.** - [Emoji List, v13.1.](https://unicode.org/emoji/charts/emoji-list.html#1f926_200d_2642_fe0f)
+
+
 
 
 
