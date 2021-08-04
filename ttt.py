@@ -95,22 +95,6 @@ def game_guides():
     )
     time.sleep(1.5)
 
-# def game_board():
-#     board = [] 
-#     for square in range(BOARD_SQUARES):
-#         board.append(EMPTY)
-#         return board
-
-# def present_game_board(board):
-#     """
-#     - Creates new game board. 
-#     - This is presented to user.
-#     """
-#     print("\n\t",board[0],"|",board[1],"|",board[2])
-#     print("\t", "-----------")
-#     print("\n\t",board[3],"|",board[4],"|",board[5])
-#     print("\t", "-----------")
-#     print("\n\t",board[6],"|",board[7],"|",board[8],"\n")
 
 
 def exit():
@@ -127,9 +111,6 @@ def main():
     """
     welcome()
     r_u_ready_to_play()
-    # game_guides()
-    # present_game_board()
     exit()
-
 main()
 
