@@ -151,27 +151,43 @@ def game_pieces():
         """
     )
 
-def human_picks_game_piece():   
+def human_picks_game_piece(): 
+    """
+    Allows user to select game piece.
+    """  
 
     human_game_piece_picked = input("\n\U0001F3B2 Please pick your game piece:\n")
 
     if human_game_piece_picked in GAMEPIECES:
         print(f"\nOkay, your game piece is '{ GAMEPIECES[human_game_piece_picked] }'.\n")
-        # return ai_picks_game_piece()
     else:  
         print(f"\nSorry, didn't recognise yourt respnse '{ human_game_piece_picked }'.\n")
         return human_picks_game_piece()
+    time.sleep(1)
 
            
 def ai_picks_game_piece():
+
+    """
+    - Allows computer ('AI') to select game piece.
+    - The AI's Game piece is selected at random.
+    """
 
     games_piece_list = list(GAMEPIECES.values())
     ai_game_piece_picked = random.choice(games_piece_list)
     print(f"\nGreat, the AI has picked '{ai_game_piece_picked}' as it's game piece.\n")
     time.sleep(1)
+    print("\nOkay let's play! \U0001F60E\n")
+    time.sleep(1.5)
+    return load_game_board()
 
 
-print("\nOkay let's play!\n")
+def load_game_board(): 
+    """
+    Loads game board in the terminal.
+    """
+    print("\nGame board loading...\n")
+    time.sleep(2)
 
 
 
@@ -197,6 +213,7 @@ def main():
     game_pieces()
     human_picks_game_piece()
     ai_picks_game_piece()
+    load_game_board()
     exit()
 main()
 
