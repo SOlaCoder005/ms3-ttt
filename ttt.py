@@ -5,18 +5,29 @@ Imported Libraries and Modules
 """
 import emoji # Credit: Unicode
 import time # Credit: Guru99
-import pprint
+import random
 
 
 """
 CONST variables
 """
-X = "\U0001F4AA" # human arm symbol 
-O = "\U0001F9BE" # mechanical arm symbol
+X = 0
+O = 0
 PlayerWon = ""
 PlayerLost = ""
 PlayerTie = ""
 BOARD_SQUARES = 9
+GAMEPIECES = {
+    "a":"\U0001F9DE", #mermaid
+    "b":"\U0001F9D1", #cook
+    "c":"\U0001F444", #mouth
+    "d":"\U0001F63B", #cat love
+    "e":"\U0001F47B", #ghost
+    "f":"\U0001F916", #robot head
+    "g":"\U0001F47D", #alien
+    "h":"\U0001F9E0", #brain
+    "i":"\U0001F4A3", #bomb          
+}
 
 
 def welcome():
@@ -26,17 +37,16 @@ def welcome():
     print("\nWELCOME TO TIC-TAC-TOE! \U0001F609\n")
     print("This is a place to engage in digital strategic sparing!\n")
     print("Can you put AI in it's place to show it who's boss?\n")
-    time.sleep(2.5)
+    time.sleep(2)
     print("I hope so...\n")
     time.sleep(3)
-
 
 def r_u_ready_to_play():
     """
     Asks user if they are ready to play.
     """
     yes = "y"
-    no = "n"
+    no = "n" 
     
     while True: 
         
@@ -61,11 +71,10 @@ def r_u_ready_to_play():
             print(
                 f"\nSorry, didn't recognise yourt respnse '{answer}'. Try again..."
             )
-        #OUTSTANDING ACTION(s)- Create statementent that times out/ allows only 3 incorrect repsonses 
-
+ 
 def game_guides():
     """
-    Tells user how to play the game
+    Tells user how to play the game.
     """
     print(
     
@@ -92,9 +101,9 @@ def game_guides():
         \U0001F449  If both of you run out of moves it you shall daraw a tie!\n
         """
     )
-    time.sleep(1.5)
+    time.sleep(3)
 
-def pick_pieces(): 
+def game_pieces(): 
 
     """
     Tells player how to select the piece that they want to use on the game board.
@@ -111,43 +120,61 @@ def pick_pieces():
             For instance: 
             -------------
         
-            a = \U0001F9DE 
-            b = \U0001F9D1
-            c = \U0001F444
-            d = \U0001F441
+                            a = \U0001F9DE 
+                            b = \U0001F9D1
+                            c = \U0001F444
+                            d = \U0001F63B
+        """
+    )
+    time.sleep(3)
+
+    print(
+        """
+        \U0001F449 Using the chart below, please select your game piece:
         """
     )
     print(
         # Do not chnage spacing as this aligns eefectivily in the terminal
         """
-        Using the chart below, please select your game piece: are the pieces:
+                        a  |  b  |  c  
+                        -------------
+                        \U0001F9DE | \U0001F9D1 | \U0001F444
 
-        a   |   b   |   c  
-        -----------------
-        "\U0001F9DE" | "\U0001F9D1" | "\U0001F444"
+                        d  |  e  |  f  
+                        -------------
+                        \U0001F63B | \U0001F47B | \U0001F916
 
-        d   |   e   |   f  
-        -----------------
-        "\U0001F63B" | "\U0001F47B" | "\U0001F916"
-
-        g   |   h   |   i  
-        -----------------
-        "\U0001F47D" | "\U0001F9E0" | "\U0001F4A3"
+                        g  |  h  |  i  
+                        -------------
+                        \U0001F47D | \U0001F9E0 | \U0001F4A3
 
         """
     )
-    # PlayerPieces = {
-    #         "a":"\U0001F9DE", #mermaid
-    #         "b":"\U0001F9D1", #cook
-    #         "c":"\U0001F444", #mouth
-    #         "d":"\U0001F441", #eye
-    # }
-    # PlayerPiecesDisplay = list(PlayerPieces.values())
-    # # print(PlayerPiecesDisplay)
+
+def human_picks_game_piece():   
+
+    human_game_piece_picked = input("\n\U0001F3B2 Please pick your game piece:\n")
+
+    if human_game_piece_picked in GAMEPIECES:
+        print(f"\nOkay, your game piece is '{ GAMEPIECES[human_game_piece_picked] }'.\n")
+        # return ai_picks_game_piece()
+    else:  
+        print(f"\nSorry, didn't recognise yourt respnse '{ human_game_piece_picked }'.\n")
+        return human_picks_game_piece()
+
+           
+def ai_picks_game_piece():
+
+    games_piece_list = list(GAMEPIECES.values())
+    ai_game_piece_picked = random.choice(games_piece_list)
+    print(f"\nGreat, the AI has picked '{ai_game_piece_picked}' as it's game piece.\n")
+    time.sleep(1)
 
 
-    # v = list(d.values())
-    # {names[i]:v[i] for i in range(len(names))}
+print("\nOkay let's play!\n")
+
+
+
 
 
 
@@ -167,7 +194,9 @@ def main():
     """
     welcome()
     r_u_ready_to_play()
-    pick_pieces()
+    game_pieces()
+    human_picks_game_piece()
+    ai_picks_game_piece()
     exit()
 main()
 
