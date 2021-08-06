@@ -136,17 +136,17 @@ def game_pieces():
     print(
         # Do not chnage spacing as this aligns eefectivily in the terminal
         """
-                        a  |  b  |  c  
+                        a  |  b  | c  
                         -------------
-                        \U0001F9DE | \U0001F9D1 | \U0001F444
+                        \U0001F9DE | \U0001F9D1  | \U0001F444
 
-                        d  |  e  |  f  
+                        d  |  e  | f  
                         -------------
-                        \U0001F63B | \U0001F47B | \U0001F916
+                        \U0001F63B | \U0001F47B  | \U0001F916
 
-                        g  |  h  |  i  
+                        g  |  h  | i  
                         -------------
-                        \U0001F47D | \U0001F9E0 | \U0001F4A3
+                        \U0001F47D | \U0001F9E0  | \U0001F4A3
 
         """
     )
