@@ -17,6 +17,7 @@ PlayerWon = ""
 PlayerLost = ""
 PlayerTie = ""
 BOARD_SQUARES = 9
+BLANK_SPACE = " "
 GAMEPIECES = {
     "a":"\U0001F9DE", #mermaid
     "b":"\U0001F9D1", #cook
@@ -152,6 +153,7 @@ def game_pieces():
     )
 
 def human_picks_game_piece(): 
+
     """
     Allows user to select game piece.
     """  
@@ -163,7 +165,7 @@ def human_picks_game_piece():
     else:  
         print(f"\nSorry, didn't recognise yourt respnse '{ human_game_piece_picked }'.\n")
         return human_picks_game_piece()
-    time.sleep(1)
+        time.sleep(1)
 
            
 def ai_picks_game_piece():
@@ -179,15 +181,44 @@ def ai_picks_game_piece():
     time.sleep(1)
     print("\nOkay let's play! \U0001F60E\n")
     time.sleep(1.5)
-    return load_game_board()
+    return board_structure()
 
 
-def load_game_board(): 
+
+def board_structure():
     """
-    Loads game board in the terminal.
+    - Loads new game board
+    - This code has been adapted from Dawson (2010, p.180)
     """
-    print("\nGame board loading...\n")
-    time.sleep(2)
+    print(
+        """
+        Here's the board below:
+        """
+    )
+    board = []  
+    for square in range(BOARD_SQUARES):
+        board.append(BLANK_SPACE)
+    return board
+
+
+def load_game_board(board):
+
+        print("\n")
+        print("\n\t", board[0], "|", board[1], "|", board[2])
+        print("\t", "---------")
+        print("\t", board[3], "|", board[4], "|", board[5])
+        print("\t", "---------")
+        print("\t", board[6], "|", board[7], "|", board[8])
+        print("\n")
+
+
+
+
+
+
+
+
+
 
 
 
@@ -213,7 +244,8 @@ def main():
     game_pieces()
     human_picks_game_piece()
     ai_picks_game_piece()
-    load_game_board()
+    board = board_structure()
+    load_game_board(board)
     exit()
 main()
 
