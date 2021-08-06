@@ -204,11 +204,11 @@ def board_structure():
 def load_game_board(board):
 
         print("\n")
-        print("\n\t", board[0], "|", board[1], "|", board[2])
-        print("\t", "---------")
-        print("\t", board[3], "|", board[4], "|", board[5])
-        print("\t", "---------")
-        print("\t", board[6], "|", board[7], "|", board[8])
+        print("\n\t", board[0],       "|", board[1],         "|", board[2])
+        print("\t", "------------------")
+        print("\t", board[3],         "|", board[4],         "|", board[5])
+        print("\t", "------------------")
+        print("\t", board[6],         "|", board[7],         "|", board[8])
         print("\n")
 
 
