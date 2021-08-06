@@ -115,14 +115,14 @@ def pick_pieces():
         """
     )
 
-    # PlayerPieces = {
-    #     "a":"\U0001F9DE", #mermaid
-    #     "b":"\U0001F9D1", #cook
-    #     "c":"\U0001F444", #mouth
-    #     "d":"\U0001F441", #eye
-    # }
-    # PlayerPiecesDisplay = PlayerPieces.values()
-    # print(PlayerPiecesDisplay)
+    PlayerPieces = {
+        "a":"\U0001F9DE", #mermaid
+        "b":"\U0001F9D1", #cook
+        "c":"\U0001F444", #mouth
+        "d":"\U0001F441", #eye
+    }
+    PlayerPiecesDisplay = PlayerPieces.values()
+    print(PlayerPiecesDisplay)
 
 
 
