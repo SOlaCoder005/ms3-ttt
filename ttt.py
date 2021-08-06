@@ -96,6 +96,10 @@ def game_guides():
 
 def pick_pieces(): 
 
+    """
+    Tells player how to select the piece that they want to use on the game board.
+    """
+
     print("Wait! Before we start, you need to pick a game board piece.\n")
     print(
         """
@@ -111,18 +115,39 @@ def pick_pieces():
             b = \U0001F9D1
             c = \U0001F444
             d = \U0001F441
+        """
+    )
+    print(
+        # Do not chnage spacing as this aligns eefectivily in the terminal
+        """
+        Using the chart below, please select your game piece: are the pieces:
+
+        a   |   b   |   c  
+        -----------------
+        "\U0001F9DE" | "\U0001F9D1" | "\U0001F444"
+
+        d   |   e   |   f  
+        -----------------
+        "\U0001F63B" | "\U0001F47B" | "\U0001F916"
+
+        g   |   h   |   i  
+        -----------------
+        "\U0001F47D" | "\U0001F9E0" | "\U0001F4A3"
 
         """
     )
+    # PlayerPieces = {
+    #         "a":"\U0001F9DE", #mermaid
+    #         "b":"\U0001F9D1", #cook
+    #         "c":"\U0001F444", #mouth
+    #         "d":"\U0001F441", #eye
+    # }
+    # PlayerPiecesDisplay = list(PlayerPieces.values())
+    # # print(PlayerPiecesDisplay)
 
-    PlayerPieces = {
-        "a":"\U0001F9DE", #mermaid
-        "b":"\U0001F9D1", #cook
-        "c":"\U0001F444", #mouth
-        "d":"\U0001F441", #eye
-    }
-    PlayerPiecesDisplay = PlayerPieces.values()
-    print(PlayerPiecesDisplay)
+
+    # v = list(d.values())
+    # {names[i]:v[i] for i in range(len(names))}
 
 
 
