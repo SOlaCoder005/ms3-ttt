@@ -21,7 +21,7 @@ BOARD_SQUARES = 9
 
 def welcome():
     """
-    TGreets user when they initially run the game.
+    Greets user when they initially run the game.
     """
     print("\nWELCOME TO TIC-TAC-TOE! \U0001F609\n")
     print("This is a place to engage in digital strategic sparing!\n")
@@ -33,7 +33,7 @@ def welcome():
 
 def r_u_ready_to_play():
     """
-    Asks user if they are ready to play
+    Asks user if they are ready to play.
     """
     yes = "y"
     no = "n"
@@ -44,9 +44,9 @@ def r_u_ready_to_play():
             answer = input("\nAre you ready to play (y/n)?:\n")
 
             if answer == yes:
-                print("\nOkay! Here's how to play... \U0001F60E")
+                print("\nOkay! Here's how to play... \U0001F60E\n")
                 return game_guides()
-                time.sleep(2.5)
+                time.sleep(1.5)
 
             elif answer == no: 
                 print("\n\U0001F92F What! Why not?\n")
@@ -74,7 +74,6 @@ def game_guides():
         -----------------------
         """
     )
-
     print(
         """ 
         Your battle-ground is formed of 9 squares and looks like this: 
@@ -95,6 +94,38 @@ def game_guides():
     )
     time.sleep(1.5)
 
+def pick_pieces(): 
+
+    print("Wait! Before we start, you need to pick a game board piece.\n")
+    print(
+        """
+        \U0001F449 Each piece is assigned to a respective letter.
+        """
+    )
+    print(
+        """
+            For instance: 
+            -------------
+        
+            a = \U0001F9DE 
+            b = \U0001F9D1
+            c = \U0001F444
+            d = \U0001F441
+
+        """
+    )
+
+    # PlayerPieces = {
+    #     "a":"\U0001F9DE", #mermaid
+    #     "b":"\U0001F9D1", #cook
+    #     "c":"\U0001F444", #mouth
+    #     "d":"\U0001F441", #eye
+    # }
+    # PlayerPiecesDisplay = PlayerPieces.values()
+    # print(PlayerPiecesDisplay)
+
+
+
 
 
 def exit():
@@ -111,6 +142,7 @@ def main():
     """
     welcome()
     r_u_ready_to_play()
+    pick_pieces()
     exit()
 main()
 
