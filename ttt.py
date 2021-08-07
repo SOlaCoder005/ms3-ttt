@@ -203,7 +203,7 @@ class Board():
 
     """
     - Initialises game board
-    - Credit: @TokyoEdtech - # https://www.youtube.com/watch?v=7Djh-Cbgi0E
+    - Reference Source: @TokyoEdtech - # https://www.youtube.com/watch?v=7Djh-Cbgi0E
     """
 
     def __init__(self):
@@ -225,6 +225,11 @@ board = Board()
 # board.board_structure()
 
 def game_play():
+    """
+    - Holds the primary fucntions of the game. 
+    - Refreshesd the board everytime a move is made 
+    - Reference Source: @TokyoEdtech
+    """
     #clears the screen
     os.system("clear")
 
