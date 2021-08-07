@@ -256,7 +256,8 @@ def player_moves():
             game_play()
     
             #retrive move from AI
-            ai_move = int(input("\n\U0001F3B2 The AI will now make a move... \n"))
+            print("\n\U0001F3B2 The AI will now make a move... \n")
+            ai_move = random.randint(0, 9)
             #wherever the AI places move, put "O"
             board.update_cell(ai_move, "O") #!!!! Needs to be an automatic function, currently it's mannual
             game_play()
