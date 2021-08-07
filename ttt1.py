@@ -34,7 +34,17 @@ GAMEPIECES = {
     "i":"\U0001F4A3", #bomb          
 }
 
-
+# - Reference Source: Dawson (2010, pp.181-82)
+WINNING_INSTANCES = (
+    (0, 1, 2), #horizontal instances
+    (3, 4, 5), #horizontal instances
+    (6, 7, 8),  #horizontal instances
+    (0, 3, 6), #vertical instances
+    (1, 4, 7),  #vertical instances
+    (2, 5, 8), #vertical instances
+    (0, 4, 8),  #diagonal instances
+    (2, 4, 6) #diagonal instances
+)
 
 def welcome():
 
@@ -47,8 +57,40 @@ def welcome():
     print("Can you put AI in it's place to show it who's boss?\n")
     time.sleep(2)
     print("I hope so...\U0001F914\n")
-    time.sleep(1)
+    time.sleep(3)
+    
+def r_u_ready_to_play():
 
+    """
+    Asks user if they are ready to play.
+    """
+    yes = "y"
+    no = "n" 
+    
+    while True: 
+        
+        try: 
+            answer = input("\nAre you ready to play (y/n)?:\n")
+
+            if answer == yes:
+                print("\nOkay! Here's how to play... \U0001F60E\n")
+                return game_guides()
+                time.sleep(1.5)
+
+            elif answer == no: 
+                print("\n\U0001F92F What! Why not?\n")
+                print("\n\U0001F612 Okay, maybe next time.\n")
+                time.sleep(1)
+                return exit()
+
+            else: 
+                raise ValueError()
+
+        except ValueError:
+            print(
+                f"\nSorry, didn't recognise yourt respnse '{answer}'. Try again..."
+            )
+ 
 def game_guides():
     
     """
@@ -66,11 +108,11 @@ def game_guides():
         """ 
         Your battle-ground is formed of 9 squares and looks like this: 
 
-                            1  |  2  |  3
+                            0  |  1  |  2
                             --------------
-                            4  |  5  |  6
+                            3  |  4  |  5
                             --------------
-                            7  |  8  |  9
+                            6  |  7  |  8
 
       
         \U0001F449  You can play either as X or O.\n
@@ -82,45 +124,13 @@ def game_guides():
     )
     time.sleep(3)
 
-def r_u_ready_to_play():
-
-    """
-    Asks user if they are ready to play.
-    """
-    yes = "y"
-    no = "n" 
-    
-    while True: 
-        
-        try: 
-            answer = input("\nAre you ready to play (y/n)?:\n")
-
-            if answer == yes:
-                print("\nOkay, let's go! \U0001F60E\n")
-                return game_pieces()
-                time.sleep(1.5)
-
-            elif answer == no: 
-                print("\n\U0001F92F What! Why not?\n")
-                print("\n\U0001F612 Okay, maybe next time.\n")
-                time.sleep(1)
-                return exit()
-
-            else: 
-                raise ValueError()
-
-        except ValueError:
-            print(
-                f"\nSorry, didn't recognise yourt respnse '{answer}'. Try again..."
-            )
-
 def game_pieces(): 
 
     """
     Tells player how to select the piece that they want to use on the game board.
     """
 
-    print("\nBefore we start, you need to pick a game board piece.\n")
+    print("Wait! Before we start, you need to pick a game board piece.\n")
     print(
         """
         \U0001F449 Each piece is assigned to a respective letter.
@@ -165,39 +175,6 @@ def game_pieces():
         """
     )
 
-def player_picks_game_piece(): 
-
-    """
-    Allows user to select game piece.
-    """  
-
-    player_game_piece_picked = input("\n\U0001F3B2 Please pick your game piece:\n")
-
-    if player_game_piece_picked in GAMEPIECES:
-        print(f"\nOkay, your game piece is '{ GAMEPIECES[player_game_piece_picked] }'.\n")
-        
-    else:  
-        print(f"\nSorry, didn't recognise yourt respnse '{ player_game_piece_picked }'.\n")
-        return player_picks_game_piece()
-        time.sleep(1)
-         
-def ai_picks_game_piece():
-    #NEED TO DO A LOOP SO AI DOES NOT PICK THE SAME PIECE AS PLAYER
-
-    """
-    - Allows computer ('AI') to select game piece.
-    - The AI's Game piece is selected at random.
-    """
-
-    games_piece_list = list(GAMEPIECES.values())
-    ai_game_piece_picked = random.choice(games_piece_list)
-    print(f"\nGreat, the AI has picked '{ai_game_piece_picked}' as it's game piece.\n")
-    ai = ai_game_piece_picked
-    time.sleep(1)
-    print("\nOkay let's play! \U0001F60E\n")
-    time.sleep(1.5)
-    # return game_play()
-
 class Board():
 
     """
@@ -240,68 +217,72 @@ def game_play():
     #presents board
     board.board_structure()
 
-def player_moves():
+def human_picks_game_piece(): 
+
     """
-    - Player and AI will alternate turns until the board is filled
-    - If incorrect answer is entered, by Player, ther are asked to play again.
-    - If AI makes the wrong turn, it will lose a turn
-    """
-    while True: 
+    Allows user to select game piece.
+    """  
+
+    human_game_piece_picked = input("\n\U0001F3B2 Please pick your game piece:\n")
+
+    if human_game_piece_picked in GAMEPIECES:
+        print(f"\nOkay, your game piece is '{ GAMEPIECES[human_game_piece_picked] }'.\n")
         
-        try:   
-            #retrive move from player
-            player_move = int(input("\n\U0001F3B2 Human, Please choose a space between 1-9: \n"))
-            # wherever player places move, put "X"
-            board.update_cell(player_move, "X") 
-            game_play()
-    
-            #retrive move from AI
-            ai_move = int(input("\n\U0001F3B2 The AI will now make a move... \n"))
-            #wherever the AI places move, put "O"
-            board.update_cell(ai_move, "O") #!!!! Needs to be an automatic function, currently it's mannual
-            game_play()
+    else:  
+        print(f"\nSorry, didn't recognise yourt respnse '{ human_game_piece_picked }'.\n")
+        return human_picks_game_piece()
+        time.sleep(1)
+         
+def ai_picks_game_piece():
+    #NEED TO DO A LOOP SO AI DOES NOT PICK THE SAME PIECE AS PLAYER
 
-            if player_move or ai_move != " ":
-                print("Place already filled. Try again!!")
-            else: 
-                raise ValueError()
+    """
+    - Allows computer ('AI') to select game piece.
+    - The AI's Game piece is selected at random.
+    """
 
-        except ValueError:
-            print("Uuuummm, that's not a right value. Try again!")
-            time.sleep(1)
-            
+    games_piece_list = list(GAMEPIECES.values())
+    ai_game_piece_picked = random.choice(games_piece_list)
+    print(f"\nGreat, the AI has picked '{ai_game_piece_picked}' as it's game piece.\n")
+    ai = ai_game_piece_picked
+    time.sleep(1)
+    print("\nOkay let's play! \U0001F60E\n")
+    time.sleep(1.5)
+    # return game_play()
+    	
+while True:
+    game_play()
+    #retrive move from human
+    human_move = int(input("\n\U0001F3B2 Human, Please choose a space between 1-9: \n"))
+
+    #wherever human X places move, put "X"
+    board.update_cell(human_move, "X")
+
+    #calling the function again
+    game_play()
+
+    #retrive move from AI
+    ai_move = int(input("\n\U0001F3B2 The AI will now make a move... \n"))
+
+    #wherever human X places move, put "X"
+    board.update_cell(ai_move, "O")
+
+
+
 def exit():
-    """
-    - Activated when player no longer wants to play
-    """
     print(input("\nPlease press ENTER on your keyboard to exit:\n"))
     time.sleep(.5) 
     print("Exiting Game mode...\n") 
     time.sleep(1)
+    #clears the terminal viewport 
     return clear_screen()
     
+
 def clear_screen():
-    """
-    - Clears the terminal
-    """
     #clears the screen
     os.system("clear")
-    #loops back to programme's welcome message
+
+    #welcome message
     return welcome()
-        
 
-
-
-
-def main():
-    welcome()
-    game_guides()
-    r_u_ready_to_play()
-    # game_pieces()
-    player_picks_game_piece()
-    ai_picks_game_piece()
-    game_play()
-    player_moves()
-    exit()
-
-main()
+def
