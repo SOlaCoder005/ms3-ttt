@@ -215,38 +215,20 @@ class Board():
         print(" %s | %s | %s " %(self.cells[7], self.cells[8], self.cells[9]))
         print("\n")
 
+# board = Board()
+# board.board_structure()
 
-board = Board()
-board.board_structure()
+  
 
-# def empty_board():
-#     """
-#     Initialises new game board
-#     Source: Dawson (2010, p.180)
-#     """
-#     board = []
-#     for square in range (BOARD_SQUARES):
-#         board.append(BLANK_SPACE)
-#     return board
-    
-# def present_board(board):
+def game_moves(board):
 
-#     print("\n\t", board[0], "|", board[1], "|", board[2])
-#     print("\t", "---------")
-#     print("\t", board[3], "|", board[4], "|", board[5])
-#     print("\t", "---------")
-#     print("\t", board[6], "|", board[7], "|", board[8], "\n")
-      
+    moves = []
+    for square in range(BOARD_SQUARES):
+        if board[square] == BLANK_SPACE:
+            moves.append(square)
+    return moves    
 
-# def game_moves(board):
-
-#     moves = []
-#     for square in range(BOARD_SQUARES):
-#         if board[square] == BLANK_SPACE:
-#             moves.append(square)
-#     return moves    
-
-# game_moves()
+game_moves()
 
 
 
