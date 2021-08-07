@@ -15,8 +15,7 @@ os.system("clear")
 CONST variables
 """
 
-X = "X"
-O = "O"
+
 PlayerWon = ""
 PlayerLost = ""
 PlayerDraw = "DRAW"
@@ -33,6 +32,7 @@ GAMEPIECES = {
     "h":"\U0001F9E0", #brain
     "i":"\U0001F4A3", #bomb          
 }
+
 
 def welcome():
 
@@ -173,7 +173,7 @@ def player_picks_game_piece():
 
     if player_game_piece_picked in GAMEPIECES:
         print(f"\nOkay, your game piece is '{ GAMEPIECES[player_game_piece_picked] }'.\n")
-        
+       
     else:  
         print(f"\nSorry, didn't recognise yourt respnse '{ player_game_piece_picked }'.\n")
         return player_picks_game_piece()
@@ -190,11 +190,12 @@ def ai_picks_game_piece():
     games_piece_list = list(GAMEPIECES.values())
     ai_game_piece_picked = random.choice(games_piece_list)
     print(f"\nGreat, the AI has picked '{ai_game_piece_picked}' as it's game piece.\n")
-    ai = ai_game_piece_picked
+    
     time.sleep(1)
     print("\nOkay let's play! \U0001F60E\n")
     time.sleep(1.5)
     # return game_play()
+   
 
 class Board():
 
@@ -247,13 +248,14 @@ def player_moves():
     while True: 
         
         try:  
-            
+            game_play()
             #retrive move from player
             player_move = int(input("\n\U0001F3B2 Human, Please choose a space between 1-9: \n"))
             # wherever player places move, put "X"
             board.update_cell(player_move, "X") 
-           
-           
+            game_play()
+
+            game_play()
             #retrive move from AI
             print("\n\U0001F3B2 The AI will now make a move... \n")
             time.sleep(1)
@@ -299,7 +301,7 @@ def main():
     welcome()
     game_guides()
     r_u_ready_to_play()
-    game_pieces()
+    # game_pieces()
     player_picks_game_piece()
     ai_picks_game_piece()
     game_play()
