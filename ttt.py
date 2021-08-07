@@ -34,8 +34,6 @@ GAMEPIECES = {
     "i":"\U0001F4A3", #bomb          
 }
 
-
-
 def welcome():
 
     """
@@ -248,27 +246,32 @@ def player_moves():
     """
     while True: 
         
-        try:   
+        try:  
+            
             #retrive move from player
             player_move = int(input("\n\U0001F3B2 Human, Please choose a space between 1-9: \n"))
             # wherever player places move, put "X"
             board.update_cell(player_move, "X") 
-            game_play()
-    
+           
+           
             #retrive move from AI
             print("\n\U0001F3B2 The AI will now make a move... \n")
+            time.sleep(1)
             ai_move = random.randint(0, 9)
             #wherever the AI places move, put "O"
             board.update_cell(ai_move, "O") #!!!! Needs to be an automatic function, currently it's mannual
-            game_play()
+            game_play() #THIS IS NOT WORKING !!!!
+           
 
-            if player_move or ai_move != " ":
-                print("Place already filled. Try again!!")
-            else: 
-                raise ValueError()
+            move1 = player_move
+            move2 = ai_move
+
+            if move1 or move2 != " ":
+                print("\U0001F449 Uh oh! That space was already filled!\n")
+                time.sleep(1)
 
         except ValueError:
-            print("Uuuummm, that's not a right value. Try again!")
+            print("\n\U0001F449 Uuuummm, that's not a right value. Try again!\n")
             time.sleep(1)
             
 def exit():
@@ -292,15 +295,13 @@ def clear_screen():
         
 
 
-
-
 def main():
-    welcome()
-    game_guides()
-    r_u_ready_to_play()
+    # welcome()
+    # game_guides()
+    # r_u_ready_to_play()
     # game_pieces()
-    player_picks_game_piece()
-    ai_picks_game_piece()
+    # player_picks_game_piece()
+    # ai_picks_game_piece()
     game_play()
     player_moves()
     exit()
