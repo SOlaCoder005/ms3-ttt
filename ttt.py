@@ -19,9 +19,9 @@ CONST variables
 # O = ()
 PlayerWon = ""
 PlayerLost = ""
-PlayerTie = ""
-BOARD_SQUARES = 9
+PlayerDraw = "DRAW"
 BLANK_SPACE = " "
+BOARD_SQUARES = 9
 GAMEPIECES = {
     "a":"\U0001F9DE", #mermaid
     "b":"\U0001F9D1", #cook
@@ -33,6 +33,18 @@ GAMEPIECES = {
     "h":"\U0001F9E0", #brain
     "i":"\U0001F4A3", #bomb          
 }
+
+# - Reference Source: Dawson (2010, pp.181-82)
+WINNING_INSTANCES = (
+    (0, 1, 2), #horizontal instances
+    (3, 4, 5), #horizontal instances
+    (6, 7, 8),  #horizontal instances
+    (0, 3, 6), #vertical instances
+    (1, 4, 7),  #vertical instances
+    (2, 5, 8), #vertical instances
+    (0, 4, 8),  #diagonal instances
+    (2, 4, 6) #diagonal instances
+)
 
 def welcome():
 
@@ -196,33 +208,7 @@ def ai_picks_game_piece():
     time.sleep(1)
     print("\nOkay let's play! \U0001F60E\n")
     time.sleep(1.5)
-    return game_play()
-
-
-class Board():
-
-    """
-    - Initialises game board
-    - Reference Source: @TokyoEdtech - # https://www.youtube.com/watch?v=7Djh-Cbgi0E
-    """
-
-    def __init__(self):
-        self.cells = [" ", " ", " " , " " , " " , " " , " " , " " , " " , " " ]
-    
-    def board_structure(self):
-        print("\n")
-        print(" %s | %s | %s " %(self.cells[1], self.cells[2], self.cells[3]))
-        print("-----------")
-        print(" %s | %s | %s " %(self.cells[4], self.cells[5], self.cells[6]))
-        print("-----------")
-        print(" %s | %s | %s " %(self.cells[7], self.cells[8], self.cells[9]))
-        print("\n")
-
-    def update_cell(self, cell_no, player):
-        self.cells[cell_no] = player
-
-board = Board()
-# board.board_structure()
+    # return game_play()
 
 def game_play():
     """
@@ -237,37 +223,51 @@ def game_play():
     print("\n\U0001F3B2 Game board loading...\n")
     time.sleep(1)
 
-    #presents board
-    board.board_structure()
+def BLANK_SPACE_board():
+    """
+    - Initialises new game board
+    - Reference Source: Dawson (2010, p.180)
+    """
+    board = []
+    for square in range(BOARD_SQUARES):
+        board.append(BLANK_SPACE)
+    return board
+    
+def present_board(board):
 
-while True:
-    game_play()
-    #retrive move from human
-    human_move = int(input("\nHuman, Please choose a space between 1-9: \n"))
+    print("\n\t", board[0], "|", board[1], "|", board[2])
+    print("\t", "---------")
+    print("\t", board[3], "|", board[4], "|", board[5])
+    print("\t", "---------")
+    print("\t", board[6], "|", board[7], "|", board[8], "\n")
 
-    #whereever human X places move, put "X"
-    board.update_cell(human_move, "X")
+def board_moves(board):
+    """
+    - Returns a list of viable moves on the board
+    - Reference Source: Dawson (2010, p.180)
+    """
 
-    #calling the function
-    game_play()
+    moves = []
+    for square in range(BOARD_SQUARES):
+        if board[square] == BLANK_SPACE:
+            moves.append(square)
+    return moves
 
-    ai_move = int(input("\n The AI will now make a move... \n"))
+def game_winner_analysis(board):
+    WINNING_INSTANCES
 
-    #whereever human X places move, put "X"
-    board.update_cell(ai_move, "O")
+    for row in WINNING_INSTANCES:
+        if board[row[0]] == board[row[1]] == board[row[2]] != BLANK_SPACE:
+            winner = board[row[0]]
+            return PlayerWon
 
-
-
-
-
-
-
+        elif BLANK_SPACE not in board:
+            return PlayerDraw
 
 
 
 
 def exit():
-
     print(input("\nPlease press ENTER on your keyboard to exit:\n"))
     time.sleep(.5) 
     print("Exiting Game mode...\n") 
@@ -294,12 +294,11 @@ def main():
     human_picks_game_piece()
     ai_picks_game_piece()
     game_play()
-    
-    # board = empty_board() 
-    # present_board(board)
-    # game_moves()
-    exit()
-    clear_screen()
+    board = BLANK_SPACE_board() 
+    present_board(board)
+    board_moves(board)
+    game_winner_analysis(board)
+    # exit()
+    # clear_screen()
      
 main()
-
