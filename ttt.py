@@ -296,12 +296,12 @@ def clear_screen():
 
 
 def main():
-    # welcome()
-    # game_guides()
-    # r_u_ready_to_play()
-    # game_pieces()
-    # player_picks_game_piece()
-    # ai_picks_game_piece()
+    welcome()
+    game_guides()
+    r_u_ready_to_play()
+    game_pieces()
+    player_picks_game_piece()
+    ai_picks_game_piece()
     game_play()
     player_moves()
     exit()
