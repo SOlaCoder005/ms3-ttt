@@ -44,11 +44,10 @@ def welcome():
     print("This is a place to engage in digital strategic sparing!\n")
     print("Can you put AI in it's place to show it who's boss?\n")
     time.sleep(2)
-    print("I hope so...\n")
+    print("I hope so...\U0001F914\n")
     time.sleep(3)
-    # return r_u_ready_to_play()
+    
 
-#r u ready to play no function needs fixing
 def r_u_ready_to_play():
 
     """
@@ -198,10 +197,15 @@ def ai_picks_game_piece():
     time.sleep(1)
     print("\nOkay let's play! \U0001F60E\n")
     time.sleep(1.5)
-    # return board_structure()
+    return game_play()
 
-# https://www.youtube.com/watch?v=7Djh-Cbgi0E
+
 class Board():
+
+    """
+    - Initialises game board
+    - Credit: @TokyoEdtech - # https://www.youtube.com/watch?v=7Djh-Cbgi0E
+    """
 
     def __init__(self):
         self.cells = [" ", " ", " " , " " , " " , " " , " " , " " , " " , " " ]
@@ -215,20 +219,28 @@ class Board():
         print(" %s | %s | %s " %(self.cells[7], self.cells[8], self.cells[9]))
         print("\n")
 
-# board = Board()
+board = Board()
 # board.board_structure()
+
+def game_play():
+    #clears the screen
+    os.system("clear")
+
+    #loading message
+    print("\n\U0001F3B2 Game board loading...\n")
+    time.sleep(1)
 
   
 
-def game_moves(board):
+# def game_moves(board):
 
-    moves = []
-    for square in range(BOARD_SQUARES):
-        if board[square] == BLANK_SPACE:
-            moves.append(square)
-    return moves    
+#     moves = []
+#     for square in range(BOARD_SQUARES):
+#         if board[square] == BLANK_SPACE:
+#             moves.append(square)
+#     return moves    
 
-game_moves()
+# game_moves()
 
 
 
@@ -241,26 +253,34 @@ def exit():
     time.sleep(.5) 
     print("Exiting Game mode...\n") 
     time.sleep(1)
-    #NEED to clear the terminal once exiting
-    return welcome()
+    #clears the terminal viewport 
+    return clear_screen()
     
 
-# def cls():
-#     os.system('cls' if os.name == 'nt' else 'clear')
-# cls()
+def clear_screen():
+    #clears the screen
+    os.system("clear")
+
+    #welcome message
+    return welcome()
+
    
-# def main(): 
-#     """
-#     Contains key functions that allows the game to run. 
-#     """
-#     # welcome()
-#     # r_u_ready_to_play()
-#     # game_pieces()
-#     # human_picks_game_piece()
-#     # ai_picks_game_piece()
-#     # board = empty_board() 
-#     # present_board(board)
-#     # game_moves()
-#     # exit() 
-# main()
+def main(): 
+    """
+    Contains key functions that allows the game to run. 
+    """
+    welcome()
+    r_u_ready_to_play()
+    game_pieces()
+    human_picks_game_piece()
+    ai_picks_game_piece()
+    game_play()
+    board.board_structure()
+    # board = empty_board() 
+    # present_board(board)
+    # game_moves()
+    exit()
+    clear_screen()
+     
+main()
 
