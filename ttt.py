@@ -15,13 +15,13 @@ os.system("clear")
 CONST variables
 """
 
-X = ()
-O = ()
+# X = ()
+# O = ()
 PlayerWon = ""
 PlayerLost = ""
 PlayerTie = ""
-# BOARD_SQUARES = 9
-# BLANK_SPACE = " "
+BOARD_SQUARES = 9
+BLANK_SPACE = " "
 GAMEPIECES = {
     "a":"\U0001F9DE", #mermaid
     "b":"\U0001F9D1", #cook
@@ -47,7 +47,6 @@ def welcome():
     print("I hope so...\U0001F914\n")
     time.sleep(3)
     
-
 def r_u_ready_to_play():
 
     """
@@ -219,6 +218,9 @@ class Board():
         print(" %s | %s | %s " %(self.cells[7], self.cells[8], self.cells[9]))
         print("\n")
 
+    def update_cell(self, cell_no, player):
+        self.cells[cell_no] = player
+
 board = Board()
 # board.board_structure()
 
@@ -230,17 +232,29 @@ def game_play():
     print("\n\U0001F3B2 Game board loading...\n")
     time.sleep(1)
 
-  
+    #presents board
+    board.board_structure()
 
-# def game_moves(board):
+while True:
+    game_play()
+    #retrive move from human
+    human_move = int(input("\nHuman, Please choose a space between 1-9: \n"))
 
-#     moves = []
-#     for square in range(BOARD_SQUARES):
-#         if board[square] == BLANK_SPACE:
-#             moves.append(square)
-#     return moves    
+    #whereever human X places move, put "X"
+    board.update_cell(human_move, "X")
 
-# game_moves()
+    #calling the function
+    game_play()
+
+    ai_move = int(input("\n The AI will now make a move... \n"))
+
+    #whereever human X places move, put "X"
+    board.update_cell(ai_move, "O")
+
+
+
+
+
 
 
 
@@ -269,13 +283,13 @@ def main():
     """
     Contains key functions that allows the game to run. 
     """
-    welcome()
-    r_u_ready_to_play()
-    game_pieces()
+    # welcome()
+    # r_u_ready_to_play()
+    # game_pieces()
     human_picks_game_piece()
     ai_picks_game_piece()
     game_play()
-    board.board_structure()
+    
     # board = empty_board() 
     # present_board(board)
     # game_moves()
