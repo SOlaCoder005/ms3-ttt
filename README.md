@@ -188,10 +188,11 @@ While there were several bugs that arose through the duration of the project, th
 - **Reason:** 
 - **Fix:** 
 
+<!-- assigning selected emoji to player > used 'global' -->
 #### **6.5.2 Unfixed bugs**
 
 
-**[moving .j and .css to right file so programe would run]**
+<!-- **[moving .j and .css to right file so programe would run]** -->
 
 - **Context:** 
 - **Reason:** 
