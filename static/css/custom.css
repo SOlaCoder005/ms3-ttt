@@ -36,22 +36,19 @@ nav {
     padding: 0.625rem;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
-    /* background-color: red; */
 }
 
 main {
     grid-area: main;
-    /* background-color: orange; */
+
 }
 
 section {
     grid-area: section;
-    /* background-color: yellow; */
 }
 
 footer{
     grid-area: footer;
-    /* background-color: yellowgreen; */
 }
 
 h1, h2, h3, h3 {
@@ -159,11 +156,6 @@ button:hover {
 .game-pad > i:nth-child(1) {
     color: #ffcc00;
 }
-
-
-
-
-
 
 /*MEDIA QUERIES*/
 
