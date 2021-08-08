@@ -91,45 +91,37 @@ def game_guides():
 
 
 def r_u_ready_to_play():
-
     """
     Asks user if they are ready to play.
     """
     yes = "y"
-    no = "n" 
-    
-    while True: 
-        
-        try: 
-            answer = input("\nAre you ready to play (y/n)?:\n")
+    no = "n"
+    while True:
+        try:
+            answer = input("\n\U0001F3B2 Are you ready to play (y/n)?:\n")
 
             if answer == yes:
                 print("\nOkay, let's go! \U0001F60E\n")
                 return game_pieces_overview()
-                time.sleep(1.5)
-
-            elif answer == no: 
+                time.sleep(1)
+            elif answer == no:
                 print("\n\U0001F92F What! Why not?\n")
                 print("\n\U0001F612 Okay, maybe next time.\n")
                 time.sleep(1)
                 return exit()
-
             else: 
                 raise ValueError()
-
         except ValueError:
             print(
                 f"\nSorry, didn't recognise yourt respnse '{answer}'. Try again..."
             )
 
 
-def game_pieces_overview(): 
-
+def game_pieces_overview():
     """
-    Tells player how to select the piece that they want to use on the game board.
+    - Tells player how to select the game piece that they want to use.
     """
-
-    print("\nBefore we start, you need to pick a game board piece.\n")
+    print("\n\U0001F449 Before we start, you need to pick a game board piece.\n")
     print(
         """
         \U0001F449 Each piece is assigned to a respective letter.
@@ -143,21 +135,20 @@ def game_pieces_overview():
     )
     print(
         """
-                            a = \U0001F9DE 
+                            a = \U0001F9DE
                             b = \U0001F9D1
                             c = \U0001F444
                             d = \U0001F63B
         """
     )
     time.sleep(3)
-
     print(
         """
         \U0001F449 Using the chart below, please select your game piece:
         """
     )
     print(
-        # Do not chnage spacing as this aligns eefectivily in the terminal
+        # Do not chnage spacing as this aligns effectivily in the terminal
         """
                             a  |  b  | c  
                             -------------
@@ -175,8 +166,6 @@ def game_pieces_overview():
     )
     pp.player_picks_game_piece()
     time.sleep(1)
-    # pp.ai_picks_game_piece()
-    # board
 
 
 class PickGamePiece():
@@ -192,7 +181,6 @@ class PickGamePiece():
                 if PlayerGamePiece in GAMEPIECES:
                     print(
                         f"\nYou've picked '{GAMEPIECES[PlayerGamePiece]}'.\n"
-                        # f"\nYou've picked '{GAMEPIECES.keys()}'.\n"
                     )
                     return pp.ai_picks_game_piece()
                 else:
@@ -232,7 +220,7 @@ class Board():
     """
     def __init__(self):
         self.cells = [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
-   
+
     def board_structure(self):
         print("\n")
         print(" %s | %s | %s " % (self.cells[1], self.cells[2], self.cells[3]))
@@ -279,7 +267,7 @@ def player_moves():
             # Player Turn
             player_move = int(input("\n\U0001F3B2 Human, Please choose a space between 1-9: \n"))
             # wherever player places move, put "X"
-            board.update_cell(player_move, GAMEPIECES[PlayerGamePiece]) # !!!!! NEED TO FIX, letter keeps typing
+            board.update_cell(player_move, GAMEPIECES[PlayerGamePiece])
             game_play()
             # AI Turn
             print("\n\U0001F3B2 The AI will now make a move... \n")
@@ -322,5 +310,4 @@ def main():
     player_moves()
     exit()
 
-    
 main()
