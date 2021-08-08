@@ -185,12 +185,14 @@ class PickGamePiece():
         Allows user to select game piece.
         This shall be used later and assigned to the player
         """
+        global PlayerGamePiece
         while True:
             try:
                 PlayerGamePiece = input("\U0001F3B2 Pick your piece (a-i):\n")           
                 if PlayerGamePiece in GAMEPIECES:
                     print(
                         f"\nYou've picked '{GAMEPIECES[PlayerGamePiece]}'.\n"
+                        # f"\nYou've picked '{GAMEPIECES.keys()}'.\n"
                     )
                     return pp.ai_picks_game_piece()
                 else:
@@ -206,6 +208,7 @@ class PickGamePiece():
         - Allows computer ('AI') to select game piece.
         - The AI's Game piece is selected at random.
         """
+        global AiGamePiece
         games_piece_list = list(GAMEPIECES.values())
         AiGamePiece = random.choice(games_piece_list)
         print(
@@ -276,13 +279,13 @@ def player_moves():
             # Player Turn
             player_move = int(input("\n\U0001F3B2 Human, Please choose a space between 1-9: \n"))
             # wherever player places move, put "X"
-            board.update_cell(player_move, "X")
+            board.update_cell(player_move, GAMEPIECES[PlayerGamePiece]) # !!!!! NEED TO FIX, letter keeps typing
             game_play()
             # AI Turn
             print("\n\U0001F3B2 The AI will now make a move... \n")
             time.sleep(1)
             ai_move = random.randint(0, 9)
-            board.update_cell(ai_move, "O")  # !!!! Needs to be an automatic function, currently it's mannual
+            board.update_cell(ai_move, AiGamePiece)  # !!!! Needs to be an automatic function, currently it's mannual
             time.sleep(.5)
             game_play()  
         except ValueError:
