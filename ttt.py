@@ -174,7 +174,7 @@ def game_pieces_overview():
         """
     )
     pp.player_picks_game_piece()
-    time.sleep(1.5)
+    time.sleep(1)
     # pp.ai_picks_game_piece()
     # board
 
@@ -315,7 +315,6 @@ def main():
     welcome()
     game_guides()
     r_u_ready_to_play()
-    game_pieces_overview()
     game_play()
     player_moves()
     exit()
