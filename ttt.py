@@ -233,8 +233,8 @@ pp = PickGamePiece()
 
 class Board():
     """
-    - Initialises game board
-    - Reference Source: @TokyoEdtech - # https://www.youtube.com/watch?v=7Djh-Cbgi0E
+    Initialises game board
+    Reference Source: @TokyoEdtech - # https://www.youtube.com/watch?v=7Djh-Cbgi0E
     """
     def __init__(self):
         self.squares = [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
@@ -250,9 +250,19 @@ class Board():
 
     def update_square(self, board_space, player):
         """
+        This updates the Player's and / or AI's move
+        Function PlayerGamePiece or AiGame Pieces needs to be called to trigger the update
         """
         if self.squares[board_space] == " ":
             self.squares[board_space] = player
+    
+    # Ref: TokyoEdtech pt3
+    def new_game_board(self):
+        """
+        This creates a new empty gameboard.
+        This game board is activated if the player wants to play again.
+        """
+        self.squares = [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
     
     # Ref: TokyoEdtech pt3
     def winning_instances(self, player):
@@ -276,8 +286,9 @@ class Board():
         elif self.squares[3] == player and self.squares[5] == player and self.squares[7] == player:
             return True
         return False
-        # if self.squares[i] in WINNING_INSTANCES == player:
         # might be able to call array
+        # if self.squares[i] in WINNING_INSTANCES == player:
+       
 
     # Ref: TokyoEdtech pt4
     def game_tie(self):
@@ -287,20 +298,15 @@ class Board():
         occupied_squares = 0
         for square in self.squares:
             if square != " ":
+                # going through each space to check if it's full
                 occupied_squares += 1
+        # Checks if the 9 squares are occupied
         if occupied_squares == 9:
             return True
         else:
             return False 
-    # Ref: TokyoEdtech pt3
-    def new_game_board(self):
-        """
-        This creates a new empty gameboard.
-        This game board is activated if the player wants to play again.
-        """
-        self.squares = [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-
+    
 board = Board()
 # board.board_structure()
 
