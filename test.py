@@ -260,14 +260,29 @@ class Board():
         if self.cells[board_space] == " ":
             self.cells[board_space] = player
     
-    #Ref: TokyoEdtech pt3
-    # might be able to call array
+    # Ref: TokyoEdtech pt3
     def winning_instances(self, player):
         """
         """
         if self.cells[1] == player and self.cells[2] == player and self.cells[3] == player:
             return True
+        if self.cells[4] == player and self.cells[5] == player and self.cells[6] == player:
+            return True
+        if self.cells[7] == player and self.cells[8] == player and self.cells[9] == player:
+            return True
+        if self.cells[1] == player and self.cells[4] == player and self.cells[7] == player:
+            return True
+        if self.cells[2] == player and self.cells[5] == player and self.cells[8] == player:
+            return True
+        if self.cells[3] == player and self.cells[6] == player and self.cells[9] == player:
+            return True
+        if self.cells[1] == player and self.cells[5] == player and self.cells[9] == player:
+            return True
+        if self.cells[3] == player and self.cells[5] == player and self.cells[7] == player:
+            return True
+        return False
         # if self.cells[i] in WINNING_INSTANCES == player:
+        # might be able to call array
     
     def new_game_board(self):
         """
@@ -292,6 +307,8 @@ def refresh_game_board():
 
     # loading message
     print("\n\U0001F3B2 Loading...\n")
+    os.system("clear")
+    print("\n\U0001F3B2 Loaded.\n")
     time.sleep(1)
 
     # presents board
@@ -304,9 +321,6 @@ def player_moves():
     - If incorrect answer is entered, by Player, ther are asked to play again.
     - If AI makes the wrong turn, it will lose a turn
     """
-    # Makes copy of the board
-    # board = board[:]
-
     while True:
         try: 
             # Player Turn
@@ -318,27 +332,24 @@ def player_moves():
             # Once placed, board refreshes
             refresh_game_board()
             
-            # Check player's move      
+            # Check Player's move for winner
             if board.winning_instances(GAMEPIECES[PlayerGamePiece]):
-                print("\n Well Done! You've beaten the AI!\n")
+                print("\n\U0001F973 Well Done! You've beaten the AI!\n")
                 yes = "y"
                 no = "n"
-                answer = input("\nDo you want to beat the AI again? (y/n):\n")
-                are_u_sure = input("\nAre you sure? (y/n):\n") 
-                if answer == yes: 
+                question = input("\n\U0001F3B2 Do you want to play again? (y/n):\n") 
+                if question == yes:
                     print("\n Don't get full of yourself...\n")
                     print("\n You may not win this time!\n")
                     board.new_game_board()
                     refresh_game_board()
                     time.sleep(1)
-                elif answer == no:
-                    return are_u_sure
-                elif are_u_sure == yes:
+                elif question == no:
                     print("\nFine i'm bored anyway!\n")
+                    time.sleep(.5)
                     return exit()
-                else: 
+                else:
                     break
-
         
             # AI Turn
             print("\n\U0001F3B2 The AI will now make a move... \n")
@@ -350,7 +361,26 @@ def player_moves():
             time.sleep(.5)
 
             # Once placed, board refreshes
-            refresh_game_board()  
+            refresh_game_board() 
+
+            # Check AI's move for winner    
+            if board.winning_instances(AiGamePiece):
+                print("\n\U0001F629 Well, the machine won! Oh Dear...\n")
+                yes = "y"
+                no = "n"
+                question = input("\nU0001F3B2 Do you want to play again? (y/n):\n") 
+                if question == yes: 
+                    print("\n\U000164F Ahhh the will is strong with this one...\n")
+                    time.sleep(1)
+                    board.new_game_board()
+                    refresh_game_board()
+                    time.sleep(1)
+                elif question == no:
+                    print("\nU0001971 Fine i'm bored anyway!\n")
+                    time.sleep(.5)
+                    return exit()
+                else: 
+                    break
         except ValueError:
             # If value invalid, this message will activate 
             print("\n\U0001F449 Uuuummm, that's not a right value. Try again!\n")
