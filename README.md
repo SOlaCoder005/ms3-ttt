@@ -365,6 +365,8 @@ Particular mention is paid to the following creators and their content as the re
 
 - **Unicode.org. 2021.** - [Emoji List, v13.1.](https://unicode.org/emoji/charts/emoji-list.html#1f926_200d_2642_fe0f)
 
+- **W3schools.com. 2021.** - [Python Operators](https://www.w3schools.com/python/python_operators.asp)
+
 
 
 
