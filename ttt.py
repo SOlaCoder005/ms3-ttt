@@ -249,7 +249,7 @@ def game_play():
     os.system("clear")
 
     # loading message
-    print("\n\U0001F3B2 Game board loading...\n")
+    print("\n\U0001F3B2 Loading...\n")
     time.sleep(1)
 
     # presents board
