@@ -1,45 +1,4 @@
-<!doctype html>
-<html>
-
-<head>
-    <link rel="stylesheet" href="css/xterm.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Terminal by Code Institute</title>
-</head>
-
-<body>
-    <div id="view-cont">
-        <nav>
-            <h1 id="game-name"><span>TIC</span>-<span>TAC</span>-<span>TOE</span></h1>
-        </nav>
-        <main>
-            <div id="terminal"></div>          
-        </main>
-
-        <section class="btn-cont">
-            <button onclick="window.location.reload()">LETS PLAY</button>
-        </section>  
-        
-        <footer>
-            <div class="game-pad">
-                <i class="fas fa-gamepad"></i>
-                <i class="fas fa-gamepad"></i>
-                <i class="fas fa-gamepad"></i>
-                <i class="fas fa-gamepad"></i>
-                <i class="fas fa-gamepad"></i>
-                <i class="fas fa-gamepad"></i>
-                <i class="fas fa-gamepad"></i>
-                <i class="fas fa-gamepad"></i>
-                <i class="fas fa-gamepad"></i>
-                <i class="fas fa-gamepad"></i>
-                <i class="fas fa-gamepad"></i>  
-            </div>
-        </footer>
-    </div>
-    <!-- <script>
-        var socket = null;
+var socket = null;
         var term = null;
         var buffer = '';
 
@@ -116,12 +75,3 @@
             init_socket();
             init_terminal();
         });
-    </script> -->
-    <script src="js/terminal.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"
-        integrity="sha512-aMGMvNYu8Ue4G+fHa359jcPb1u+ytAF+P2SCb+PxrjCdO3n3ZTxJ30zuH39rimUggmTwmh2u7wvQsDTHESnmfQ=="
-        crossorigin="anonymous"></script>
-    <script src="js/xterm.js"></script>
-</body>
-
-</html>
