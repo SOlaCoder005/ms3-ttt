@@ -241,7 +241,7 @@ board = Board()
 
 def game_play():
     """
-    - Holds the primary fucntions of the game.
+    - Holds the primary fucntions of the game. 
     - Refreshesd the board everytime a move is made.
     - Reference Source: @TokyoEdtech
     """
