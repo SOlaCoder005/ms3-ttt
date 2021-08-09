@@ -41,6 +41,28 @@ GAMEPIECES = {
     # bomb
     "i": "\U0001F4A3",
     }
+    
+WINNING_INSTANCES = (
+    # horizontal instance
+    (1, 2, 3),
+    # horizontal instance
+    (4, 5, 6),
+    # horizontal instance
+    (7, 8, 9),
+    # vertical instance
+    (1, 4, 7),
+    # vertical instance
+    (2, 5, 8),
+    # vertical instance
+    (3, 6, 9),
+    # diagonal instance
+    (1, 5, 9),
+    # diagonal instance
+    (3, 5, 7)
+)
+
+# Ref: Dawson (2010, p.184)
+OPTIMAL_MOVES = (4, 0, 2, 6, 8, 1, 3, 5, 7)
 
 
 def welcome():
@@ -180,7 +202,7 @@ class PickGamePiece():
                 PlayerGamePiece = input("\U0001F3B2 Pick your piece (a-i):\n")           
                 if PlayerGamePiece in GAMEPIECES:
                     print(
-                        f"\nYou've picked '{GAMEPIECES[PlayerGamePiece]}'.\n"
+                        f"\nYou've picked '  {GAMEPIECES[PlayerGamePiece]}  '.\n"
                     )
                     return pp.ai_picks_game_piece()
                 else:
@@ -191,20 +213,22 @@ class PickGamePiece():
                 )                  
 
     def ai_picks_game_piece(self):
-        # !!!!!!!!!!!!!NEED TO DO A LOOP SO AI DOES NOT PICK THE SAME PIECE AS PLAYER
         """
         - Allows computer ('AI') to select game piece.
         - The AI's Game piece is selected at random.
         """
         global AiGamePiece
         games_piece_list = list(GAMEPIECES.values())
-        AiGamePiece = random.choice(games_piece_list)
+        AiGamePiece = random.choice(games_piece_list) #AI sometimes picks the same icon as player, WHY?
+        # AI selects a random game piece except from one chosen by player
+        # AiGamePiece = random.choice([x for x in games_piece_list if x != PlayerGamePiece]) #AI sometimes picks the same icon as player, WHY?
         print(
-            f"\nGreat, the AI has picked '{AiGamePiece}' as it's game piece.\n"
+            f"\nGreat, the AI has picked '  {AiGamePiece}  ' as it's game piece.\n"
         )
         time.sleep(1)
         print("\nOkay let's play! \U0001F60E\n")
         time.sleep(1.5)
+
 
 
 pp = PickGamePiece()
@@ -231,17 +255,50 @@ class Board():
         print("\n")
 
     def update_cell(self, board_space, player):
+        """
+        """
         if self.cells[board_space] == " ":
             self.cells[board_space] = player
+    
+    # Ref: TokyoEdtech pt3
+    def winning_instances(self, player):
+        """
+        """
+        if self.cells[1] == player and self.cells[2] == player and self.cells[3] == player:
+            return True
+        elif self.cells[4] == player and self.cells[5] == player and self.cells[6] == player:
+            return True
+        elif self.cells[7] == player and self.cells[8] == player and self.cells[9] == player:
+            return True
+        elif self.cells[1] == player and self.cells[4] == player and self.cells[7] == player:
+            return True
+        elif self.cells[2] == player and self.cells[5] == player and self.cells[8] == player:
+            return True
+        elif self.cells[3] == player and self.cells[6] == player and self.cells[9] == player:
+            return True
+        elif self.cells[1] == player and self.cells[5] == player and self.cells[9] == player:
+            return True
+        elif self.cells[3] == player and self.cells[5] == player and self.cells[7] == player:
+            return True
+        return False
+        # if self.cells[i] in WINNING_INSTANCES == player:
+        # might be able to call array
+    
+    def new_game_board(self):
+        """
+        This creates a new empty gameboard.
+        This game board is activated if the player wants to play again.
+        """
+        self.cells = [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 
 board = Board()
 # board.board_structure()
 
 
-def game_play():
+def refresh_game_board():
     """
-    - Holds the primary fucntions of the game. 
+    - Holds the primary fucntions of the game.
     - Refreshesd the board everytime a move is made.
     - Reference Source: @TokyoEdtech
     """
@@ -249,7 +306,10 @@ def game_play():
     os.system("clear")
 
     # loading message
-    print("\n\U0001F3B2 Loading...\n")
+    print("\n\U0001F3B2 Loading game...\n")
+    time.sleep(1)
+    os.system("clear")
+    print("\n\U0001F3B2 Game loaded.\n")
     time.sleep(1)
 
     # presents board
@@ -263,24 +323,75 @@ def player_moves():
     - If AI makes the wrong turn, it will lose a turn
     """
     while True:
-        try: 
+        try:
+
             # Player Turn
             player_move = int(input("\n\U0001F3B2 Human, Please choose a space between 1-9: \n"))
-            # wherever player places move, put "X"
+
+            # Wherever player places move, put game piece
             board.update_cell(player_move, GAMEPIECES[PlayerGamePiece])
-            game_play()
+
+            # Once placed, board refreshes
+            refresh_game_board()
+
+            # Check Player's move for winner
+            # No else statement as this only needs to run if True
+            if board.winning_instances(GAMEPIECES[PlayerGamePiece]) == True:
+                print("\n\U0001F973 Well Done! You've beaten the AI!\n")
+                yes = "y"
+                no = "n"
+                question = input("\n\U0001F3B2 Do you want to play again? (y/n):\n") 
+                if question == yes:
+                    print("\n Don't get full of yourself...\n")
+                    print("\n You may not win this time!\n")
+                    board.new_game_board()
+                    refresh_game_board()
+                    time.sleep(1)
+                elif question == no:
+                    print("\nFine i'm bored anyway!\n")
+                    time.sleep(.5)
+                    return exit()
+                else:
+                    break
+        
             # AI Turn
             print("\n\U0001F3B2 The AI will now make a move... \n")
             time.sleep(1)
             ai_move = random.randint(0, 9)
-            board.update_cell(ai_move, AiGamePiece)  # !!!! Needs to be an automatic function, currently it's mannual
+
+            # Wherever AI places move, put game piece
+            board.update_cell(ai_move, AiGamePiece)
             time.sleep(.5)
-            game_play()  
+
+            # Once placed, board refreshes
+            refresh_game_board() 
+
+            # Check AI's move for winner    
+            if board.winning_instances(AiGamePiece) == True:
+                print("\n\U0001F629 Well, the machine won! Oh Dear...\n")
+                yes = "y"
+                no = "n"
+                question = input("\n\U0001F449 Do you want to play again? (y/n):\n") 
+                if question == yes: 
+                    print("\n\U0001F4AA Ahhh the will is strong with this one...\n")
+                    time.sleep(1)
+                    board.new_game_board()
+                    refresh_game_board()
+                    time.sleep(1)
+                elif question == no:
+                    print("\n\U0001F449 Fine, i'm bored anyway!\n")
+                    time.sleep(.5)
+                    return exit()
+                else: 
+                    break
+
         except ValueError:
+
+            # If value invalid, this message will activate 
             print("\n\U0001F449 Uuuummm, that's not a right value. Try again!\n")
             time.sleep(1)
 
-
+        
 def exit():
     """
     - Activated when player no longer wants to play
@@ -303,10 +414,11 @@ def clear_screen():
 
 
 def main():
+    
     welcome()
     game_guides()
     r_u_ready_to_play()
-    game_play()
+    refresh_game_board()
     player_moves()
     exit()
 
