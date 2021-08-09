@@ -333,7 +333,8 @@ def player_moves():
             refresh_game_board()
             
             # Check Player's move for winner
-            if board.winning_instances(GAMEPIECES[PlayerGamePiece]):
+            # No else statement as this only needs to run if True
+            if board.winning_instances(GAMEPIECES[PlayerGamePiece]) == True:
                 print("\n\U0001F973 Well Done! You've beaten the AI!\n")
                 yes = "y"
                 no = "n"
@@ -364,7 +365,7 @@ def player_moves():
             refresh_game_board() 
 
             # Check AI's move for winner    
-            if board.winning_instances(AiGamePiece):
+            if board.winning_instances(AiGamePiece) == True:
                 print("\n\U0001F629 Well, the machine won! Oh Dear...\n")
                 yes = "y"
                 no = "n"
