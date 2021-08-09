@@ -345,6 +345,8 @@ Particular mention is paid to the following creators and their content as the re
 
 ### :computer: Online Resources 
 
+- **Azu, I., 2013.** -["If" statement without the "else" | Codecademy.](https://www.codecademy.com/forum_questions/526868e5548c352551000f60#:~:text=An%20if%20statement%20looks%20at,else%20statement%20is%20not%20needed)
+
 - **cdnjs. 2021.** - [font-awesome - Libraries - cdnjs - The #1 free and open source CDN built to make life easier for developers](https://cdnjs.com/libraries/font-awesome)
 
 - **Docs.python.org. 2021.** - [Python Module Index — Python 3.9.6 documentation](https://docs.python.org/3/py-modindex.html)
