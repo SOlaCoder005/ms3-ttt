@@ -340,7 +340,7 @@ def player_moves():
     while True:
         try:
             # Player Turn
-            player_move = int(input("\n\U0001F3B2 Human, Please choose a space between 1-9: \n"))
+            player_move = int(input("\n\U0001F449 Human, Please choose a space between 1-9: \n"))
 
             # Wherever player places move, put game piece
             board.update_square(player_move, GAMEPIECES[PlayerGamePiece])
@@ -351,18 +351,18 @@ def player_moves():
             # Check Player's moves for winner
             # No 'else statement' is needed as this only needs to run if True
             if board.winning_instances(GAMEPIECES[PlayerGamePiece]) is True:
-                print("\n\U0001F973 Well Done! You've beaten the AI!\n")
+                print("\n\U0001F973  Well Done! You've beaten the AI!\n")
                 yes = "y"
                 no = "n"
                 question = input("\n\U0001F3B2 Do you want to play again? (y/n):\n") 
                 if question == yes:
-                    print("\n Don't get full of yourself...\n")
-                    print("\n You may not win this time!\n")
+                    print("\n\U0001F449 Don't get full of yourself...\n")
+                    print("\n\U0001F449 You may not win this time!\n")
                     board.new_game_board()
                     refresh_game_board()
                     time.sleep(1)
                 elif question == no:
-                    print("\nFine i'm bored anyway!\n")
+                    print("\n\U0001F449 Fine i'm bored anyway!\n")
                     time.sleep(.5)
                     exit()
                     return welcome()
@@ -378,12 +378,12 @@ def player_moves():
                 no = "n"
                 question = input("\n\U0001F3B2 Do you want to play again? (y/n):\n") 
                 if question == yes:
-                    print("\n Let's see if we can get a winner.\n")
+                    print("\n\U0001F449 Let's see if we can get a winner.\n")
                     board.new_game_board()
                     refresh_game_board()
                     time.sleep(1)
                 elif question == no:
-                    print("\nFine i'm bored anyway!\n")
+                    print("\n\U0001F449 Fine i'm bored anyway!\n")
                     time.sleep(.5)
                     exit()
                     return welcome()
@@ -391,7 +391,7 @@ def player_moves():
                     break    
         
             # AI Turn
-            print("\n\U0001F3B2 The AI will now make a move... \n")
+            print("\n\U0001F449 The AI will now make a move... \n")
             time.sleep(1)
             ai_move = random.randint(0, 9)
 
