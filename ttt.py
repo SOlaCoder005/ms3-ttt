@@ -191,6 +191,7 @@ class PickGamePiece():
         Allows user to select game piece.
         This shall be used later and assigned to the player
         """
+        # Hss been assigned 'gloabal' as piece will be called in the game play
         global PlayerGamePiece
         while True:
             try:
@@ -212,9 +213,10 @@ class PickGamePiece():
         - Allows computer ('AI') to select game piece.
         - The AI's Game piece is selected at random.
         """
+        # Hss been assigned 'gloabal' as piece will be called in the game play
         global AiGamePiece
         games_piece_list = list(GAMEPIECES.values())
-        AiGamePiece = random.choice(games_piece_list) #AI sometimes picks the same icon as player, WHY?
+        AiGamePiece = random.choice(games_piece_list)#AI sometimes picks the same icon as player, WHY?
         # AI selects a random game piece except from one chosen by player
         # AiGamePiece = random.choice([x for x in games_piece_list if x != PlayerGamePiece]) #AI sometimes picks the same icon as player, WHY?
         print(
@@ -227,7 +229,7 @@ class PickGamePiece():
 
 pp = PickGamePiece()
 # You dont need to call in main() as this statement calls the class
-# pp.player_picks_game_piece()
+pp.player_picks_game_piece()
 # pp.ai_picks_game_piece()
 
 
@@ -247,15 +249,25 @@ class Board():
         print("-----------")
         print(" %s | %s | %s " % (self.squares[7], self.squares[8], self.squares[9]))
         print("\n")
-
+    
     def update_square(self, board_space, player):
         """
         This updates the Player's and / or AI's move
         Function PlayerGamePiece or AiGame Pieces needs to be called to trigger the update
         """
-        if self.squares[board_space] == " ":
-            self.squares[board_space] = player
-    
+        try: 
+            if self.squares[board_space] == " ":
+                self.squares[board_space] = player
+            elif self.squares[board_space] != " ":
+                pass
+                print("\n\U0001F449 Space is filled! A turn is missed.\n")
+                time.sleep(2)
+            else: 
+                raise ValueError() 
+        except ValueError:
+            print("\nDid not recognise response. Please try again!\n")
+            time.sleep(1)
+
     # Ref: TokyoEdtech pt3
     def new_game_board(self):
         """
@@ -263,7 +275,7 @@ class Board():
         This game board is activated if the player wants to play again.
         """
         self.squares = [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
-    
+
     # Ref: TokyoEdtech pt3
     def winning_instances(self, player):
         """
@@ -288,7 +300,23 @@ class Board():
         return False
         # might be able to call array
         # if self.squares[i] in WINNING_INSTANCES == player:
-       
+
+    def ai_move(self, player):
+        """
+        Dictates the AI's move
+        The AI will search for the next available space
+        """
+        # Selecting square 5 in a tic-tac-toe grid often gives and advantage to the person who has selected it
+        if self.squares[5] == " ":
+            self.update_square(player)
+
+        # Ref: @TokyoEdtech pt.5
+        chance = list(range(1,10))
+        random.shuffle(chance)
+        for i in chance:
+            if self.squares[i] == " ":
+                self.update_square(i, player)
+                break
 
     # Ref: TokyoEdtech pt4
     def game_tie(self):
@@ -306,7 +334,7 @@ class Board():
         else:
             return False 
 
-    
+  
 board = Board()
 # board.board_structure()
 
@@ -388,17 +416,14 @@ def player_moves():
                     exit()
                     return welcome()
                 else:
-                    break    
-        
+                    break
+    
             # AI Turn
             print("\n\U0001F449 The AI will now make a move... \n")
             time.sleep(1)
-            ai_move = random.randint(0, 9) 
-
-            # Wherever AI places move, put game piece
-            board.update_square(ai_move, AiGamePiece)
+            board.ai_move(AiGamePiece)
             time.sleep(.5)
-
+              
             # Once placed, board refreshes
             refresh_game_board() 
 
@@ -442,11 +467,12 @@ def player_moves():
                     return welcome()
                 else:
                     break
-                
+
         except ValueError:
             # If value invalid, this message will activate 
             print("\n\U0001F449 Uuuummm, that's not a right value. Try again!\n")
-            time.sleep(1)
+            time.sleep(1) 
+
 
         
 def exit():
@@ -472,9 +498,9 @@ def clear_screen():
 
 def main():
     
-    welcome()
-    game_guides()
-    r_u_ready_to_play()
+    # welcome()
+    # game_guides()
+    # r_u_ready_to_play()
     refresh_game_board()
     player_moves()
     exit()

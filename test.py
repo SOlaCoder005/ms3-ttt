@@ -301,19 +301,12 @@ class Board():
         # might be able to call array
         # if self.squares[i] in WINNING_INSTANCES == player:
 
-
     def ai_move(self, player):
         """
         Dictates the AI's move
         The AI will search for the next available space
         """
-        # oppo = " "
-        # if player == PlayerGamePiece:
-        #     oppo == AiGamePiece
-        # if player == AiGamePiece:
-        #     oppo == PlayerGamePiece
-
-        # # Slecting square 5 in a tic-tac-toe grid often gives and advantage to the person who has selected it
+        # Selecting square 5 in a tic-tac-toe grid often gives and advantage to the person who has selected it
         if self.squares[5] == " ":
             self.update_square(player)
 
@@ -324,8 +317,6 @@ class Board():
             if self.squares[i] == " ":
                 self.update_square(i, player)
                 break
-
-
 
     # Ref: TokyoEdtech pt4
     def game_tie(self):
