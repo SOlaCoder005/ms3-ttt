@@ -11,11 +11,13 @@ import random
 # https://www.youtube.com/watch?v=7Djh-Cbgi0E
 import os
 os.system("clear")
+import sys
 
 
 """
 CONST variables
 """
+# Dictionary of icons that the player and AI can choose from 
 GAMEPIECES = {
     # mermaid
     "a": "\U0001F9DE",
@@ -36,28 +38,26 @@ GAMEPIECES = {
     # bomb
     "i": "\U0001F4A3",
     }
-    
-# WINNING_INSTANCES = (
-#     # horizontal instance
-#     (1, 2, 3),
-#     # horizontal instance
-#     (4, 5, 6),
-#     # horizontal instance
-#     (7, 8, 9),
-#     # vertical instance
-#     (1, 4, 7),
-#     # vertical instance
-#     (2, 5, 8),
-#     # vertical instance
-#     (3, 6, 9),
-#     # diagonal instance
-#     (1, 5, 9),
-#     # diagonal instance
-#     (3, 5, 7)
-# )
 
-# Ref: Dawson (2010, p.184)
-OPTIMAL_MOVES = (4, 0, 2, 6, 8, 1, 3, 5, 7)
+# Instances where player or AI can win  
+WINNING_INSTANCES = [
+    # horizontal instance
+    [1, 2, 3],
+    # horizontal instance
+    [4, 5, 6],
+    # horizontal instance
+    [7, 8, 9],
+    # vertical instance
+    [1, 4, 7],
+    # vertical instance
+    [2, 5, 8],
+    # vertical instance
+    [3, 6, 9],
+    # diagonal instance
+    [1, 5, 9],
+    # diagonal instance
+    [3, 5, 7]
+]
 
 
 def welcome():
@@ -69,7 +69,6 @@ def welcome():
     print("Can you put AI in it's place to show it who's boss?\n")
     time.sleep(2)
     print("\nI hope so...\U0001F914\n")
-    print("\n\U0001F3B2 Instructions loading...")
     time.sleep(1.5)
 
 
@@ -78,7 +77,8 @@ def game_guides():
     """
     Tells user how to play the game.
     """
-
+    print("\n\U0001F3B2 Instructions loading...")
+    time.sleep(1.5)
     print(
     
         """
@@ -229,7 +229,7 @@ class PickGamePiece():
 
 pp = PickGamePiece()
 # You dont need to call in main() as this statement calls the class
-pp.player_picks_game_piece()
+# pp.player_picks_game_piece()
 # pp.ai_picks_game_piece()
 
 
@@ -242,6 +242,10 @@ class Board():
         self.squares = [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
 
     def board_structure(self):
+        """
+        Code creates the board structure. 
+        This will be displayed in the terminal. 
+        """
         print("\n")
         print(" %s | %s | %s " % (self.squares[1], self.squares[2], self.squares[3]))
         print("-----------")
@@ -281,25 +285,13 @@ class Board():
         """
         This lists all the possible ways for the play or AI to win the game. 
         """
-        if self.squares[1] == player and self.squares[2] == player and self.squares[3] == player:
-            return True
-        elif self.squares[4] == player and self.squares[5] == player and self.squares[6] == player:
-            return True
-        elif self.squares[7] == player and self.squares[8] == player and self.squares[9] == player:
-            return True
-        elif self.squares[1] == player and self.squares[4] == player and self.squares[7] == player:
-            return True
-        elif self.squares[2] == player and self.squares[5] == player and self.squares[8] == player:
-            return True
-        elif self.squares[3] == player and self.squares[6] == player and self.squares[9] == player:
-            return True
-        elif self.squares[1] == player and self.squares[5] == player and self.squares[9] == player:
-            return True
-        elif self.squares[3] == player and self.squares[5] == player and self.squares[7] == player:
-            return True
-        return False
-        # might be able to call array
-        # if self.squares[i] in WINNING_INSTANCES == player:
+        for instances in WINNING_INSTANCES:
+            outcome = True
+            for board_space in instances:
+                if self.squares[board_space] != player: 
+                    outcome = False
+            if outcome is True: 
+                return True
 
     def ai_move(self, player):
         """
@@ -307,11 +299,11 @@ class Board():
         The AI will search for the next available space
         """
         # Selecting square 5 in a tic-tac-toe grid often gives and advantage to the person who has selected it
-        if self.squares[5] == " ":
-            self.update_square(player)
+        # if self.squares[5] == " ":
+        #     self.update_square(5, player)
 
         # Ref: @TokyoEdtech pt.5
-        chance = list(range(1,10))
+        chance = list(range(1, 10))
         random.shuffle(chance)
         for i in chance:
             if self.squares[i] == " ":
@@ -334,10 +326,8 @@ class Board():
         else:
             return False 
 
-  
-board = Board()
-# board.board_structure()
 
+board = Board()
 
 def refresh_game_board():
     """
@@ -469,17 +459,15 @@ def player_moves():
                     break
 
         except ValueError:
-            # If value invalid, this message will activate 
             print("\n\U0001F449 Uuuummm, that's not a right value. Try again!\n")
             time.sleep(1) 
 
-
-        
+      
 def exit():
     """
-    - Activated when player no longer wants to play
+    Activated when player no longer wants to play
     """
-    print(input("\nPlease press ENTER on your keyboard to exit:\n"))
+    print(input("\n\U0001F449 Please press ENTER on your keyboard to exit:\n"))
     time.sleep(.5) 
     print("Exiting Game mode...\n") 
     time.sleep(1)
@@ -488,19 +476,26 @@ def exit():
 
 def clear_screen():
     """
-    - Clears the terminal
+    Clears the terminal
     """
     # clears the screen
     os.system("clear")
-    # loops back to programme's welcome message
-    return welcome()
+    return restart_program()
+
+# This code has been written by Gribouillis(2010)
+def restart_program():
+    """
+    This clears the terminal and restarts the programme. 
+    """
+    python = sys.executable
+    os.execl(python, python, * sys.argv)
 
 
 def main():
     
-    # welcome()
-    # game_guides()
-    # r_u_ready_to_play()
+    welcome()
+    game_guides()
+    r_u_ready_to_play()
     refresh_game_board()
     player_moves()
     exit()
