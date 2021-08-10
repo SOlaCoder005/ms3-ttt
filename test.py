@@ -255,7 +255,6 @@ class Board():
         This updates the Player's and / or AI's move
         Function PlayerGamePiece or AiGame Pieces needs to be called to trigger the update
         """
-     
         try: 
             if self.squares[board_space] == " ":
                 self.squares[board_space] = player

@@ -393,7 +393,7 @@ def player_moves():
             # AI Turn
             print("\n\U0001F449 The AI will now make a move... \n")
             time.sleep(1)
-            ai_move = random.randint(0, 9)
+            ai_move = random.randint(0, 9) 
 
             # Wherever AI places move, put game piece
             board.update_square(ai_move, AiGamePiece)
