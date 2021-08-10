@@ -351,6 +351,8 @@ Particular mention is paid to the following creators and their content as the re
 
 - **Docs.python.org. 2021.** - [Python Module Index — Python 3.9.6 documentation](https://docs.python.org/3/py-modindex.html)
 
+- **Gribouillis, 2010** - [Restart your python program](https://www.daniweb.com/programming/software-development/code/260268/restart-your-python-program)
+
 - **Guru99.com. 2021.** - [Python time.sleep(): Add Delay to the Code (Example)](https://www.guru99.com/python-time-sleep-delay.html#2)
 
 - **PyPI. 2021.** - [emoji](https://pypi.org/project/emoji/)
