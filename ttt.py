@@ -483,11 +483,12 @@ def clear_screen():
     return restart_program()
 
 
-# This code has been written by Gribouillis (2010)
+# Ref: Gribouillis (2010)
 def restart_program():
     """
     This clears the terminal and restarts the programme. 
     """
+    os.system("clear")
     python = sys.executable
     os.execl(python, python, * sys.argv)
 
