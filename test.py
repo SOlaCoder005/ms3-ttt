@@ -16,11 +16,6 @@ os.system("clear")
 """
 CONST variables
 """
-PlayerWon = ""
-PlayerLost = ""
-PlayerDraw = "DRAW"
-BLANK_SPACE = " "
-BOARD_SQUARES = 9
 GAMEPIECES = {
     # mermaid
     "a": "\U0001F9DE",
@@ -42,24 +37,24 @@ GAMEPIECES = {
     "i": "\U0001F4A3",
     }
     
-WINNING_INSTANCES = (
-    # horizontal instance
-    (1, 2, 3),
-    # horizontal instance
-    (4, 5, 6),
-    # horizontal instance
-    (7, 8, 9),
-    # vertical instance
-    (1, 4, 7),
-    # vertical instance
-    (2, 5, 8),
-    # vertical instance
-    (3, 6, 9),
-    # diagonal instance
-    (1, 5, 9),
-    # diagonal instance
-    (3, 5, 7)
-)
+# WINNING_INSTANCES = (
+#     # horizontal instance
+#     (1, 2, 3),
+#     # horizontal instance
+#     (4, 5, 6),
+#     # horizontal instance
+#     (7, 8, 9),
+#     # vertical instance
+#     (1, 4, 7),
+#     # vertical instance
+#     (2, 5, 8),
+#     # vertical instance
+#     (3, 6, 9),
+#     # diagonal instance
+#     (1, 5, 9),
+#     # diagonal instance
+#     (3, 5, 7)
+# )
 
 # Ref: Dawson (2010, p.184)
 OPTIMAL_MOVES = (4, 0, 2, 6, 8, 1, 3, 5, 7)
@@ -196,6 +191,7 @@ class PickGamePiece():
         Allows user to select game piece.
         This shall be used later and assigned to the player
         """
+        # Hss been assigned 'gloabal' as piece will be called in the game play
         global PlayerGamePiece
         while True:
             try:
@@ -217,9 +213,10 @@ class PickGamePiece():
         - Allows computer ('AI') to select game piece.
         - The AI's Game piece is selected at random.
         """
+        # Hss been assigned 'gloabal' as piece will be called in the game play
         global AiGamePiece
         games_piece_list = list(GAMEPIECES.values())
-        AiGamePiece = random.choice(games_piece_list) #AI sometimes picks the same icon as player, WHY?
+        AiGamePiece = random.choice(games_piece_list)#AI sometimes picks the same icon as player, WHY?
         # AI selects a random game piece except from one chosen by player
         # AiGamePiece = random.choice([x for x in games_piece_list if x != PlayerGamePiece]) #AI sometimes picks the same icon as player, WHY?
         print(
@@ -230,68 +227,99 @@ class PickGamePiece():
         time.sleep(1.5)
 
 
-
 pp = PickGamePiece()
 # You dont need to call in main() as this statement calls the class
 pp.player_picks_game_piece()
-pp.ai_picks_game_piece()
+# pp.ai_picks_game_piece()
 
 
 class Board():
     """
-    - Initialises game board
-    - Reference Source: @TokyoEdtech - # https://www.youtube.com/watch?v=7Djh-Cbgi0E
+    Initialises game board
+    Reference Source: @TokyoEdtech - # https://www.youtube.com/watch?v=7Djh-Cbgi0E
     """
     def __init__(self):
-        self.cells = [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
+        self.squares = [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
 
     def board_structure(self):
         print("\n")
-        print(" %s | %s | %s " % (self.cells[1], self.cells[2], self.cells[3]))
+        print(" %s | %s | %s " % (self.squares[1], self.squares[2], self.squares[3]))
         print("-----------")
-        print(" %s | %s | %s " % (self.cells[4], self.cells[5], self.cells[6]))
+        print(" %s | %s | %s " % (self.squares[4], self.squares[5], self.squares[6]))
         print("-----------")
-        print(" %s | %s | %s " % (self.cells[7], self.cells[8], self.cells[9]))
+        print(" %s | %s | %s " % (self.squares[7], self.squares[8], self.squares[9]))
         print("\n")
 
-    def update_cell(self, board_space, player):
+    def update_square(self, board_space, player):
         """
+        This updates the Player's and / or AI's move
+        Function PlayerGamePiece or AiGame Pieces needs to be called to trigger the update
         """
-        if self.cells[board_space] == " ":
-            self.cells[board_space] = player
-    
+     
+        try: 
+            if self.squares[board_space] == " ":
+                self.squares[board_space] = player
+            elif self.squares[board_space] != " ":
+                pass
+                print("\n\U0001F449 Space is filled! A turn is missed.\n")
+                time.sleep(2)
+            else: 
+                raise ValueError() 
+        except ValueError:
+            print("\nDid not recognise response. Please try again!\n")
+            time.sleep(1)
+            
     # Ref: TokyoEdtech pt3
-    def winning_instances(self, player):
-        """
-        """
-        if self.cells[1] == player and self.cells[2] == player and self.cells[3] == player:
-            return True
-        elif self.cells[4] == player and self.cells[5] == player and self.cells[6] == player:
-            return True
-        elif self.cells[7] == player and self.cells[8] == player and self.cells[9] == player:
-            return True
-        elif self.cells[1] == player and self.cells[4] == player and self.cells[7] == player:
-            return True
-        elif self.cells[2] == player and self.cells[5] == player and self.cells[8] == player:
-            return True
-        elif self.cells[3] == player and self.cells[6] == player and self.cells[9] == player:
-            return True
-        elif self.cells[1] == player and self.cells[5] == player and self.cells[9] == player:
-            return True
-        elif self.cells[3] == player and self.cells[5] == player and self.cells[7] == player:
-            return True
-        return False
-        # if self.cells[i] in WINNING_INSTANCES == player:
-        # might be able to call array
-    
     def new_game_board(self):
         """
         This creates a new empty gameboard.
         This game board is activated if the player wants to play again.
         """
-        self.cells = [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
+        self.squares = [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
+    
+    # Ref: TokyoEdtech pt3
+    def winning_instances(self, player):
+        """
+        This lists all the possible ways for the play or AI to win the game. 
+        """
+        if self.squares[1] == player and self.squares[2] == player and self.squares[3] == player:
+            return True
+        elif self.squares[4] == player and self.squares[5] == player and self.squares[6] == player:
+            return True
+        elif self.squares[7] == player and self.squares[8] == player and self.squares[9] == player:
+            return True
+        elif self.squares[1] == player and self.squares[4] == player and self.squares[7] == player:
+            return True
+        elif self.squares[2] == player and self.squares[5] == player and self.squares[8] == player:
+            return True
+        elif self.squares[3] == player and self.squares[6] == player and self.squares[9] == player:
+            return True
+        elif self.squares[1] == player and self.squares[5] == player and self.squares[9] == player:
+            return True
+        elif self.squares[3] == player and self.squares[5] == player and self.squares[7] == player:
+            return True
+        return False
+        # might be able to call array
+        # if self.squares[i] in WINNING_INSTANCES == player:
+       
 
+    # Ref: TokyoEdtech pt4
+    def game_tie(self):
+        """
+        Checks for a tie after a win is checked
+        """
+        occupied_squares = 0
+        for square in self.squares:
+            if square != " ":
+                # going through each space to check if it's full
+                occupied_squares += 1
+        # Checks if the 9 squares are occupied
+        if occupied_squares == 9:
+            return True
+        else:
+            return False 
 
+    
 board = Board()
 # board.board_structure()
 
@@ -306,9 +334,10 @@ def refresh_game_board():
     os.system("clear")
 
     # loading message
-    print("\n\U0001F3B2 Loading...\n")
+    print("\n\U0001F3B2 Loading game...\n")
+    time.sleep(1)
     os.system("clear")
-    print("\n\U0001F3B2 Loaded.\n")
+    print("\n\U0001F3B2 Game loaded.\n")
     time.sleep(1)
 
     # presents board
@@ -323,54 +352,74 @@ def player_moves():
     """
     while True:
         try:
-
             # Player Turn
-            player_move = int(input("\n\U0001F3B2 Human, Please choose a space between 1-9: \n"))
+            player_move = int(input("\n\U0001F449 Human, Please choose a space between 1-9: \n"))
 
             # Wherever player places move, put game piece
-            board.update_cell(player_move, GAMEPIECES[PlayerGamePiece])
+            board.update_square(player_move, GAMEPIECES[PlayerGamePiece])
 
             # Once placed, board refreshes
             refresh_game_board()
 
-            # Check Player's move for winner
-            # No else statement as this only needs to run if True
-            if board.winning_instances(GAMEPIECES[PlayerGamePiece]) == True:
-                print("\n\U0001F973 Well Done! You've beaten the AI!\n")
+            # Check Player's moves for winner
+            # No 'else statement' is needed as this only needs to run if True
+            if board.winning_instances(GAMEPIECES[PlayerGamePiece]) is True:
+                print("\n\U0001F973  Well Done! You've beaten the AI!\n")
                 yes = "y"
                 no = "n"
                 question = input("\n\U0001F3B2 Do you want to play again? (y/n):\n") 
                 if question == yes:
-                    print("\n Don't get full of yourself...\n")
-                    print("\n You may not win this time!\n")
+                    print("\n\U0001F449 Don't get full of yourself...\n")
+                    print("\n\U0001F449 You may not win this time!\n")
                     board.new_game_board()
                     refresh_game_board()
                     time.sleep(1)
                 elif question == no:
-                    print("\nFine i'm bored anyway!\n")
+                    print("\n\U0001F449 Fine i'm bored anyway!\n")
                     time.sleep(.5)
-                    return exit()
+                    exit()
+                    return welcome()
                 else:
                     break
-        
-            # AI Turn
-            print("\n\U0001F3B2 The AI will now make a move... \n")
-            time.sleep(1)
-            ai_move = random.randint(0, 9)
 
-            # Wherever AI places move, put game piece
-            board.update_cell(ai_move, AiGamePiece)
-            time.sleep(.5)
-
-            # Once placed, board refreshes
-            refresh_game_board() 
-
-            # Check AI's move for winner    
-            if board.winning_instances(AiGamePiece) == True:
-                print("\n\U0001F629 Well, the machine won! Oh Dear...\n")
+            # Check Player's moves for tie
+            if board.game_tie():
+                print("\n Well, this is awkward. You've tied.\n")
+                time.sleep(0.25)
+                print("\n Seems like you both play the same.\n")
                 yes = "y"
                 no = "n"
                 question = input("\n\U0001F3B2 Do you want to play again? (y/n):\n") 
+                if question == yes:
+                    print("\n\U0001F449 Let's see if we can get a winner.\n")
+                    board.new_game_board()
+                    refresh_game_board()
+                    time.sleep(1)
+                elif question == no:
+                    print("\n\U0001F449 Fine i'm bored anyway!\n")
+                    time.sleep(.5)
+                    exit()
+                    return welcome()
+                else:
+                    break
+    
+            # AI Turn
+            print("\n\U0001F449 The AI will now make a move... \n")
+            time.sleep(1)
+            ai_move = random.randint(0, 9)
+            # Wherever AI places move, put game piece
+            board.update_square(ai_move, AiGamePiece)
+            time.sleep(.5)
+              
+            # Once placed, board refreshes
+            refresh_game_board() 
+
+            # Check AI's moves for winner    
+            if board.winning_instances(AiGamePiece) is True:
+                print("\n\U0001F629 Well, the machine won! Oh Dear...\n")
+                yes = "y"
+                no = "n"
+                question = input("\n\U0001F449 Do you want to play again? (y/n):\n") 
                 if question == yes: 
                     print("\n\U0001F4AA Ahhh the will is strong with this one...\n")
                     time.sleep(1)
@@ -378,17 +427,39 @@ def player_moves():
                     refresh_game_board()
                     time.sleep(1)
                 elif question == no:
-                    print("\n\U0001F644 Fine, i'm bored anyway!\n")
+                    print("\n\U0001F449 Fine, i'm bored anyway!\n")
                     time.sleep(.5)
-                    return exit()
+                    exit()
+                    return welcome()
                 else: 
                     break
 
-        except ValueError:
+            # Check AI's moves for tie
+            if board.game_tie():
+                print("\n\U0001F973 Well, this is awkward. You've tied.\n")
+                time.sleep(0.25)
+                print("\n\U0001F973 Seems like you both play the same.")
+                yes = "y"
+                no = "n"
+                question = input("\n\U0001F3B2 Do you want to play again? (y/n):\n") 
+                if question == yes:
+                    print("\n Let's see if we can get a winner.\n")
+                    board.new_game_board()
+                    refresh_game_board()
+                    time.sleep(1)
+                elif question == no:
+                    print("\nFine i'm bored anyway!\n")
+                    time.sleep(.5)
+                    exit()
+                    return welcome()
+                else:
+                    break
 
+        except ValueError:
             # If value invalid, this message will activate 
             print("\n\U0001F449 Uuuummm, that's not a right value. Try again!\n")
-            time.sleep(1)
+            time.sleep(1) 
+
 
         
 def exit():
@@ -414,9 +485,9 @@ def clear_screen():
 
 def main():
     
-    welcome()
-    game_guides()
-    r_u_ready_to_play()
+    # welcome()
+    # game_guides()
+    # r_u_ready_to_play()
     refresh_game_board()
     player_moves()
     exit()
