@@ -249,7 +249,7 @@ class Board():
         print("-----------")
         print(" %s | %s | %s " % (self.squares[7], self.squares[8], self.squares[9]))
         print("\n")
-
+    
     def update_square(self, board_space, player):
         """
         This updates the Player's and / or AI's move
@@ -300,6 +300,32 @@ class Board():
         return False
         # might be able to call array
         # if self.squares[i] in WINNING_INSTANCES == player:
+
+
+    def ai_move(self, player):
+        """
+        Dictates the AI's move
+        The AI will search for the next available space
+        """
+        # oppo = " "
+        # if player == PlayerGamePiece:
+        #     oppo == AiGamePiece
+        # if player == AiGamePiece:
+        #     oppo == PlayerGamePiece
+
+        # # Slecting square 5 in a tic-tac-toe grid often gives and advantage to the person who has selected it
+        if self.squares[5] == " ":
+            self.update_square(player)
+
+        # Ref: @TokyoEdtech pt.5
+        chance = list(range(1,10))
+        random.shuffle(chance)
+        for i in chance:
+            if self.squares[i] == " ":
+                self.update_square(i, player)
+                break
+
+
 
     # Ref: TokyoEdtech pt4
     def game_tie(self):
@@ -404,9 +430,10 @@ def player_moves():
             # AI Turn
             print("\n\U0001F449 The AI will now make a move... \n")
             time.sleep(1)
-            ai_move = random.randint(0, 9)
+            # ai_move = random.randint(0, 10)
             # Wherever AI places move, put game piece
-            board.update_square(ai_move, AiGamePiece)
+            # board.update_square(ai_move, AiGamePiece)
+            board.ai_move(AiGamePiece)
             time.sleep(.5)
               
             # Once placed, board refreshes
