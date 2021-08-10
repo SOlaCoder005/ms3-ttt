@@ -1,17 +1,22 @@
-# Tic-Tac-Toe Game
-
+# Tic-Tac-Toe Game - Programme script
 """
 Imported Libraries and Modules
 """
-import emoji
+
 # Credit: Unicode
-import time 
+import emoji
+
 # Credit: Guru99
+import time 
+
 import random
-# https://www.youtube.com/watch?v=7Djh-Cbgi0E
+
+import sys
+
 import os
 os.system("clear")
-import sys
+
+
 
 
 """
@@ -119,8 +124,8 @@ def r_u_ready_to_play():
 
             if answer == yes:
                 print("\nOkay, let's go! \U0001F60E\n")
+                time.sleep(1.5)
                 return game_pieces_overview()
-                time.sleep(1)
             elif answer == no:
                 print("\n\U0001F92F What! Why not?\n")
                 print("\n\U0001F612 Okay, maybe next time.\n")
@@ -191,7 +196,7 @@ class PickGamePiece():
         Allows user to select game piece.
         This shall be used later and assigned to the player
         """
-        # Hss been assigned 'gloabal' as piece will be called in the game play
+        # PlayerGamePiece has been assigned 'gloabal' as piece will be called in the game play
         global PlayerGamePiece
         while True:
             try:
@@ -213,12 +218,10 @@ class PickGamePiece():
         - Allows computer ('AI') to select game piece.
         - The AI's Game piece is selected at random.
         """
-        # Hss been assigned 'gloabal' as piece will be called in the game play
+        # AiGamePiece has been assigned 'gloabal' as piece will be called in the game play
         global AiGamePiece
         games_piece_list = list(GAMEPIECES.values())
-        AiGamePiece = random.choice(games_piece_list)#AI sometimes picks the same icon as player, WHY?
-        # AI selects a random game piece except from one chosen by player
-        # AiGamePiece = random.choice([x for x in games_piece_list if x != PlayerGamePiece]) #AI sometimes picks the same icon as player, WHY?
+        AiGamePiece = random.choice(games_piece_list)  # AI sometimes picks the same icon as player, WHY?
         print(
             f"\nGreat, the AI has picked '  {AiGamePiece}  ' as it's game piece.\n"
         )
@@ -228,9 +231,6 @@ class PickGamePiece():
 
 
 pp = PickGamePiece()
-# You dont need to call in main() as this statement calls the class
-# pp.player_picks_game_piece()
-# pp.ai_picks_game_piece()
 
 
 class Board():
@@ -253,7 +253,7 @@ class Board():
         print("-----------")
         print(" %s | %s | %s " % (self.squares[7], self.squares[8], self.squares[9]))
         print("\n")
-    
+ 
     def update_square(self, board_space, player):
         """
         This updates the Player's and / or AI's move
@@ -328,6 +328,7 @@ class Board():
 
 
 board = Board()
+
 
 def refresh_game_board():
     """
@@ -407,17 +408,16 @@ def player_moves():
                     return welcome()
                 else:
                     break
-    
+
             # AI Turn
             print("\n\U0001F449 The AI will now make a move... \n")
             time.sleep(1)
             board.ai_move(AiGamePiece)
-            time.sleep(.5)
-              
+            time.sleep(.5)          
             # Once placed, board refreshes
-            refresh_game_board() 
+            refresh_game_board()
 
-            # Check AI's moves for winner    
+            # Check AI's moves for winner
             if board.winning_instances(AiGamePiece) is True:
                 print("\n\U0001F629 Well, the machine won! Oh Dear...\n")
                 yes = "y"
@@ -482,7 +482,8 @@ def clear_screen():
     os.system("clear")
     return restart_program()
 
-# This code has been written by Gribouillis(2010)
+
+# This code has been written by Gribouillis (2010)
 def restart_program():
     """
     This clears the terminal and restarts the programme. 
@@ -491,13 +492,13 @@ def restart_program():
     os.execl(python, python, * sys.argv)
 
 
-def main():
-    
+def main(): 
     welcome()
     game_guides()
     r_u_ready_to_play()
     refresh_game_board()
     player_moves()
     exit()
+
 
 main()
