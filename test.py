@@ -267,7 +267,7 @@ class Board():
         except ValueError:
             print("\nDid not recognise response. Please try again!\n")
             time.sleep(1)
-            
+
     # Ref: TokyoEdtech pt3
     def new_game_board(self):
         """
@@ -275,7 +275,7 @@ class Board():
         This game board is activated if the player wants to play again.
         """
         self.squares = [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
-    
+
     # Ref: TokyoEdtech pt3
     def winning_instances(self, player):
         """
@@ -300,7 +300,6 @@ class Board():
         return False
         # might be able to call array
         # if self.squares[i] in WINNING_INSTANCES == player:
-       
 
     # Ref: TokyoEdtech pt4
     def game_tie(self):
@@ -318,7 +317,7 @@ class Board():
         else:
             return False 
 
-    
+  
 board = Board()
 # board.board_structure()
 
