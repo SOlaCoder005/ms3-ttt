@@ -355,6 +355,8 @@ Particular mention is paid to the following creators and their content as the re
 
 - **Guru99.com. 2021.** - [Python time.sleep(): Add Delay to the Code (Example)](https://www.guru99.com/python-time-sleep-delay.html#2)
 
+- **O’Reilly Online Learning. 2021.** - [Effective Computation in Physics](https://www.oreilly.com/library/view/effective-computation-in/9781491901564/ch04.html)
+
 - **PyPI. 2021.** - [emoji](https://pypi.org/project/emoji/)
 
 - **Prajapati, K., 2020.** - [How to print 😁😛😋🤣emojis using python🐍](https://medium.com/analytics-vidhya/how-to-print-emojis-using-python-2e4f93443f7e)
