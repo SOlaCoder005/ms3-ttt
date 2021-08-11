@@ -43,6 +43,7 @@ function init_terminal() {
 
         term._initialized = true;
 
+
         term.writeln('');
         term_prompt(term);
 
