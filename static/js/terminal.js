@@ -43,7 +43,7 @@ var socket = null;
 
                 term._initialized = true;
 
-                term.writeln('TIC-TAC-TOE GAME');
+                // term.writeln('TIC-TAC-TOE GAME');
                 term.writeln('');
                 term_prompt(term);
 
