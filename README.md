@@ -345,17 +345,31 @@ Particular mention is paid to the following creators and their content as the re
 
 ### :computer: Online Resources 
 
-- **Azu, I., 2013.** -["If" statement without the "else" | Codecademy.](https://www.codecademy.com/forum_questions/526868e5548c352551000f60#:~:text=An%20if%20statement%20looks%20at,else%20statement%20is%20not%20needed)
+- **Alnitak. 2009.** - [String.equals versus == ](https://stackoverflow.com/questions/767372/string-equals-versus)
+
+- **AskPython. 2021.** - [The "in" and "not in" operators in Python - AskPython](https://www.askpython.com/python/examples/in-and-not-in-operators-in-python)
+
+- **Azu, I., 2013.** - ["If" statement without the "else" | Codecademy.](https://www.codecademy.com/forum_questions/526868e5548c352551000f60#:~:text=An%20if%20statement%20looks%20at,else%20statement%20is%20not%20needed)
+
+- **Bir, A., 2019.** [Class Attribute vs. Instance Attribute In Python - DZone Web Dev](https://dzone.com/articles/python-class-attributes-vs-instance-attributes)
 
 - **cdnjs. 2021.** - [font-awesome - Libraries - cdnjs - The #1 free and open source CDN built to make life easier for developers](https://cdnjs.com/libraries/font-awesome)
 
+- **Daksh, D., 2018.** - [Object Oriented Python : Class(es) and Object(s)](https://medium.com/@DakshHub/object-oriented-python-class-es-and-object-s-f9f016674e40)
+
 - **Docs.python.org. 2021.** - [Python Module Index — Python 3.9.6 documentation](https://docs.python.org/3/py-modindex.html)
+
+- **GeeksforGeeks. 2020.** - [Python | Using variable outside and inside the class and method](https://www.geeksforgeeks.org/python-using-variable-outside-and-inside-the-class-and-method/)
 
 - **Gribouillis, 2010** - [Restart your python program](https://www.daniweb.com/programming/software-development/code/260268/restart-your-python-program)
 
 - **Guru99.com. 2021.** - [Python time.sleep(): Add Delay to the Code (Example)](https://www.guru99.com/python-time-sleep-delay.html#2)
 
+- **Kumar, V., 2021.** - [How to use a variable from another function in Python - CodeSpeedy](https://www.codespeedy.com/how-to-use-a-variable-from-another-function-in-python/)
+
 - **O’Reilly Online Learning. 2021.** - [Effective Computation in Physics](https://www.oreilly.com/library/view/effective-computation-in/9781491901564/ch04.html)
+
+- **PYnative Python Programming. 2021.** - [Python range() Explained with Examples](https://pynative.com/python-range-function/)
 
 - **PyPI. 2021.** - [emoji](https://pypi.org/project/emoji/)
 
