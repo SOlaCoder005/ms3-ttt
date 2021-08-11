@@ -1,10 +1,8 @@
-terminal.js 
-
-
-
+/*jshint esversion: 6 */
 var socket = null;
 var term = null;
 var buffer = '';
+var io = ();
 
 function init_socket() {
     socket = io(window.location.protocol + '//' + window.location.host, {
@@ -13,11 +11,11 @@ function init_socket() {
 
     socket.on('connect', function () {
         socket.emit('connection_establish', 'ok');
-        console.log("connected")
+        console.log("connected");
     });
 
     socket.on('console_output', function (msg, cb) {
-        console.log("output:", msg)
+        console.log("output:", msg);
         term.writeln(msg);
         term_short_prompt(term);
         if (cb)
@@ -54,7 +52,7 @@ function init_terminal() {
         term.onData(e => {
             switch (e) {
                 case '\r': // Enter
-                    console.log("command entered: ", buffer)
+                    console.log("command entered: ", buffer);
                     socket.emit('command_entered', buffer);
                     term_prompt(term);
                     break;
