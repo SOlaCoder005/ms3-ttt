@@ -365,7 +365,9 @@ Particular mention is paid to the following creators and their content as the re
 
 - **Python.org. 2021.** - [Python Release Python 3.9.6.](https://www.python.org/downloads/release/python-396/)
 
-- **Pythondocs.readthedocs.io. 2021.**- [Python Intro 1.0 documentation](https://pythondocs.readthedocs.io/en/latest/)
+- **Pythondocs.readthedocs.io. 2021.** - [Python Intro 1.0 documentation](https://pythondocs.readthedocs.io/en/latest/)
+
+- **Ratnakumar, S., 2020.** - [How to prevent favicon.ico requests? Stack Overflow.](https://stackoverflow.com/questions/1321878/how-to-prevent-favicon-ico-requests)
 
 - **Seitz, T., 2012.** - [Picking a Color Palette for Your Game's Artwork | Game Development Envato Tuts+](https://gamedevelopment.tutsplus.com/articles/picking-a-color-palette-for-your-games-artwork--gamedev-1174)
 
