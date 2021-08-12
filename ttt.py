@@ -40,6 +40,7 @@ def welcome_header():
     """
     - Presents welcome message to player
     """
+    clear_screen()
     print("\nWELCOME TO TIC-TAC-TOE! \U0001F609\n")
     time.sleep(1)
 
