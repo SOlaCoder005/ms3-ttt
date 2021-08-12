@@ -145,13 +145,9 @@ The following [colours](https://coolors.co/000000-ff6600-ffcc00-03b7b7-9900cc-f5
 
 The following applications were used to test various aspects of theprogramme. Meeting these requirements were essential to the programme complying with accessibility, coding and performance standards within the programming industry.
 
--   [Dillinger](https://dillinger.io/)
--   [Online Python Compiler](https://www.programiz.com/python-programming/online-compiler/)
-<!-- -   [(Jigsaw) Validator](https://jigsaw.w3.org/css-validator)
--   [JSHint](https://jshint.com/) -->
-<!-- -   [Lighthouse](https://developers.google.com/web/tools/lighthouse)
--   [Wave](https://wave.webaim.org/)
--   [W3C Validator](https://validator.w3.org/) -->
+- [Dillinger](https://dillinger.io/)
+- [Online Python Compiler](https://www.programiz.com/python-programming/online-compiler/)
+- [PEP8 (local and online application)](http://pep8online.com/)
 
 ## 6. Testing
 
@@ -161,9 +157,9 @@ To ensure that the HTML, CSS and JS source-code adhered to industry standards, e
 
 - [W3C Validator](https://validator.w3.org/)
 - [(Jigsaw) Validator](https://jigsaw.w3.org/css-validator)
-- [JShint Validator](https://jshint.com/). 
+<!-- - [JSHint](https://jshint.com/) -->
 
-All the tests produced **_**. Evidence of the tests can be found in the testing repository directory, [here](docs/testing).
+All the tests produced **_**. Evidence of the tests can be found in the testing repository directory, [here](static/docs/testing).
 
 ### **6.2 WAVE: Programme Accessibility Test**
 
@@ -314,15 +310,21 @@ Particular mention is paid to the following creators and their content as the re
 
 -	**Game Concept & Structural Planning** 
 
-    Dawson (2010) – Specifically, page 157-58 and 175-1987 of Dawson’s book assisted greatly in approaching the  planning stages of the project.  
+    Dawson (2010) 
+    
+    - Specifically, page 157-58 and 175-1987 of Dawson’s book assisted greatly in approaching the  planning stages of the project.
 
-### **8.3 Language, Scripts and Modules**
+    TokyoEdtech - https://youtube.com/playlist?list=PLlEgNdBJEO-ky309V4VV9amEZ2vtKge_u(playlist)
+
+    - Gibolous - Restart progamme function
+
+### **8.3 Languages, Libraries, Modules and Scripts**
 
 - **JavaScript:** 
 
     The JavaScript used within the code was part of the  Code Institute’s [Python Essentials repository template]( https://github.com/Code-Institute-Org/python-essentials-template). It has not been edited for the programme to function effectively. 
 
-- **Emoji Module:** 
+- **Unicode's Emoji Module:** 
 
     The Emoji module was imported into the Python script  in order for the emoji icons to be displayed in the terminal. The module was sourced from [Emoji by PyPi](https://pypi.org/project/emoji/) ( PyPI , 2021).
 
