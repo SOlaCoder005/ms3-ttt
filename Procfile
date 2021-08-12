@@ -1,3 +1,3 @@
-web: node js/index.js
+web: node index.js
 
 
