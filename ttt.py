@@ -330,7 +330,7 @@ def exit():
     """
     - Activated when player no longer wants to play the game or programme
     """
-    print(input("\n\U0001F449 Please press ENTER on keyboard to exit:\n"))
+    print(input("\n\U0001F449 Press ANY KEY on your keyboard to exit:\n"))
     time.sleep(.5)
     print("Exiting Game mode...\n")
     time.sleep(1)
