@@ -75,7 +75,7 @@ def welcome_description():
                 raise ValueError()
         except ValueError:
             print(
-                f"\nDidn't recognise yourt respnse '{answer}'. Try again..."
+                f"\nDidn't recognise your respnse '{answer}'. Try again..."
             )
 
 
@@ -101,7 +101,7 @@ def game_guides():
                             --------------
                             7  |  8  |  9
 
-        \U0001F449  You can pick the game piece you want to use on the board\n
+        \U0001F449  You can pick the game piece you want to use on the board.\n
         \U0001F449  To win, you must align your pieces in a row.\n
         \U0001F449  The row can be horizontally, verticaly or diagonally.\n
         \U0001F449  Do this before the AI and you win the game!\n
@@ -135,7 +135,7 @@ def r_u_ready_to_play():
                 raise ValueError()
         except ValueError:
             print(
-                f"\nDidn't recognise yourt respnse '{answer}'. Try again..."
+                f"\nDidn't recognise your respnse ' {answer} '. Try again..."
             )
 
 
@@ -209,7 +209,7 @@ def refresh_game_board():
     board.board_structure()
 
 
-def player_moves():
+def moves():
     """
     - Player and AI will alternate turns until the board is filled
     - If incorrect answer is ned by Player, they are asked to play again.
@@ -217,7 +217,7 @@ def player_moves():
     """
     while True:
         try:
-            # Player Turn
+            # Player's Turn
             player_move = int(input("\n\U0001F449 Human, make a move(1-9):\n"))
 
             # Wherever player places move, put game piece
@@ -270,11 +270,14 @@ def player_moves():
                 else:
                     break
 
-            # AI Turn
+            # AI's Turn
             print("\n\U0001F449 The AI will now make a move... \n")
-            time.sleep(1.5)
+            time.sleep(1)
+
+            # Wherever AI places move, put game piece
             board.ai_move(AiGamePiece)
             time.sleep(.5)
+
             # Once placed, board refreshes
             refresh_game_board()
 
@@ -330,7 +333,7 @@ def exit():
     """
     - Activated when player no longer wants to play the game or programme
     """
-    print(input("\n\U0001F449 Please press ANY KEY on keyboard to exit:\n"))
+    print(input("\n\U0001F449 Please press ENTER on keyboard to exit:\n"))
     time.sleep(.5)
     print("Exiting Game mode...\n")
     time.sleep(1)
@@ -399,7 +402,6 @@ class PickGamePiece():
         print("\nOkay let's play! \U0001F60E\n")
         time.sleep(1.5)
 
-
 pp = PickGamePiece()
 
 
@@ -412,15 +414,26 @@ class Board():
 
     def board_structure(self):
         """
-        Code creates the board structure.
-        This will be displayed in the terminal.
+        - Code creates the board structure.
+        - This will be displayed in the terminal.
+        - The print statements have been formatted in this way to
+          meet line length requirements on PEP8 Validator checks
         """
         print("\n")
-        print(" %s | %s | %s " % (self.squares[1], self.squares[2], self.squares[3]))
+        print(
+            " %s | %s | %s " %
+            (self.squares[1], self.squares[2], self.squares[3])
+        )
         print("-----------")
-        print(" %s | %s | %s " % (self.squares[4], self.squares[5], self.squares[6]))
+        print(
+            " %s | %s | %s " %
+            (self.squares[4], self.squares[5], self.squares[6])
+        )
         print("-----------")
-        print(" %s | %s | %s " % (self.squares[7], self.squares[8], self.squares[9]))
+        print(
+            " %s | %s | %s " %
+            (self.squares[7], self.squares[8], self.squares[9])
+        )
         print("\n")
 
     def update_square(self, board_space, player):
@@ -497,7 +510,7 @@ def main():
     welcome_description()
     r_u_ready_to_play()
     refresh_game_board()
-    player_moves()
+    moves()
     exit()
 
 
