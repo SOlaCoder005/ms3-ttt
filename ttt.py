@@ -1,86 +1,87 @@
 # Tic-Tac-Toe Game - Programme script
-"""
-Imported Libraries and Modules
-"""
-
-# Credit: Unicode
+# Imported Libraries and Modules
 import emoji
-
-# Credit: Guru99
 import time 
-
 import random
-
 import sys
-
 import os
 os.system("clear")
 
+# CONST VARIABLES
 
 
-
-"""
-CONST variables
-"""
-# Dictionary of icons that the player and AI can choose from 
+# Dictionary of icons that the player and AI can choose from
 GAMEPIECES = {
-    # mermaid
-    "a": "\U0001F9DE",
-    # cook
-    "b": "\U0001F9D1",
-    # mouth
-    "c": "\U0001F444",
-    # cat love
-    "d": "\U0001F63B",
-    # ghost
-    "e": "\U0001F47B",
-    # robot head
-    "f": "\U0001F916",
-    # alien
-    "g": "\U0001F47D",
-    # brain
-    "h": "\U0001F9E0",
-    # bomb
-    "i": "\U0001F4A3",
-    }
+    "a": "\U0001F9DE", # mermaid
+    "b": "\U0001F9D1", # cook
+    "c": "\U0001F444", # mouth
+    "d": "\U0001F63B",  # cat love
+    "e": "\U0001F47B",  # ghost
+    "f": "\U0001F916", # robot head
+    "g": "\U0001F47D", # alien
+    "h": "\U0001F9E0", # brain
+    "i": "\U0001F4A3", # bomb
+}
+
 
 # Instances where player or AI can win  
 WINNING_INSTANCES = [
-    # horizontal instance
-    [1, 2, 3],
-    # horizontal instance
-    [4, 5, 6],
-    # horizontal instance
-    [7, 8, 9],
-    # vertical instance
-    [1, 4, 7],
-    # vertical instance
-    [2, 5, 8],
-    # vertical instance
-    [3, 6, 9],
-    # diagonal instance
-    [1, 5, 9],
-    # diagonal instance
-    [3, 5, 7]
+    [1, 2, 3], # horizontal instance 
+    [4, 5, 6], # horizontal instance 
+    [7, 8, 9], # horizontal instance
+    [1, 4, 7],  # vertical instance
+    [2, 5, 8], # vertical instance 
+    [3, 6, 9], # vertical instance
+    [1, 5, 9], # diagonal instance
+    [3, 5, 7] # diagonal instance
 ]
 
-
-def welcome():
+def welcome_header():
     """
-    Greets user when they initially run the game.
-    """
+    - Presents welcome message to player
+    """  
     print("\nWELCOME TO TIC-TAC-TOE! \U0001F609\n")
-    print("This is a place to engage in digital strategic sparing!\n")
-    print("Can you put AI in it's place to show it who's boss?\n")
-    time.sleep(2)
-    print("\nI hope so...\U0001F914\n")
-    time.sleep(1.5)
+    time.sleep(1)
 
 
-def game_guides():
-    
+def welcome_description():
     """
-    Tells user how to play the game.
+    - Greets user when they initially run the game.
+    """  
+    print("This is a place to engage in digital strategic sparing!\n")
+    time.sleep(1)
+    print("Can you put AI in it's place to show it who's boss?\n")
+    time.sleep(1)
+    print("\nI hope so...\U0001F914\n")
+    time.sleep(2)
+
+    yes = "y"
+    no = "n"
+
+    while True:
+        try:
+            answer = input("\n\U0001F3B2 Do you want to play (y/n)?:\n")
+            if answer == yes:
+                print("\n\U0001F449 Great!\n")
+                time.sleep(1.5)
+                return game_guides()
+            elif answer == no:
+                print("\n\U0001F449 Okay no worries!\n")
+                time.sleep(1)
+                print("Exiting Game mode...\n") 
+                time.sleep(1)
+                return restart_program()
+            else: 
+                raise ValueError()
+        except ValueError:
+            print(
+                f"\nSorry, didn't recognise yourt respnse '{answer}'. Try again..."
+            )
+            
+  
+def game_guides():
+    """
+    - Tells user how to play the game.
     """
     print("\n\U0001F3B2 Instructions loading...")
     time.sleep(1.5)
@@ -114,10 +115,11 @@ def game_guides():
 
 def r_u_ready_to_play():
     """
-    Asks user if they are ready to play.
+    - Asks user if they are ready to play.
     """
     yes = "y"
     no = "n"
+
     while True:
         try:
             answer = input("\n\U0001F3B2 Are you ready to play (y/n)?:\n")
@@ -190,160 +192,19 @@ def game_pieces_overview():
     time.sleep(1)
 
 
-class PickGamePiece():
-    def player_picks_game_piece(self):
-        """
-        Allows user to select game piece.
-        This shall be used later and assigned to the player
-        """
-        # PlayerGamePiece has been assigned 'gloabal' as piece will be called in the game play
-        global PlayerGamePiece
-        while True:
-            try:
-                PlayerGamePiece = input("\U0001F3B2 Pick your piece (a-i):\n")           
-                if PlayerGamePiece in GAMEPIECES:
-                    print(
-                        f"\nYou've picked '  {GAMEPIECES[PlayerGamePiece]}  '.\n"
-                    )
-                    return pp.ai_picks_game_piece()
-                else:
-                    raise ValueError()
-            except ValueError:
-                print(
-                    f"\n'{PlayerGamePiece}' is not vaild. Try again.\n"
-                )                  
-
-    def ai_picks_game_piece(self):
-        """
-        - Allows computer ('AI') to select game piece.
-        - The AI's Game piece is selected at random.
-        """
-        # AiGamePiece has been assigned 'gloabal' as piece will be called in the game play
-        global AiGamePiece
-        games_piece_list = list(GAMEPIECES.values())
-        AiGamePiece = random.choice(games_piece_list)  # AI sometimes picks the same icon as player, WHY?
-        print(
-            f"\nGreat, the AI has picked '  {AiGamePiece}  ' as it's game piece.\n"
-        )
-        time.sleep(1)
-        print("\nOkay let's play! \U0001F60E\n")
-        time.sleep(1.5)
-
-
-pp = PickGamePiece()
-
-
-class Board():
-    """
-    Initialises game board
-    Reference Source: @TokyoEdtech - # https://www.youtube.com/watch?v=7Djh-Cbgi0E
-    """
-    def __init__(self):
-        self.squares = [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
-
-    def board_structure(self):
-        """
-        Code creates the board structure. 
-        This will be displayed in the terminal. 
-        """
-        print("\n")
-        print(" %s | %s | %s " % (self.squares[1], self.squares[2], self.squares[3]))
-        print("-----------")
-        print(" %s | %s | %s " % (self.squares[4], self.squares[5], self.squares[6]))
-        print("-----------")
-        print(" %s | %s | %s " % (self.squares[7], self.squares[8], self.squares[9]))
-        print("\n")
- 
-    def update_square(self, board_space, player):
-        """
-        This updates the Player's and / or AI's move
-        Function PlayerGamePiece or AiGame Pieces needs to be called to trigger the update
-        """
-        try: 
-            if self.squares[board_space] == " ":
-                self.squares[board_space] = player
-            elif self.squares[board_space] != " ":
-                pass
-                print("\n\U0001F449 Space is filled! A turn is missed.\n")
-                time.sleep(2)
-            else: 
-                raise ValueError() 
-        except ValueError:
-            print("\nDid not recognise response. Please try again!\n")
-            time.sleep(1)
-
-    # Ref: TokyoEdtech pt3
-    def new_game_board(self):
-        """
-        This creates a new empty gameboard.
-        This game board is activated if the player wants to play again.
-        """
-        self.squares = [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
-
-    # Ref: TokyoEdtech pt3
-    def winning_instances(self, player):
-        """
-        This lists all the possible ways for the play or AI to win the game. 
-        """
-        for instances in WINNING_INSTANCES:
-            outcome = True
-            for board_space in instances:
-                if self.squares[board_space] != player: 
-                    outcome = False
-            if outcome is True: 
-                return True
-
-    def ai_move(self, player):
-        """
-        Dictates the AI's move
-        The AI will search for the next available space
-        """
-        # Selecting square 5 in a tic-tac-toe grid often gives and advantage to the person who has selected it
-        # if self.squares[5] == " ":
-        #     self.update_square(5, player)
-
-        # Ref: @TokyoEdtech pt.5
-        chance = list(range(1, 10))
-        random.shuffle(chance)
-        for i in chance:
-            if self.squares[i] == " ":
-                self.update_square(i, player)
-                break
-
-    # Ref: TokyoEdtech pt4
-    def game_tie(self):
-        """
-        Checks for a tie after a win is checked
-        """
-        occupied_squares = 0
-        for square in self.squares:
-            if square != " ":
-                # going through each space to check if it's full
-                occupied_squares += 1
-        # Checks if the 9 squares are occupied
-        if occupied_squares == 9:
-            return True
-        else:
-            return False 
-
-
-board = Board()
-
-
 def refresh_game_board():
     """
     - Holds the primary fucntions of the game.
     - Refreshesd the board everytime a move is made.
-    - Reference Source: @TokyoEdtech
     """
     # clears the screen
     os.system("clear")
 
     # loading message
-    print("\n\U0001F3B2 Loading game...\n")
+    print("\n\U0001F3B2 Loading board...\n")
     time.sleep(1)
     os.system("clear")
-    print("\n\U0001F3B2 Game loaded.\n")
+    print("\n\U0001F3B2 Board loaded.\n")
     time.sleep(1)
 
     # presents board
@@ -353,7 +214,7 @@ def refresh_game_board():
 def player_moves():
     """
     - Player and AI will alternate turns until the board is filled
-    - If incorrect answer is entered, by Player, ther are asked to play again.
+    - If incorrect answer is entered by Player, they are asked to play again.
     - If AI makes the wrong turn, it will lose a turn
     """
     while True:
@@ -376,7 +237,9 @@ def player_moves():
                 question = input("\n\U0001F3B2 Do you want to play again? (y/n):\n") 
                 if question == yes:
                     print("\n\U0001F449 Don't get full of yourself...\n")
+                    time.sleep(1)
                     print("\n\U0001F449 You may not win this time!\n")
+                    time.sleep(1)
                     board.new_game_board()
                     refresh_game_board()
                     time.sleep(1)
@@ -384,7 +247,7 @@ def player_moves():
                     print("\n\U0001F449 Fine i'm bored anyway!\n")
                     time.sleep(.5)
                     exit()
-                    return welcome()
+                    return welcome_header()
                 else:
                     break
 
@@ -405,13 +268,13 @@ def player_moves():
                     print("\n\U0001F449 Fine i'm bored anyway!\n")
                     time.sleep(.5)
                     exit()
-                    return welcome()
+                    return welcome_header()
                 else:
                     break
 
             # AI Turn
             print("\n\U0001F449 The AI will now make a move... \n")
-            time.sleep(1)
+            time.sleep(1.5)
             board.ai_move(AiGamePiece)
             time.sleep(.5)          
             # Once placed, board refreshes
@@ -433,7 +296,7 @@ def player_moves():
                     print("\n\U0001F449 Fine, i'm bored anyway!\n")
                     time.sleep(.5)
                     exit()
-                    return welcome()
+                    return welcome_header()
                 else: 
                     break
 
@@ -444,7 +307,7 @@ def player_moves():
                 print("\n\U0001F973 Seems like you both play the same.")
                 yes = "y"
                 no = "n"
-                question = input("\n\U0001F3B2 Do you want to play again? (y/n):\n") 
+                question = input("\n\U0001F449 Do you want to play again? (y/n):\n") 
                 if question == yes:
                     print("\n Let's see if we can get a winner.\n")
                     board.new_game_board()
@@ -454,7 +317,7 @@ def player_moves():
                     print("\nFine i'm bored anyway!\n")
                     time.sleep(.5)
                     exit()
-                    return welcome()
+                    return welcome_header()
                 else:
                     break
 
@@ -465,7 +328,7 @@ def player_moves():
       
 def exit():
     """
-    Activated when player no longer wants to play
+    - Activated when player no longer wants to play the game or programme
     """
     print(input("\n\U0001F449 Please press ENTER on your keyboard to exit:\n"))
     time.sleep(.5) 
@@ -476,26 +339,158 @@ def exit():
 
 def clear_screen():
     """
-    Clears the terminal
+    - Clears the terminal
     """
     # clears the screen
     os.system("clear")
     return restart_program()
 
 
-# Ref: Gribouillis (2010)
 def restart_program():
     """
-    This clears the terminal and restarts the programme. 
+    - This clears the terminal and restarts the programme. 
     """
     os.system("clear")
     python = sys.executable
     os.execl(python, python, * sys.argv)
+    return welcome_header()
 
 
-def main(): 
-    welcome()
-    game_guides()
+class PickGamePiece():
+    def player_picks_game_piece(self):
+        """
+        - Allows user to select game piece.
+        - This shall be used later and assigned to the player
+        """
+        # PlayerGamePiece has been assigned 'gloabal' as piece will be called in the gameplay
+        global PlayerGamePiece
+
+        while True:
+            try:
+                PlayerGamePiece = input("\U0001F3B2 Pick your piece (a-i):\n")           
+                if PlayerGamePiece in GAMEPIECES:
+                    print(
+                        f"\nYou've picked '  {GAMEPIECES[PlayerGamePiece]}  '.\n"
+                    )
+                    return pp.ai_picks_game_piece()
+                else:
+                    raise ValueError()
+            except ValueError:
+                print(
+                    f"\n'{PlayerGamePiece}' is not vaild. Try again.\n"
+                )                  
+
+    def ai_picks_game_piece(self):
+        """
+        - Allows computer ('AI') to select game piece.
+        - The AI's Game piece is selected at random.
+        """
+        # AiGamePiece has been assigned 'gloabal' as piece will be called in the game play
+        global AiGamePiece
+
+        games_piece_list = list(GAMEPIECES.values())
+        AiGamePiece = random.choice(games_piece_list)  # AI sometimes picks the same icon as player, WHY?
+        print(
+            f"\nGreat, the AI has picked '  {AiGamePiece}  ' as it's game piece.\n"
+        )
+        time.sleep(1)
+        print("\nOkay let's play! \U0001F60E\n")
+        time.sleep(1.5)
+
+
+pp = PickGamePiece()
+
+
+class Board():
+    """
+    - Initialises game board
+    """
+    def __init__(self):
+        self.squares = [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+    def board_structure(self):
+        """
+        Code creates the board structure. 
+        This will be displayed in the terminal. 
+        """
+        print("\n")
+        print(" %s | %s | %s " % (self.squares[1], self.squares[2], self.squares[3]))
+        print("-----------")
+        print(" %s | %s | %s " % (self.squares[4], self.squares[5], self.squares[6]))
+        print("-----------")
+        print(" %s | %s | %s " % (self.squares[7], self.squares[8], self.squares[9]))
+        print("\n")
+ 
+    def update_square(self, board_space, player):
+        """
+        - This updates the Player's and / or AI's move
+        - Function PlayerGamePiece or AiGamePiece needs to be called to trigger the update
+        """
+        try: 
+            if self.squares[board_space] == " ":
+                self.squares[board_space] = player
+            elif self.squares[board_space] != " ":
+                pass
+                print("\n\U0001F449 Space is filled! A turn is missed.\n")
+                time.sleep(2)
+            else: 
+                raise ValueError() 
+        except ValueError:
+            print("\nDid not recognise response. Please try again!\n")
+            time.sleep(1)
+
+    def new_game_board(self):
+        """
+        - This creates a new empty gameboard.
+        - This game board is activated if the player wants to play again.
+        """
+        self.squares = [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+    def winning_instances(self, player):
+        """
+        - This lists all the possible ways for the play or AI to win the game. 
+        """
+        for instances in WINNING_INSTANCES:
+            outcome = True
+            for board_space in instances:
+                if self.squares[board_space] != player: 
+                    outcome = False
+            if outcome is True: 
+                return True
+
+    def ai_move(self, player):
+        """
+        - Dictates the AI's move
+        - The AI will search for the next available space
+        """
+        chance = list(range(1, 10))
+        random.shuffle(chance)
+        for i in chance:
+            if self.squares[i] == " ":
+                self.update_square(i, player)
+                break
+
+    def game_tie(self):
+        """
+        - Checks for a tie after a win is checked
+        """
+        occupied_squares = 0
+        for square in self.squares:
+            if square != " ":
+                # Going through each space to check if it's full
+                occupied_squares += 1
+        # Checks if the 9 squares are occupied
+        if occupied_squares == 9:
+            return True
+        else:
+            return False 
+
+
+board = Board()
+
+def main():
+    welcome_header()
+    welcome_description()
     r_u_ready_to_play()
     refresh_game_board()
     player_moves()
