@@ -17,13 +17,21 @@
 
 ## 1. Overview
 
-The Tic-Tac-Toe (TTT) programme intends to pay homage to a simpler time, where competitors would get a one-up on eachother through a simple match of Xs & Os. This programme operates as traditional TIC-TAC-TOE, however, it has incorporated some additional elements such as emojis instead of X and Os. Would you like to play?  
+The Tic-Tac-Toe (TTT) game intends to pay homage to a simpler time, where competitors would get a one-up on each other through a simple match of Xs & Os. This programme operates as traditional TIC-TAC-TOE, however, it has incorporated some additional elements such as emojis instead of Xs and Os. 
+With that said, would you like to play?  
 
 **Features Overview** 
 
+-	**Emoji ‘Game Pieces’** 
+    The user can select their desired icon from the list of icons provided. This shall be discussed in more detail in the [Features](#4-Features) section of this README. 
+
+-	**‘Let’s Play’ button**
+
+    This feature allows the user to refresh the application instantly. This too shall be discussed in more detail in the [Features](#4-Features) section of this README.
+
 <!-- ## 2. User Experience (UX)
 
-The [‘5 Planes of UX Design Model’ (5PUXD)](https://medium.com/designcentered/ux-design-5-planes-method-b1b1d6587c05#:~:text=The%20five%20planes%20%E2%80%94%20strategy%2C%20scope,the%20problem%20as%20a%20whole) provides **five** core principles used when creating Programmes and applications.These principles are: 
+The [‘5 Planes of UX Design Model’ (5PUXD)](https://medium.com/designcentered/ux-design-5-planes-method-b1b1d6587c05#:~:text=The%20five%20planes%20%E2%80%94%20strategy%2C%20scope,the%20problem%20as%20a%20whole) provides **five** core principles used when creating Programmes and applications.  These principles are: 
 
 - Strategy
 - Scope

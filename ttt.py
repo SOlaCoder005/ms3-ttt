@@ -245,7 +245,6 @@ def moves():
                     print("\n\U0001F449 Fine i'm bored anyway!\n")
                     time.sleep(.5)
                     exit()
-                    return welcome_header()
                 else:
                     break
 
@@ -266,7 +265,6 @@ def moves():
                     print("\n\U0001F449 Fine i'm bored anyway!\n")
                     time.sleep(.5)
                     exit()
-                    return welcome_header()
                 else:
                     break
 
@@ -299,7 +297,6 @@ def moves():
                     print("\n\U0001F449 Fine, i'm bored anyway!\n")
                     time.sleep(.5)
                     exit()
-                    return welcome_header()
                 else:
                     break
 
@@ -320,7 +317,6 @@ def moves():
                     print("\nFine i'm bored anyway!\n")
                     time.sleep(.5)
                     exit()
-                    return welcome_header()
                 else:
                     break
 
