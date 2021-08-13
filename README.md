@@ -245,6 +245,13 @@ While there were several bugs that arose through the duration of the project, th
     - **Reason:** 
     - **Fix:** adjusted the format of the board_structure()
 
+4. AI picks the same game piece as user sometimes can potentially cause a faulty win for ther player and AI 
+    - **Context:** 
+    - **Reason:** 
+    - **Potential Fix:**
+
+5. Play again prompt in move() function accepted any value, including yes and/or no
+
 
 #### **6.5.2 Unfixed bugs**
 
@@ -256,15 +263,13 @@ While there were several bugs that arose through the duration of the project, th
     - **Context:** 
     - **Reason:** 
     - **Potential Fix:** 
-3. AI picks the same game piece as user sometimes can potentially cause a faulty win for ther player and AI 
-    - **Context:** 
-    - **Reason:** 
-    - **Potential Fix:**
 
 4. If square is out of range, the game crashes 
     - **Context:** 
     - **Reason:** 
     - **Potential Fix:**  
+
+5. Moving index.js to js directory within static
 
 ## 7. Deployment, Access and Extensions
 
