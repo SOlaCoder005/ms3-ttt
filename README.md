@@ -466,6 +466,7 @@ Below is an overview on how to deploy a project via Heroku. This method was used
 ## 8. Credits
 
 ### **8.1 The Project** 
+
 - This application is the final product of the Portfolio Project 3: Python Essentials (a.k.a. Milestone Project 3, MS3).  It is part of the Code Institutes’ (CI) Diploma in Full Stack Software Development Diploma (5P).
 
 #### **8.1.1 Chosen Project Idea** 
@@ -506,7 +507,7 @@ Particular mention is paid to the following creators and their content. The reso
 
 - **Font Awesome:** 
     
-    FontAwesome’s CDN - https://kit.fontawesome.com/1699136767.js, was used for it to support the icon elements used on the index page.  
+    [FontAwesome’s CDN](https://kit.fontawesome.com/1699136767.js), was used for it to support the icon elements used on the index page.  
 
 ## 9. Acknowledgements
 :raised_hands: This project could not have been achieved without the strength given to me by God! 
