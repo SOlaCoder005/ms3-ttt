@@ -29,7 +29,7 @@ With that said, would you like to play?
 
     This feature allows the user to refresh the application instantly. This too shall be discussed in more detail in the [Features](#4-Features) section of this README.
 
-<!-- ## 2. User Experience (UX)
+## 2. User Experience (UX)
 
 The [‘5 Planes of UX Design Model’ (5PUXD)](https://medium.com/designcentered/ux-design-5-planes-method-b1b1d6587c05#:~:text=The%20five%20planes%20%E2%80%94%20strategy%2C%20scope,the%20problem%20as%20a%20whole) provides **five** core principles used when creating Programmes and applications.  These principles are: 
 
@@ -39,34 +39,53 @@ The [‘5 Planes of UX Design Model’ (5PUXD)](https://medium.com/designcentere
 - Skeleton
 - Surface
 
-The **Strategy** and **Scope** plane in the 5PUXD model suggest that consumer trends, needs and competing services should be considered before designing applications. Arguably, these factors are essential to identifying the core deliverables of the application and its services being offered. It also helps designers clarify the applications’ relevance withing the respective industry and potential market demand.
-As such, brief market research was conducted to gain insight into competing services (e.g. ) and user psychographics. It also helped identify the target audience and the perceived objectives (goals) of the programme owner and users’ (first-time and re-occurring) who visit the programme. This is discussed in more detail below.
+While these concepts were considered in the initial stages of forming the application, primary focus was made to the programme’s structure. Most of the planning was dedicated to the ‘flow logic’ and flow control of the programme itself. 
 
-### **2.2 Competitor Analysis**
+Nonetheless, to present an effective functioning programme that is also appealing, the following considerations were made in relation to the 5PUXD planes: 
 
-As part of competitor analysis, the following language applications were reviewed. Analysis of such applications assisted in the conceptualisation and creation of the Programme’s User Experience Deign. 
+### **2.1 Strategy & Scope**
 
-Below is a list of some of the Programmes and applications reviewed:
+The two scopes above, suggest that trends, needs and competing services should be considered before designing applications. In relation to this application, there is not a specific need or consumer demand for the game. Arguably, the game is well known¬ and there are multiple variations of the game. Despite this, there was a need to create a version of game that differed from the traditional Tic-Tac-Toe game design, which uses X and Os. 
 
-- []()
+### **2.2 Structure**
 
-**2.2.1 Valuableness of Programme** 
+This plane encourages designers to consider how the programme will function and the functional requirements of the game. Given that the game would be built through python script, there was a need to consider how the script would be optimally presented in the terminal.  One of the salient steps to creating the programme was establishing the programme’s flow. Specifically, it was essential to the programme’s success to identify;
 
-**2.2.2 Competitor Analysis**
+    (1) what actions the programme needs to execute, 
+    (2) what functions were needed, 
+    (3) which order the code blocks would need to be executed in, and 
+    (4) how they would be executed. This is discussed in more detail in the [Content](#3-Content) section of the README.  
 
-### **2.3 Key Psychographic(s)**
+### **2.3 Skeleton and Surface**
 
-### **2.4 Key Demographic(s)**
+Arguably, these planes encourage designers to focus on building the user interface (UI) of an application or website. As the primary purpose of the site is to run an effective functioning game via Python, less time was allocated to the interface of the programme. As such, the hosting page has few interface elements (e. g. buttons and media links). Similarly, the aesthetics of the site has a simple and clean design. The primary motive behind this choice was to echo nostalgic retro aesthetics, similar to games such as Pac-Man, Tetris and Super Mario bros.  
+
+### **2.4 Valuableness and Relevance of the programme** 
+
+Given current social norms, it can be argued that using Emojis instead of Xs and Os for the game’s board pieces can contribute to increased use of the game due to the popular use of Emojis.  
+Arguably, Emojis have become increasingly relevant to communication practice within many societal cultures. That is, given the rise of technology, Emojis are commonly used in communications by multiple user demographics (i.e. varying in age, culture, gender etc.).  
+Moreover, findings from many contemporary studies and [articles](https://www.independent.co.uk/voices/emoji-generational-divide-smiley-b1900591.html) have indicates that Emojis used in conversation can have just as much contextual meaning and connotations as words (Stevenson, 2021). 
 
 ### **2.5 User stories: programme Owner and User goals**
 
+Below are the following goals of both the users and owner, in this case designer, of the TTT game:
+
 #### **2.5.1 Goals: First-time user** 
+
+1.	Interact with a game that is easy to use. 
+2.	Play a game that is based on strategy and logic
+3.	Play against an online competitor, such as the computer
 
 #### **2.5.2 Goals: Re-occurring user** 
 
+4.	Beat the computer in a logic game
+5.	Play the game on multiple devices (e.g. phones, tablets and desktop/laptop devices) 
 
-#### **2.5.3 Goals: programme Owner**  -->
+#### **2.5.3 Goals: programme Owner**  
 
+6.	Design a UI that is easy to use and navigate around 
+7.	Create and implement a programme that catches invalid responses
+8.	Create and host a game online that can be used on multiple devices (e.g. phones, tablets and desktop/laptop devices)
 
 ## 3. Content
 
@@ -98,23 +117,45 @@ The following [colours](https://coolors.co/000000-ff6600-ffcc00-03b7b7-9900cc-f5
 
 
 - **#F5F5F5**
-<!-- white-->
 - **#9900cc**
-<!-- purple -->
 - **#03b7b7**
-<!-- aqua -->
 - **#ffcc00**
-<!-- yellow -->
 - **#ff6600**
-<!-- orange -->
 - **#000000**
-<!-- black -->
+
 
 ## 4. Features
 
-<!-- This section provides an overview of the features on the Programme, and where relevant, the way in which theses feature(s) address the users’ stories, mentioned in prior sections. -->
+This section provides an overview of the features on the Programme, and where relevant, the way in which theses feature(s) address the users’ stories, mentioned in prior sections.
 
-### **programme-wide features**
+### **4.1 Application landing page**
+### **4.2 Programme and Terminal **
+**4.2.1 Welcome Message**
+| Goal Number| Description|
+|-----|-----|
+| ---------------- | ---------------------|
+**4.2.2 Game Instructions**
+| Goal Number| Description|
+|-----|-----|
+| ---------------- | ---------------------|
+**4.2.3 Game Board Pieces**
+| Goal Number| Description|
+|-----|-----|
+| ---------------- | ---------------------|
+**4.2.4 Game Board**
+| Goal Number| Description|
+|-----|-----|
+| ---------------- | ---------------------|
+**4.2.5 Exit Fucntion**
+| Goal Number| Description|
+|-----|-----|
+| ---------------- | ---------------------|
+### **4.3 Let's Play button **
+| Goal Number| Description|
+|-----|-----|
+| ---------------- | ---------------------|
+![]()
+### **4.4 **
 
 
 | Goal Number| Description|
@@ -130,7 +171,7 @@ The following [colours](https://coolors.co/000000-ff6600-ffcc00-03b7b7-9900cc-f5
 - **CSS**: This source code supported the core styling elements of theprogramme.
 
 - **JavaScript**: This source code supported the dynamic features/capabilities of theprogramme. 
-- **JQuery**: Supported specific functionalities (e.g. _____________________) within the programme through simplifying ‘Document Object Model’ (DOM) manipulation (Developer.mozilla.org, 2021).
+
 
 ### **5.2 Applications, Libraries and Resources**
 
@@ -165,21 +206,21 @@ To ensure that the HTML, CSS and JS source-code adhered to industry standards, e
 
 - [W3C Validator](https://validator.w3.org/)
 - [(Jigsaw) Validator](https://jigsaw.w3.org/css-validator)
-<!-- - [JSHint](https://jshint.com/) -->
+
 
 All the tests produced **_**. Evidence of the tests can be found in the testing repository directory, [here](static/docs/testing).
 
 ### **6.2 WAVE: Programme Accessibility Test**
 
-The [WAVE Accessibility Evaluation Tool](https://wave.webaim.org) was used to evaluate the overall accessibility of ____________programme. It considered factors such as the quantity and suitability of accessibility features used on the Programme (e.g. aria-labels, degree of contrast). The results produced **_**, thus passing the overall test. 
+The [WAVE Accessibility Evaluation Tool](https://wave.webaim.org) was used to evaluate the overall accessibility of TTT programme. It considered factors such as the quantity and suitability of accessibility features used on the Programme (e.g. aria-labels, degree of contrast). The results produced **_**, thus passing the overall test. 
 
 ### **6.3 LIGHTHOUSE: Programme Performance test**
 
-The [Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools) was used to test the performance of the _________________. In relation to performance, the tests indicated that the Programme would operate at an optimal level on desktop devices where each page achieved a score between **91-99 out of 100**. Evidence for the results of each page can be found [here](docs/testing/lighthouse-results).
+The [Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools) was used to test the performance of the TTT. In relation to performance, the tests indicated that the Programme would operate at an optimal level on desktop devices where each page achieved a score between **91-99 out of 100**. Evidence for the results of each page can be found [here](docs/testing/lighthouse-results).
 
 ### **6.4 Programme Responsiveness**
 
-Regarding the Programme’s degree of responsiveness, the programme was accessed on multiple devices (incl. mobile, tablets, desktop, and larger devices) and multiple browsers (incl. FireFox, Google Chrome and Microsoft edge). The __________________ appears to respond appropriately to the changing device screen sizes and altering of browser’s size. Evidence of this is provided below: 
+Regarding the Programme’s degree of responsiveness, the programme was accessed on multiple devices (incl. mobile, tablets, desktop, and larger devices) and multiple browsers (incl. FireFox, Google Chrome and Microsoft edge). The TTT game appears to respond appropriately to the changing device screen sizes and altering of browser’s size. Evidence of this is provided below: 
 
 ![](IMAGE GOES HERE)
 
@@ -188,23 +229,46 @@ Regarding the Programme’s degree of responsiveness, the programme was accessed
 While there were several bugs that arose through the duration of the project, the most notable fixed and unfixed bugs are discussed in more detail below. 
 
 #### **6.5.1 Fixed bugs**
-- **Context:** 
-- **Reason:** 
-- **Fix:** 
 
-<!-- assigning selected emoji to player > used 'global' -->
+1. Using the GamePiece chosen on the game board
+    - **Context:** 
+    - **Reason:** 
+    - **Fix:** assigning selected emoji to player > used 'global'
+
+2. Manipulating the DOM
+    - **Context:** 
+    - **Reason:** 
+    - **Fix:** [moving .j and .css to right file so programe would run]
+
+3. Board PEP8 Online error 
+    - **Context:** 
+    - **Reason:** 
+    - **Fix:** adjusted the format of the board_structure()
+
+
 #### **6.5.2 Unfixed bugs**
 
+1. Screen doesn't clear after screen refresh in the terminal /deployed site. It does in the virtual/cloud IDE
+    - **Context:** 
+    - **Reason:** 
+    - **Potential Fix:** 
+2. Exit game accepts any key but prints input twice before exiting 
+    - **Context:** 
+    - **Reason:** 
+    - **Potential Fix:** 
+3. AI picks the same game piece as user sometimes can potentially cause a faulty win for ther player and AI 
+    - **Context:** 
+    - **Reason:** 
+    - **Potential Fix:**
 
-<!-- **[moving .j and .css to right file so programe would run]** -->
-
-- **Context:** 
-- **Reason:** 
-- **Potential Fix:** 
+4. If square is out of range, the game crashes 
+    - **Context:** 
+    - **Reason:** 
+    - **Potential Fix:**  
 
 ## 7. Deployment, Access and Extensions
 
-The __________________ programme was deployed locally and online via the use of GitHub (web application), GitPod, Git Bash, Heroku and an IDE such as VS Code. In order to access the repo locally, a ‘repo’ - specific SSH Key was created and used also. An overview of how the programme was accessed and deployed are outlined in the sections below. 
+The TTT programme was deployed locally and online via the use of GitHub (web application), GitPod, Git Bash, Heroku and an IDE such as VS Code. In order to access the repo locally, a ‘repo’ - specific SSH Key was created and used also. An overview of how the programme was accessed and deployed are outlined in the sections below. 
 
 ### :unlock: 7.1 Access: Local Clone 
 
@@ -243,7 +307,7 @@ The __________________ programme was deployed locally and online via the use of 
 
 ### :unlock: 7.1.1 Access: GitPod Workspaces
 
-Below is an overview on how to access project via [GitPod](https://gitpod.io/workspaces) which can be accessed directly via the main site or via GitHub. This method was used in the process of writing the code for the ______________ programme:
+Below is an overview on how to access project via [GitPod](https://gitpod.io/workspaces) which can be accessed directly via the main site or via GitHub. This method was used in the process of writing the code for the TTT programme:
 
 |The Process| 
 |-------------|
@@ -253,33 +317,10 @@ Below is an overview on how to access project via [GitPod](https://gitpod.io/wor
 |3.1 **‘Pin’** the unique repo name on the GitPod Workspace. nThis can be accessed by the ellipses button on the right-hand side of the unique repo name. This pin will be deleted automatically if it has not been accessed within 7 – 14 days. |
 |4. Once these steps are taken, you can the access, edit and create changes to the repo using commit, pull and push commands (e.g. 'git push', 'git add .' and 'git pull'). These will update the online GitHub repo (remote repository) also.| 
 
-<!-- ### 7.2 Extensions Install:  Python Extensions
-|The Process – Installing Python v3 and later| 
-|-------------|
-||
-
-|The Process – Installing Python extension for IDE| 
-|-------------|
-|-----------|
-|Notes on interpreter selection too|
-
-Below is an overview on how to deploy a project via GitHub’s GitHub Pages. This method was used to deploy the __________ Programme:
-
-|The Process| 
-|-------------|
-| 1. Create a project **repository** on [GitHub](https://github.com/) using a registered GitHub account. |
-|2. Once the repository is created, click on the repository, then the **Settings** tab, this is the last tab in the top right of the repository’s **navigation bar**. |
-|3. Once on the settings page, navigate to and click on **Pages** (titled as ‘Pages’ as of May 2021) listed in the left-hand menu pane. |
-|4. Under the header - **Source**, select **master branch** from the drop-down list. This will change the neighbouring selector box to **/(root)**. |
-|5. Then click **Save**. |
-|6. Wait for a minute and then **refresh** the webpage. |
-|7. Once refreshing, a green box with the text and clickable link; **'the programme is published at...'**. | 
-|8. Clicking on the Programme’s hyperlink in the green box will direct to the live deployed
-programme. | -->
 
 ### 7.3 Deployment: Heroku
 
-Below is an overview on how to deploy a project via Heroku. This method was used to deploy the ________________Programme. 
+Below is an overview on how to deploy a project via Heroku. This method was used to deploy the TTT programme. 
 
 |The Process| 
 |-------------|
