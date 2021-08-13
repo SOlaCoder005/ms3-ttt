@@ -333,10 +333,12 @@ While there were several bugs that arose through the duration of the project, th
 
     I created sub directories within the parent ‘static’ directory. I then moved the .js and .css files to their respective directories. For the programme to function appropriately, I linked these files in the <head></head> section and the lower section of the index.html. The some index.js and ttt.py files have remained in the root directory as I have yet to find a solution for them to run successfully within a sub directory.  
 
-#### 3. Restructuring print statement within the board_structure () function 
+#### 3. Restructuring print statement within the board_structure() function 
 - **Context:** 
 
     When initially running the ttt.py script through the PEP8 Online, the app retuned an error regarding the length of the print statements that formed the game board structure. 
+
+![](static/docs/testing/screenshots/errorboard().png)
 
 - **Reason:** 
 
@@ -370,54 +372,29 @@ While there were several bugs that arose through the duration of the project, th
 
 - **Context:** 
 
-Initially, when the game finished, the player would be asked if they wanted to play again. Inputting yes or no, triggered the expected subsequent actions in the programme. However, inputting any other key into this prompt automatically triggered the activation of the exit() function. Though this issue was not as pertinent to the programme as the other bugs mentioned, it was not ideal.
+    Initially, when the game finished, the player would be asked if they wanted to play again. Inputting yes or no, triggered the expected subsequent actions in the programme. However, inputting any other key into this prompt automatically triggered the activation of the exit() function. Though this issue was not as pertinent to the programme as the other bugs mentioned, it was not ideal.
 
 - **Fix:**
-
     This issue was resolved by adding an ‘elif’ statement to the pre-existing conditional (if) Specifically, the additional statement states that if the answer inputted to the ‘Play again’ question is anything other than yes or no, the programme will activate the exit function. 
     
-
 #### **6.5.2 Unfixed bugs**
+The following bugs have been recorded and troubleshooted up to the point of submission for the project. However, these bugs have yet to be resolved. With further development 
 
-1. Screen doesn't clear after screen refresh in the terminal /deployed site. It does in the virtual/cloud IDE
-    - **Context:** 
-    - **Reason:** 
-    - **Potential Fix:** 
-2. Exit game accepts any key but prints input twice before exiting 
-    - **Context:** 
-    - **Reason:** 
-    - **Potential Fix:** 
-
-4. If square is out of range, the game crashes 
-    - **Context:** 
-    - **Reason:** 
-    - **Potential Fix:**  
-
-5. Moving index.js to js directory within static 
-
-2. Manipulating the DOM and directory structure
-- **Context:** 
-	The repo template used for this project had the .css and .js files places in the root directory. 
-    
-- **Reason:** 
-
-    In line with coding practices, directories management helps create and manage clean DOMs and locate programme assets.
-
-- **Fix:** 
-
-    I created sub directories within the parent ‘static’ directory. I then moved the .js and .css files to their respective directories. In order for the programme to function appropriately, I linked these files in the <head></head> section and the lower section of the index.html. 
- 
+### 1. Screen doesn't clear after screen refresh in the terminal /deployed site. It does in the virtual/cloud IDE. 
+### 2. exit() function prints input twice before exiting 
+#### 3. If square number selected in input is out of range, the game crashes 
+#### 4. Moving index.js to js sub-directory within static causes the programme to have a 404 error. 
 
 ## 7. Deployment, Access and Extensions
 
-The TTT programme was deployed locally and online via the use of GitHub (web application), GitPod, Git Bash, Heroku and an IDE such as VS Code. In order to access the repo locally, a ‘repo’ - specific SSH Key was created and used also. An overview of how the programme was accessed and deployed are outlined in the sections below. 
+The TTT programme was deployed locally and online via the use of GitHub (web application), GitPod, Git Bash, Heroku and an IDE such as VS Code. To access the repo locally, a ‘repo’ - specific SSH Key was created and used also. An overview of how the programme was accessed and deployed are outlined in the sections below. 
 
 ### :unlock: 7.1 Access: Local Clone 
 
 |The Process – :key: SSH Key| 
 |-------------|
 |Note: You will need this key to clone the repo to the local space (e.g. on the desktop).|
-|1.	Download the GitBash application and create a SSH key. How to create a SSH key can be found [here]( https://inchoo.net/dev-talk/how-to-generate-ssh-keys-for-git-authorization/).|
+|1.	Download the GitBash application and create a SSH key. How to create a SSH key can be found [here](https://inchoo.net/dev-talk/how-to-generate-ssh-keys-for-git-authorization/).|
 |2.	Sign into [GitHub](https://github.com/).|
 |3.	Click the profile icon in the top-right corner of the GitHub webpage, click **Settings**.|
 |4.	Click SSH and GPG Keys tab on the left-hand menu.|
@@ -453,11 +430,11 @@ Below is an overview on how to access project via [GitPod](https://gitpod.io/wor
 
 |The Process| 
 |-------------|
-| 1. Create a project **repository** on [GitHub](https://github.com/) using a registered GitHub account.|
+| 1. Create a project **repository** on [GitHub](https://github.com/) using a registered GitHub account. |
 |2. Once the repository is created, on the repo page, click on the GitPod icon above the repo. This will then direct you to GitPod. Further information on how to get started with GitPod can be found [here](https://www.gitpod.io/docs/getting-started).|
 |3. Once you have accessed (and signed in, if prompted) GitPod, open a new tab. Type or paste the following URL into the new tab: **https://gitpod.io/workspaces**.|
 |3.1 **‘Pin’** the unique repo name on the GitPod Workspace. nThis can be accessed by the ellipses button on the right-hand side of the unique repo name. This pin will be deleted automatically if it has not been accessed within 7 – 14 days. |
-|4. Once these steps are taken, you can the access, edit and create changes to the repo using commit, pull and push commands (e.g. 'git push', 'git add .' and 'git pull'). These will update the online GitHub repo (remote repository) also.| 
+|4. Once these steps are taken, you can the access, edit and create changes to the repo using commit, pull and push commands (e.g. 'git push', 'git add .' and 'git pull'). These will update the online GitHub repo (remote repository) also. |  
 
 
 ### 7.3 Deployment: Heroku
@@ -487,46 +464,55 @@ Below is an overview on how to deploy a project via Heroku. This method was used
 ## 8. Credits
 
 ### **8.1 The Project** 
+- This application is the final product of the Portfolio Project 3: Python Essentials (a.k.a. Milestone Project 3, MS3).  It is part of the Code Institutes’ (CI) Diploma in Full Stack Software Development Diploma (5P).
 
-#### **8.1.1 Project Goals**
+#### **8.1.1 Chosen Project Idea** 
 
-#### **8.1.2 Chosen Project Idea** 
+- Out of several ideas presented, Project Idea 0 was chosen. However, to provide more conceptual structure to the project, the website uses the concepts presented in Project Idea Example 2 as a point of reference as it asked to build a ‘logic’ based game. Specifically, the programme was designed allow to players to exercise their logical and strategic capabilities via the engagement with the game. 
 
 ### **8.2 Content** 
-Particular mention is paid to the following creators and their content as the resources assisted in the overall execution of the project.
+
+Particular mention is paid to the following creators and their content. The resources assisted in the overall execution of the project.
 
 -	**Repository Elements**
 
-    The fundamental content of Code Institute’s [Python Essentials repository template]( https://github.com/Code-Institute-Org/python-essentials-template) was amended and used to form the base of this programme's repository. The repository includes some existing, HTML, CSS, JS and JSON code which has not been changed or removed from the repo. It was essential to utilise this template for the python code to function effectively.
+    The fundamental content of Code Institute’s [Python Essentials repository template](https://github.com/Code-Institute-Org/python-essentials-template) was amended and used to form the base of this programme's repository. The repository includes some existing, HTML, CSS, JS and JSON code which has not been changed or removed from the repo. It was essential to utilise this template for the python code to function effectively.
 
 -	**Game Concept & Structural Planning** 
 
     Dawson (2010) 
     
-    - Specifically, page 157-58 and 175-1987 of Dawson’s book assisted greatly in approaching the  planning stages of the project.
+    - Specifically, page 157-58 and 175-187 of Dawson’s book assisted greatly in approaching the  planning stages of the project.
 
-    TokyoEdtech - https://youtube.com/playlist?list=PLlEgNdBJEO-ky309V4VV9amEZ2vtKge_u(playlist)
+[TokyoEdtech](https://youtube.com/playlist?list=PLlEgNdBJEO-ky309V4VV9amEZ2vtKge_u(playlist)
+-	This Youtuber and his tutorials aided my understanding around  building of the TTT programme, specifically the board_structure() and moves() function.
 
-    - Gibolous - Restart programme function
+Gibolous (2010):  restart_programme() function
+-	This function was used to aid the clearing of the terminal once the exit() function has been activated. 
 
 ### **8.3 Languages, Libraries, Modules and Scripts**
 
 - **JavaScript:** 
 
-    The JavaScript used within the code was part of the  Code Institute’s [Python Essentials repository template]( https://github.com/Code-Institute-Org/python-essentials-template). It has not been edited for the programme to function effectively. 
+    The JavaScript used within the code was part of the Code Institute’s [Python Essentials repository template](https://github.com/Code-Institute-Org/python-essentials-template). It has not been edited for the programme to function effectively. 
 
 - **Unicode's Emoji Module:** 
 
-    The Emoji module was imported into the Python script  in order for the emoji icons to be displayed in the terminal. The module was sourced from [Emoji by PyPi](https://pypi.org/project/emoji/) ( PyPI , 2021).
+    The Emoji module was imported into the Python script for the emoji icons to be displayed in the terminal. The module was sourced from [Emoji by PyPi](https://pypi.org/project/emoji/) ( PyPI , 2021).
 
 - **Font Awesome:** 
     
-    FontAwesome’s CDN - https://kit.fontawesome.com/1699136767.js, was used in order for it to support the icon elements used on the index page.  
-
-
-### **8.4 Media** 
+    FontAwesome’s CDN - https://kit.fontawesome.com/1699136767.js, was used for it to support the icon elements used on the index page.  
 
 ## 9. Acknowledgements
+:raised_hands: This project could not have been achieved without the strength given to me by God! 
+
+:heartpulse: Additional thanks goes out to my Husband for all his loving patience and support. 
+
+I would also like to thank;
+
+- :computer: My mentor for the invaluable advice he has given me in relation to this project and overall coding principles. 
+- :books: The Code Institute for the invaluable coding resources that has aided my learnig.
 
 ## 10. References
 
@@ -579,10 +565,6 @@ Particular mention is paid to the following creators and their content as the re
 - **Unicode.org. 2021.** - [Emoji List, v13.1.](https://unicode.org/emoji/charts/emoji-list.html#1f926_200d_2642_fe0f)
 
 - **W3schools.com. 2021.** - [Python Operators](https://www.w3schools.com/python/python_operators.asp)
-
-
-
-
 
 
 
