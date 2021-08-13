@@ -306,9 +306,8 @@ Regarding the Programme’s degree of responsiveness, the programme was accessed
 While there were several bugs that arose through the duration of the project, the most notable fixed and unfixed bugs are discussed in more detail below. 
 
 #### **6.5.1 Fixed bugs**
-| Bug | Description|
-|-----|-----|
-|1.| Using the player’s and AI’s chose game piece on the game board|
+
+#### 1. Using the player’s and AI’s chose game piece on the game board
 - **Context:** 
 
     Initially, there was difficulty in applying the chosen game piece of the player and AI to the gameboard.
@@ -321,9 +320,7 @@ While there were several bugs that arose through the duration of the project, th
 
     Assigning the Python keyword -  ‘global’ to the game piece variables resolved the issue. Doing so allowed the variable to be called upon in latter functions. 
 
-| Bug | Description|
-|-----|-----|
-|2.| Manipulating the DOM and directory structure |
+#### 2. Manipulating the DOM and directory structure
 - **Context:** 
 	
     The repo template used for this project had the .css and .js files places in the root directory. 
@@ -334,11 +331,9 @@ While there were several bugs that arose through the duration of the project, th
 
 - **Fix:**
 
-    I created sub directories within the parent ‘static’ directory. I then moved the .js and .css files to their respective directories. For the programme to function appropriately, I linked these files in the <head></head> section and the lower section of the index.html. The some index.js and ttt.py files have remained in the root directory as I have yet to find a solution for them to run successfully within a sub directory.
+    I created sub directories within the parent ‘static’ directory. I then moved the .js and .css files to their respective directories. For the programme to function appropriately, I linked these files in the <head></head> section and the lower section of the index.html. The some index.js and ttt.py files have remained in the root directory as I have yet to find a solution for them to run successfully within a sub directory.  
 
-| Bug | Description|
-|-----|-----|
-|3. | Restructuring print statement within the board_structure() function|
+#### 3. Restructuring print statement within the board_structure () function 
 - **Context:** 
 
     When initially running the ttt.py script through the PEP8 Online, the app retuned an error regarding the length of the print statements that formed the game board structure. 
@@ -351,9 +346,7 @@ While there were several bugs that arose through the duration of the project, th
 
     This error was resolved by re-formatting the structure of the print statements mentioned.
 
-| Bug | Description|
-|-----|-----|
-|4.| AI picks the same game piece as player|
+4. AI picks the same game piece as player
 
 - **Context:** 
 
@@ -373,9 +366,7 @@ While there were several bugs that arose through the duration of the project, th
 
 ![](static/docs/testing/screenshots/pickssamepiecefixed.png) 
 
-| Bug | Description|
-|-----|-----|
-|5.| ‘Play again?’ prompt in moves() function accepted any value|
+#### 5. ‘Play again?’ prompt in moves() function accepted any value.
 
 - **Context:** 
 
