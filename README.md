@@ -232,6 +232,7 @@ This section provides an overview of the features on the Programme, and where re
 -	When clicking on the icons, it redirects the player to its respective social media page in an external tab. 
 -	When hovering over the icons, they too turn yellow. This design choice has been selected to indicate to the player that the button triggers an action.
 -	The gamepad icons are used to decorate the page. These collapse into shorter lines to accommodate for the changing screens sizes. 
+
 | Goal Number| Description|
 |-----|-----|
 | 6. | Design a UI that is easy to use and navigate around. |
@@ -305,29 +306,46 @@ Regarding the Programme’s degree of responsiveness, the programme was accessed
 While there were several bugs that arose through the duration of the project, the most notable fixed and unfixed bugs are discussed in more detail below. 
 
 #### **6.5.1 Fixed bugs**
-1. Using the GamePiece chosen on the game board
+1. Using the player’s and AI’s chose game piece on the game board
     - **Context:** 
+Initially, there was difficulty in applying the chosen game piece of the player and AI to the gameboard.
     - **Reason:** 
-    - **Fix:** assigning selected emoji to player > used 'global'
+This issue arose as the variable for the pieces were local variables, only functioning in the code block it was declared in. 
+    - **Fix:** 
+Assigning the Python keyword -  ‘global’ to the game piece variables resolved the issue. Doing so allowed the variable to be called upon in latter functions. 
 
-2. Manipulating the DOM
+2. Manipulating the DOM and directory structure
     - **Context:** 
+	The repo template used for this project had the .css and .js files places in the root directory. 
     - **Reason:** 
-    - **Fix:** [moving .j and .css to right file so programe would run]
+	In line with coding practices, directories management helps create and manage clean DOMs and locate programme assets.
+    - **Fix:** 
+I created sub directories within the parent ‘static’ directory. I then moved the .js and .css files to their respective directories. For the programme to function appropriately, I linked these files in the <head></head> section and the lower section of the index.html. The some index.js and ttt.py files have remained in the root directory as I have yet to find a solution for them to run successfully within a sub directory.  
 
-3. Board PEP8 Online error 
+3. Restructuring print statement within the board_structure () function 
     - **Context:** 
+When initially running the ttt.py script through the PEP8 Online, the app retuned an error regarding the length of the print statements that formed the game board structure. 
     - **Reason:** 
-    - **Fix:** adjusted the format of the board_structure()
-
+The returned error message said that the initial layout of the print statements was too long. This was because I kept the print statement content on one line. 
+    - **Fix:** 
+This error was resolved by re-formatting the structure of the print statements mentioned. 
 4. AI picks the same game piece as user sometimes can potentially cause a faulty win for ther player and AI 
     - **Context:** 
+Initially, the AI sometimes picked the same game piece as the player. While the game would continue to run in these instances, the game would produce a false winner as the programme identifies winning instances by spaces filled by one value type. See below for an example.
+![](docs/testing/screenshots/pickssamepiece.png)
+![](static/docs/testing/Aipickssamepiece.png)
     - **Reason:** 
-    - **Potential Fix:**
+This error arose as the AIGamePiece variable was created to randomly pick a piece out of the ‘GAMEPIECES’ dictionary. 
+    - **Fix:**
+This was resolved by using a conditional statement within the AIGamePiece function. The statement makes the computer pick another piece if it is the same as player’s selected piece. To conceal this process from the player, the statement ‘Sorry an error occurred’ is present. This allowed me as the programmer to know the if statement is working. Below is an example:
+![](static/docs/testing/pickssamepiecefixed.png) 
 
-5. Play again prompt in move() function accepted any value, including yes and/or no
+5. ‘Play again?’ prompt in moves() function accepted any value.
 
-
+- **Context:** 
+Initially, when the game finished, the player would be asked if they wanted to play again. Inputting yes or no, triggered the expected subsequent actions in the programme. However, inputting any other key into this prompt automatically triggered the activation of the exit() function. Though this issue was not as pertinent to the programme as the other bugs mentioned, it was not ideal.
+- **Fix:**
+This issue was resolved by adding an ‘elif’ statement to the pre-existing conditional (if) Specifically, the additional statement states that if the answer inputted to the ‘Play again ?’ question is anything other than yes or no, the programme will activate the exit function. 
 #### **6.5.2 Unfixed bugs**
 
 1. Screen doesn't clear after screen refresh in the terminal /deployed site. It does in the virtual/cloud IDE
@@ -344,7 +362,16 @@ While there were several bugs that arose through the duration of the project, th
     - **Reason:** 
     - **Potential Fix:**  
 
-5. Moving index.js to js directory within static  
+5. Moving index.js to js directory within static 
+
+2. Manipulating the DOM and directory structure
+    - **Context:** 
+	The repo template used for this project had the .css and .js files places in the root directory. 
+    - **Reason:** 
+	In line with coding practices, directories management helps create and manage clean DOMs and locate programme assets.
+    - **Fix:** 
+I created sub directories within the parent ‘static’ directory. I then moved the .js and .css files to their respective directories. In order for the programme to function appropriately, I linked these files in the <head></head> section and the lower section of the index.html. 
+ 
 
 ## 7. Deployment, Access and Extensions
 
