@@ -73,19 +73,20 @@ Below are the following goals of both the users and owner, in this case designer
 #### **2.5.1 Goals: First-time user** 
 
 1.	Interact with a game that is easy to use. 
-2.	Play a game that is based on strategy and logic
-3.	Play against an online competitor, such as the computer
+2.	Play a game that is based on strategy and logic.
+3.	Play against an online competitor, such as the computer.
 
 #### **2.5.2 Goals: Re-occurring user** 
 
-4.	Beat the computer in a logic game
-5.	Play the game on multiple devices (e.g. phones, tablets and desktop/laptop devices) 
+4.	Beat the computer in a logic game.
+5.	Play the game on multiple devices (e.g.  phones, tablets, and desktop/laptop devices).
 
 #### **2.5.3 Goals: programme Owner**  
 
-6.	Design a UI that is easy to use and navigate around 
-7.	Create and implement a programme that catches invalid responses
-8.	Create and host a game online that can be used on multiple devices (e.g. phones, tablets and desktop/laptop devices)
+6.	Design a UI that is easy to use and navigate around. 
+7.	Create and implement a programme that catches invalid responses and responds to users’ input.
+8. Provide user with a feature that allows them to personalise their response and visualise their movement(s) in the game. 
+9.	Create and host a game online that can be used on multiple devices (e.g.  phones, tablets and desktop/laptop devices).
 
 ## 3. Content
 
@@ -127,50 +128,114 @@ The following [colours](https://coolors.co/000000-ff6600-ffcc00-03b7b7-9900cc-f5
 ## 4. Features
 
 This section provides an overview of the features on the Programme, and where relevant, the way in which theses feature(s) address the users’ stories, mentioned in prior sections.
-
-### **4.1 Application landing page**
-### **4.2 Programme and Terminal **
-**4.2.1 Welcome Message**
-| Goal Number| Description|
-|-----|-----|
-| ---------------- | ---------------------|
-**4.2.2 Game Instructions**
-| Goal Number| Description|
-|-----|-----|
-| ---------------- | ---------------------|
-**4.2.3 Game Board Pieces**
-| Goal Number| Description|
-|-----|-----|
-| ---------------- | ---------------------|
-**4.2.4 Game Board**
-| Goal Number| Description|
-|-----|-----|
-| ---------------- | ---------------------|
-**4.2.5 Exit Fucntion**
-| Goal Number| Description|
-|-----|-----|
-| ---------------- | ---------------------|
-### **4.3 Let's Play button **
-| Goal Number| Description|
-|-----|-----|
-| ---------------- | ---------------------|
+### **4.1 Programme and Terminal **
+**4.1.1 Welcome Message**
 ![]()
-### **4.4 **
+-	Once loaded, the terminal presents the user with a welcome message and a short description about the game. 
+-	It then prompts the user by asking them if they want to play the game. 
+-	If yes, the game loads the game instructions.  
+-	If not the game loops back to the start, the welcome message. 
+| Goal Number| Description|
+|-----|-----|
+| 1. | Interact with a game that is easy to use. |
+| 6. | Design a UI that is easy to use and navigate around |
+|7. | Create and implement a programme that catches invalid responses and responds to users’ input. |
+|9. | Create and host a game online that can be used on multiple devices (e.g.  phones, tablets, and desktop/laptop devices). |
+**4.1.2 Game Instructions**
+![]()
 
+-	The game instructions inform the user on how to play the game.
+-	The user is then prompted by being asked if they want to continue to the gameplay. 
+-	If yes, the game loads the game pieces guides.
+-	If not, the game prompt the user to click any key to exit the game. This loops back to the start, the welcome message. 
 
 | Goal Number| Description|
 |-----|-----|
 | ---------------- | ---------------------|
+| 1. | Interact with a game that is easy to use. |
+| 6. | Design a UI that is easy to use and navigate around |
+|7. | Create and implement a programme that catches invalid responses and responds to users’ input. |
+
+**4.1.3 Game Board Pieces**
+![]()
+-	This feature presents the user with the prompt. It asks the user to pick an Emoji from the chart presented in the terminal. 
+-	Once choosing, the computer (AI) picks a random piece also. 
+-	The pieces are called in later functions and is used on the game board.
+| Goal Number| Description|
+|-----|-----|
+| 1. | Interact with a game that is easy to use. |
+| 6. | Design a UI that is easy to use and navigate around |
+|8. | Provide user with a feature that allows them to personalise their response and visualise their movement(s) in the game. |
+**4.1.4 Game Board**
+![]()
+
+-	This feature presents the use with a game board formed of 9 squares. 
+-	The squares are number from 1-9 starting from the left. 
+-	To correspond with the indexing of the squares, the player can place their piece on the board by inputting a number between 1-9. 
+-	When player selects a square, the programme places their selected piece on the boar. This function is repeated and reflects the AI’s moves. 
+| Goal Number| Description|
+|-----|-----|
+| 2. | Play a game that is based on strategy and logic.  |
+| 3.   | Play against an online competitor, such as the computer. |
+|8. | Provide user with a feature that allows them to personalise their response and visualise their movement(s) in the game. |
+
+**4.1.5 Exit Function**
+![]()
+
+-	This function is called at different stages of the game. 
+-	The feature gives the player the opportunity to exit the game should they not want to play it anymore.  
+-	If they choose to exit the game, the game loops back to the welcome message. 
+| Goal Number| Description|
+|-----|-----|
+| 6. | Design a UI that is easy to use and navigate around. |
+|7. | Create and implement a programme that catches invalid responses and responds to users’ input. |
+### **4.1.6 Let's Play button **
+![]()
+
+-	This function is called at different stages of the game. 
+-	The feature gives the player the opportunity to exit the game should they not want to play it anymore.  
+-	If they choose to exit the game, the game loops back to the welcome message. 
+| Goal Number| Description|
+|-----|-----|
+| 6. | Design a UI that is easy to use and navigate around. |
+|7. | Create and implement a programme that catches invalid responses and responds to users’ input.|
+
+
+### **4.2.7 Let's Play button **
+![]()
+
+-	This function is positioned below the terminal on the landing page, it has been positioned here to aid ease of use for the user. 
+-	When clicking on the button, it resets the terminal. Arguably this function is enabled to tackle potential glitches or crashes. 
+-	When hovering over the button, it turns yellow. This design choice has been selected to indicate to the player that the button triggers an action.
+
+| Goal Number| Description|
+|-----|-----|
+| 6. | Design a UI that is easy to use and navigate around. |
+|7. | Create and implement a programme that catches invalid responses and responds to users’ input. |
+
+### **4.1.8 Social Media Links and decorative icons**
+
+![]()
+
+-	This function is positioned below the Let’s play button on the landing page; it too has been positioned here to aid ease of use for the user. 
+-	When clicking on the icons, it redirects the player to its respective social media page in an external tab. 
+-	When hovering over the icons, they too turn yellow. This design choice has been selected to indicate to the player that the button triggers an action.
+-	The gamepad icons are used to decorate the page. These collapse into shorter lines to accommodate for the changing screens sizes. 
+| Goal Number| Description|
+|-----|-----|
+| 6. | Design a UI that is easy to use and navigate around. |
+|5. | Play the game on multiple devices (e.g.  phones, tablets, and desktop/laptop devices). |
+|7. | Create and implement a programme that catches invalid responses and responds to users’ input. |
 
 ## 5. Technologies Used
 
 ### **5.1 Languages**
 
-- **HTML**: This source code supported the fundamental structure of theprogramme. 
+- **HTML**: This source code supported the fundamental structure of the programme. 
 
-- **CSS**: This source code supported the core styling elements of theprogramme.
+- **CSS**: This source code supported the core styling elements of the programme.
 
-- **JavaScript**: This source code supported the dynamic features/capabilities of theprogramme. 
+- **JavaScript**: This source code supported the dynamic features/capabilities of the programme. 
 
 
 ### **5.2 Applications, Libraries and Resources**
@@ -192,7 +257,7 @@ This section provides an overview of the features on the Programme, and where re
 
 ### **5.3 Testing Applications** 
 
-The following applications were used to test various aspects of theprogramme. Meeting these requirements were essential to the programme complying with accessibility, coding and performance standards within the programming industry.
+The following applications were used to test various aspects of the programme. Meeting these requirements were essential to the programme complying with accessibility, coding and performance standards within the programming industry.
 
 - [Dillinger](https://dillinger.io/)
 - [Online Python Compiler](https://www.programiz.com/python-programming/online-compiler/)
@@ -229,7 +294,6 @@ Regarding the Programme’s degree of responsiveness, the programme was accessed
 While there were several bugs that arose through the duration of the project, the most notable fixed and unfixed bugs are discussed in more detail below. 
 
 #### **6.5.1 Fixed bugs**
-
 1. Using the GamePiece chosen on the game board
     - **Context:** 
     - **Reason:** 
@@ -269,7 +333,7 @@ While there were several bugs that arose through the duration of the project, th
     - **Reason:** 
     - **Potential Fix:**  
 
-5. Moving index.js to js directory within static
+5. Moving index.js to js directory within static  
 
 ## 7. Deployment, Access and Extensions
 
@@ -336,9 +400,9 @@ Below is an overview on how to deploy a project via Heroku. This method was used
 ||
 |**NOTE:** If the programme has specialised/ secured content (e.g. personal data or uses a API), there is need to supply the appropriate configuration settings. This can be done by accessing the **Settings** page of the app. [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/e3b664e16366444c8d722c5d8340b340/?child=last) provides further guidance on how to apply such settings. However, no configuration settings were set for the __________ programme as it was not needed. |
 ||
-|2.1 In order for the _______ programme to run, the **Heroku/python and Heroku/nodejs** were selected as part of the Buildpacks option. This allowed the python code to run in the terminal whilst being hoseted on Heroku.|
+|2.1 In order for the _______ programme to run, the **Heroku/python and Heroku/nodejs** were selected as part of the ‘Build packs’ option. This allowed the python code to run in the terminal whilst being hosted on Heroku.|
 ||
-|**NOTE:** As outlined in  [Code Institute’s](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/e3b664e16366444c8d722c5d8340b340/?child=last) guidance, the **Heroku/python and Heroku/nodejs**  Buildpacks **must** be selected in this order in order for the code to run optimally. |
+|**NOTE:** As outlined in  [Code Institute’s](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/e3b664e16366444c8d722c5d8340b340/?child=last) guidance, the **Heroku/python and Heroku/nodejs**  Build packs **must** be selected in this order in order for the code to run optimally. |
 ||
 |3. Once the settings are configured, navigate to the **Deploy page** via the neighbouring tab of the app. On this page choose the appropriate ‘Deployment Method’ (e.g. GitHub). |
 |4. Once selecting the method, log into the respective account and select the repo that is to be shared. |
@@ -360,7 +424,7 @@ Particular mention is paid to the following creators and their content as the re
 
 -	**Repository Elements**
 
-    The fundamental content of Code Institute’s [Python Essentials repository template]( https://github.com/Code-Institute-Org/python-essentials-template) was amedned and used to form the base of this programme's repositoy. The repository includes some existing, HTML, CSS, JS and JSON code which has not been changed or removed from the repo. It was essential to utilise this template for the python code to function effectively.
+    The fundamental content of Code Institute’s [Python Essentials repository template]( https://github.com/Code-Institute-Org/python-essentials-template) was amended and used to form the base of this programme's repository. The repository includes some existing, HTML, CSS, JS and JSON code which has not been changed or removed from the repo. It was essential to utilise this template for the python code to function effectively.
 
 -	**Game Concept & Structural Planning** 
 
@@ -370,7 +434,7 @@ Particular mention is paid to the following creators and their content as the re
 
     TokyoEdtech - https://youtube.com/playlist?list=PLlEgNdBJEO-ky309V4VV9amEZ2vtKge_u(playlist)
 
-    - Gibolous - Restart progamme function
+    - Gibolous - Restart programme function
 
 ### **8.3 Languages, Libraries, Modules and Scripts**
 
