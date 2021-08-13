@@ -375,9 +375,11 @@ While there were several bugs that arose through the duration of the project, th
     Initially, when the game finished, the player would be asked if they wanted to play again. Inputting yes or no, triggered the expected subsequent actions in the programme. However, inputting any other key into this prompt automatically triggered the activation of the exit() function. Though this issue was not as pertinent to the programme as the other bugs mentioned, it was not ideal.
 
 - **Fix:**
+
     This issue was resolved by adding an ‘elif’ statement to the pre-existing conditional (if) Specifically, the additional statement states that if the answer inputted to the ‘Play again’ question is anything other than yes or no, the programme will activate the exit function. 
     
-#### **6.5.2 Unfixed bugs**
+#### **6.5.2 Unfixed bugs*
+
 The following bugs have been recorded and troubleshooted up to the point of submission for the project. However, these bugs have yet to be resolved. With further development 
 
 ### 1. Screen doesn't clear after screen refresh in the terminal /deployed site. It does in the virtual/cloud IDE. 
