@@ -200,7 +200,7 @@ This section provides an overview of the features on the Programme, and where re
 | 6. | Design a UI that is easy to use and navigate around. |
 |7. | Create and implement a programme that catches invalid responses and responds to users’ input. |
 
-### **4.1.6 Let's Play button **
+**4.1.6 Let's Play button**
 ![]()
 
 -	This function is called at different stages of the game. 
@@ -212,7 +212,7 @@ This section provides an overview of the features on the Programme, and where re
 | 6. | Design a UI that is easy to use and navigate around. |
 |7. | Create and implement a programme that catches invalid responses and responds to users’ input.|
 
-### **4.2.7 Let's Play button **
+**4.2.7 Let's Play button**
 ![]()
 
 -	This function is positioned below the terminal on the landing page, it has been positioned here to aid ease of use for the user. 
