@@ -128,13 +128,16 @@ The following [colours](https://coolors.co/000000-ff6600-ffcc00-03b7b7-9900cc-f5
 ## 4. Features
 
 This section provides an overview of the features on the Programme, and where relevant, the way in which theses feature(s) address the users’ stories, mentioned in prior sections.
+
 ### **4.1 Programme and Terminal **
+
 **4.1.1 Welcome Message**
 ![]()
 -	Once loaded, the terminal presents the user with a welcome message and a short description about the game. 
 -	It then prompts the user by asking them if they want to play the game. 
 -	If yes, the game loads the game instructions.  
 -	If not the game loops back to the start, the welcome message. 
+
 | Goal Number| Description|
 |-----|-----|
 | 1. | Interact with a game that is easy to use. |
@@ -161,6 +164,7 @@ This section provides an overview of the features on the Programme, and where re
 -	This feature presents the user with the prompt. It asks the user to pick an Emoji from the chart presented in the terminal. 
 -	Once choosing, the computer (AI) picks a random piece also. 
 -	The pieces are called in later functions and is used on the game board.
+
 | Goal Number| Description|
 |-----|-----|
 | 1. | Interact with a game that is easy to use. |
@@ -173,6 +177,7 @@ This section provides an overview of the features on the Programme, and where re
 -	The squares are number from 1-9 starting from the left. 
 -	To correspond with the indexing of the squares, the player can place their piece on the board by inputting a number between 1-9. 
 -	When player selects a square, the programme places their selected piece on the boar. This function is repeated and reflects the AI’s moves. 
+
 | Goal Number| Description|
 |-----|-----|
 | 2. | Play a game that is based on strategy and logic.  |
@@ -185,6 +190,7 @@ This section provides an overview of the features on the Programme, and where re
 -	This function is called at different stages of the game. 
 -	The feature gives the player the opportunity to exit the game should they not want to play it anymore.  
 -	If they choose to exit the game, the game loops back to the welcome message. 
+
 | Goal Number| Description|
 |-----|-----|
 | 6. | Design a UI that is easy to use and navigate around. |
@@ -194,7 +200,8 @@ This section provides an overview of the features on the Programme, and where re
 
 -	This function is called at different stages of the game. 
 -	The feature gives the player the opportunity to exit the game should they not want to play it anymore.  
--	If they choose to exit the game, the game loops back to the welcome message. 
+-	If they choose to exit the game, the game loops back to the welcome message.
+
 | Goal Number| Description|
 |-----|-----|
 | 6. | Design a UI that is easy to use and navigate around. |
