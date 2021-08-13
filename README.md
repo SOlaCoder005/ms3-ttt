@@ -348,7 +348,7 @@ While there were several bugs that arose through the duration of the project, th
 
     This error was resolved by re-formatting the structure of the print statements mentioned.
 
-4. AI picks the same game piece as player
+#### 4. AI picks the same game piece as player
 
 - **Context:** 
 
