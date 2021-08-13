@@ -484,11 +484,13 @@ Particular mention is paid to the following creators and their content. The reso
     
     - Specifically, page 157-58 and 175-187 of Dawson’s book assisted greatly in approaching the  planning stages of the project.
 
-[TokyoEdtech](https://youtube.com/playlist?list=PLlEgNdBJEO-ky309V4VV9amEZ2vtKge_u(playlist)
--	This Youtuber and his tutorials aided my understanding around  building of the TTT programme, specifically the board_structure() and moves() function.
+    [TokyoEdtech](https://youtube.com/playlist?list=PLlEgNdBJEO-ky309V4VV9amEZ2vtKge_u(playlist)
 
-Gibolous (2010):  restart_programme() function
--	This function was used to aid the clearing of the terminal once the exit() function has been activated. 
+    -	This Youtuber and his tutorials aided my understanding around  building of the TTT programme, specifically the board_structure() and moves() function.
+
+    Gibolous (2010):  restart_programme() function
+    
+    -	This function was used to aid the clearing of the terminal once the exit() function has been activated. 
 
 ### **8.3 Languages, Libraries, Modules and Scripts**
 
