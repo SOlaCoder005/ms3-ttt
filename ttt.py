@@ -23,6 +23,7 @@ GAMEPIECES = {
     "i": "\U0001F4A3",  # bomb
 }
 
+
 # Instances where player or AI can win
 WINNING_INSTANCES = [
     [1, 2, 3],  # horizontal instance
@@ -361,7 +362,7 @@ class PickGamePiece():
         - Allows user to select game piece.
         - This shall be used later and assigned to the player
         """
-        # PlayerGamePiece has been assigned 'gloabal' as piece
+        # PlayerGamePiece has been assigned 'gloabal'
         # This piece will be called in the gameplay
         global PlayerGamePiece
 
@@ -384,19 +385,29 @@ class PickGamePiece():
         """
         - Allows computer ('AI') to select game piece.
         - The AI's Game piece is selected at random.
+        - Conditional has been used to make the AI
+          pick a different piece to the PlayerGamePiece
         """
         # AiGamePiece has been assigned 'gloabal'
-        # This piece will be called in the game play
+        # This piece will be called in the gameplay
         global AiGamePiece
 
+        # Where the AI will pick the piece from
         games_piece_list = list(GAMEPIECES.values())
+
+        # The AI will select piece at random
         AiGamePiece = random.choice(games_piece_list)
-        print(
-            f"\nThe AI has picked ' {AiGamePiece} ' as it's game piece.\n"
-        )
-        time.sleep(1)
-        print("\nOkay let's play! \U0001F60E\n")
-        time.sleep(1.5)
+        if AiGamePiece != GAMEPIECES[PlayerGamePiece]:
+            print(
+                f"\nThe AI has picked ' {AiGamePiece} ' as it's game piece.\n"
+            )
+            time.sleep(1)
+            print("\nOkay let's play! \U0001F60E\n")
+            time.sleep(1.5)
+            return board
+        else:
+            print("\n\U0001F449 Sorry an error occured\n")
+            return pp.ai_picks_game_piece()
 
 pp = PickGamePiece()
 
