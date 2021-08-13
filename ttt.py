@@ -246,6 +246,12 @@ def moves():
                     print("\n\U0001F449 Fine i'm bored anyway!\n")
                     time.sleep(.5)
                     exit()
+                elif question != yes or no:
+                    print("\n\U0001F449 Sorry, that response is not vaild.\n")
+                    time.sleep(.5)
+                    print("\n\U0001F449 The game will now end\n")
+                    time.sleep(.5)
+                    exit()
                 else:
                     break
 
@@ -264,6 +270,12 @@ def moves():
                     time.sleep(1)
                 elif question == no:
                     print("\n\U0001F449 Fine i'm bored anyway!\n")
+                    time.sleep(.5)
+                    exit()
+                elif question != yes or no:
+                    print("\n\U0001F449 Sorry, that response is not vaild.\n")
+                    time.sleep(.5)
+                    print("\n\U0001F449 The game will now end...\n")
                     time.sleep(.5)
                     exit()
                 else:
@@ -290,12 +302,18 @@ def moves():
                     print("\n\U0001F4AA  Ahhh, your will is strong!\n")
                     time.sleep(1)
                     print("\n\U0001F4AA  But, will it be enough?\n")
-                    time.sleep(1)
+                    time.sleep(1.5)
                     board.new_game_board()
                     refresh_game_board()
                     time.sleep(1)
                 elif question == no:
                     print("\n\U0001F449 Fine, i'm bored anyway!\n")
+                    time.sleep(.5)
+                    exit()
+                elif question != yes or no:
+                    print("\n\U0001F449 Sorry, that response is not vaild.\n")
+                    time.sleep(.5)
+                    print("\n\U0001F449 The game will now end\n")
                     time.sleep(.5)
                     exit()
                 else:
@@ -318,6 +336,12 @@ def moves():
                     print("\nFine i'm bored anyway!\n")
                     time.sleep(.5)
                     exit()
+                elif question != yes or no:
+                    print("\n\U0001F449 Sorry, that response is not vaild.\n")
+                    time.sleep(.5)
+                    print("\n\U0001F449 The game will now end\n")
+                    time.sleep(.5)
+                    exit()
                 else:
                     break
 
@@ -330,11 +354,11 @@ def exit():
     """
     - Activated when player no longer wants to play the game or programme
     """
-    print(input("\n\U0001F449 Press ANY KEY on your keyboard to exit:\n"))
+    print(input("\n\U0001F449 Press ENTER on your keyboard to exit:\n"))
     time.sleep(.5)
     print("Exiting Game mode...\n")
     time.sleep(1)
-    return clear_screen()
+    clear_screen()
 
 
 def clear_screen():
