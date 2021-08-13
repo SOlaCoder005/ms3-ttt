@@ -51,10 +51,12 @@ The two scopes above, suggest that trends, needs and competing services should b
 
 This plane encourages designers to consider how the programme will function and the functional requirements of the game. Given that the game would be built through python script, there was a need to consider how the script would be optimally presented in the terminal.  One of the salient steps to creating the programme was establishing the programme’s flow. Specifically, it was essential to the programme’s success to identify;
 
-    (1) what actions the programme needs to execute, 
-    (2) what functions were needed, 
-    (3) which order the code blocks would need to be executed in, and 
-    (4) how they would be executed. This is discussed in more detail in the [Content](#3-Content) section of the README.  
+1. What actions the programme needs to execute, 
+2. What functions were needed, 
+3. Which order the code blocks would need to be executed in, and 
+4. How they would be executed. 
+
+This is discussed in more detail in the [Content](#3-Content) section of the README.  
 
 ### **2.3 Skeleton and Surface**
 
@@ -144,6 +146,7 @@ This section provides an overview of the features on the Programme, and where re
 | 6. | Design a UI that is easy to use and navigate around |
 |7. | Create and implement a programme that catches invalid responses and responds to users’ input. |
 |9. | Create and host a game online that can be used on multiple devices (e.g.  phones, tablets, and desktop/laptop devices). |
+
 **4.1.2 Game Instructions**
 ![]()
 
@@ -170,6 +173,7 @@ This section provides an overview of the features on the Programme, and where re
 | 1. | Interact with a game that is easy to use. |
 | 6. | Design a UI that is easy to use and navigate around |
 |8. | Provide user with a feature that allows them to personalise their response and visualise their movement(s) in the game. |
+
 **4.1.4 Game Board**
 ![]()
 
@@ -195,6 +199,7 @@ This section provides an overview of the features on the Programme, and where re
 |-----|-----|
 | 6. | Design a UI that is easy to use and navigate around. |
 |7. | Create and implement a programme that catches invalid responses and responds to users’ input. |
+
 ### **4.1.6 Let's Play button **
 ![]()
 
@@ -206,7 +211,6 @@ This section provides an overview of the features on the Programme, and where re
 |-----|-----|
 | 6. | Design a UI that is easy to use and navigate around. |
 |7. | Create and implement a programme that catches invalid responses and responds to users’ input.|
-
 
 ### **4.2.7 Let's Play button **
 ![]()
