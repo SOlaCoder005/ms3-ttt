@@ -330,11 +330,11 @@ The W3C and Jigsaw validator produced **0 errors**. Evidence of the tests can be
 
 ### **6.2 WAVE: Programme Accessibility Test**
 
-The [WAVE Accessibility Evaluation Tool](https://wave.webaim.org) was used to evaluate the overall accessibility of TTT programme. It considered factors such as the quantity and suitability of accessibility features used on the Programme (e.g. aria-labels, degree of contrast). The results produced **0 errors**, thus passing the overall test. 
+The [WAVE Accessibility Evaluation Tool](https://wave.webaim.org) was used to evaluate the overall accessibility of TTT programme. It considered factors such as the quantity and suitability of accessibility features used on the Programme (e.g. aria-labels, degree of contrast). The results produced **0 errors**, thus passing the overall test. Evidence for the results of each page can be found [here](https://github.com/SOlaCoder005/ttt-game/blob/main/docs/testing/wave/PASS_ttt_game_wave.webaim.orgresults.pdf).
 
 ### **6.3 LIGHTHOUSE: Programme Performance test**
 
-The [Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools) was used to test the performance of the TTT. In relation to performance, the tests indicated that the Programme would operate at an optimal level on desktop devices where each page achieved a score between **91-99 out of 100**. Evidence for the results of each page can be found [here](https://github.com/SOlaCoder005/ttt-game/tree/main/docs/testing/lighthouse).
+The [Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools) was used to test the performance of the TTT. In relation to performance, the tests indicated that the Programme would operate at an optimal level on desktop devices where each page achieved a score between **91-99 out of 100**. Evidence for the results of each page can be found [here](https://github.com/SOlaCoder005/ttt-game/blob/main/docs/testing/lighthouse/PASS_ttt_game_index.html_lighthouseresults.pdf).
 
 ### **6.4 Programme Responsiveness**
 
