@@ -326,9 +326,9 @@ def moves():
 
             # Check AI's moves for tie
             if board.game_tie():
-                print("\n\U0001F973 Well, this is awkward. You've tied.\n")
+                print("\n\U0001F449 Well, this is awkward. You've tied.\n")
                 time.sleep(0.25)
-                print("\n\U0001F973 Seems like you both play the same.")
+                print("\n\U0001F449 Seems like you both play the same.")
                 yes = "y"
                 no = "n"
                 question = input("\n\U0001F449  Play again? (y/n):\n")
