@@ -313,7 +313,7 @@ Regarding the Programme’s degree of responsiveness, the programme was accessed
 
 While there were several bugs that arose through the duration of the project, the most notable fixed and unfixed bugs are discussed in more detail below. 
 
-#### **6.5.1 Fixed bugs**
+### **6.5.1 Fixed bugs**
 
 #### 1. Using the player’s and AI’s chose game piece on the game board
 
@@ -385,7 +385,7 @@ While there were several bugs that arose through the duration of the project, th
 
     This issue was resolved by adding an ‘elif’ statement to the pre-existing conditional (if) Specifically, the additional statement states that if the answer inputted to the ‘Play again’ question is anything other than yes or no, the programme will activate the exit function.
 
-#### 6. If square-number selected in gameplay is out of range, the game crashes
+#### 6. If number inputted in gameplay is out of the board's square range, the game crashes
 
 - **Context:** 
 
@@ -403,26 +403,29 @@ While there were several bugs that arose through the duration of the project, th
 
 ![](docs/testing/screenshots/rangeerrorfixed.png)
     
-#### **6.5.2 Unfixed bugs**
+### **6.5.2 Unfixed bugs**
 
 The following bugs have been recorded and troubleshooted up to the point of submission for the project. However, these bugs have yet to be resolved. With further development 
 
-### 1. Screen doesn't clear after screen refresh in the terminal /deployed site. It does in the virtual/cloud IDE. 
+#### 1. Screen doesn't clear after screen refresh in the terminal /deployed site. It does in the virtual/cloud IDE. 
 
 - **Context:** 
 
     On the delplyed hosting page, when exiting the game, the terminal runs the required functions, but does not clear the screen. This issue does not arise in the local and cloud IDE that are used. On these platforms the terminal clears. Arguably, clicking the **'Let's Play'** button clears the terminal, and the clearing of the screen does not stop the programme fucntionaing - this error is not ideal from a UX perspective.  
+
     
     ![](docs/testing/screenshots/terminalwontclearonexit.png)
+
 
     In future development of the programme this could be investigated further to find a solution. 
 
 
-### 2. exit() function prints input twice before exiting
+#### 2. exit() function prints input twice before exiting
 
 - **Context:** 
 
     The user can exit the game when the exit() function is activated. They can confirm exiting by pressing any key on their keyboard. While this is helpful, the terminal prints the user's response twice in the terminal. While this does not stop the programme fucntionaing, it's not ideal from a UX perspective.  
+
     
     ![](docs/testing/screenshots/terminalprintstwiceonexit.png)
 
@@ -449,7 +452,9 @@ The following bugs have been recorded and troubleshooted up to the point of subm
 
     Akin to unfixed bug 3., when moving the onclick function to an external .js script, the button element would not work. This issue would also be revisited should this programme be developed further.
 
+
 ![](docs/testing/screenshots/onclickerror.png)
+
 
 
 ## 7. Deployment, Access and Extensions
