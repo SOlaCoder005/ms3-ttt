@@ -29,6 +29,8 @@ With that said, would you like to play?
 
     This feature allows the user to refresh the application instantly. This too shall be discussed in more detail in the [Features](#4-Features) section of this README.
 
+
+
 ## 2. User Experience (UX)
 
 The [‘5 Planes of UX Design Model’ (5PUXD)](https://medium.com/designcentered/ux-design-5-planes-method-b1b1d6587c05#:~:text=The%20five%20planes%20%E2%80%94%20strategy%2C%20scope,the%20problem%20as%20a%20whole) provides **five** core principles used when creating Programmes and applications.  These principles are: 
@@ -96,6 +98,8 @@ As an Application creator / Site owner, I...
 8. Want to provide the user with a feature that allows them to personalise their response and visualise their movement(s) in the game. 
 9.	Want to create and host an online game that can be used on multiple devices (e.g.phones, tablets and desktop/laptop devices).
 
+
+
 ## 3. Content
 
 This section discusses various design elements of the programme. Formulating and executing such elements were integral the development of the programme. Arguably, consideration of these factors echoes the premises of the latter planes of the 5PUXD Model. For instance, when designing the programme, it was essential to identify the required information of the programme (structure) and how users can access this content (skeleton).
@@ -131,6 +135,7 @@ The following [colours](https://coolors.co/000000-ff6600-ffcc00-03b7b7-9900cc-f5
 - **#FFCC00**
 - **#FF6600**
 - **#000000**
+
 
 
 ## 4. Features
@@ -245,6 +250,8 @@ This section provides an overview of the features on the Programme, and where re
 |5. | Want to be able to play the game on multiple devices (e.g.  phones, tablets, and desktop/laptop devices). |
 |7. | Want to create and implement a programme that catches invalid responses and responds to users’ input. |
 
+
+
 ## 5. Technologies Used
 
 ### **5.1 Languages**
@@ -282,6 +289,8 @@ The following applications were used to test various aspects of the programme. M
 - [Dillinger](https://dillinger.io/)
 - [Online Python Compiler](https://www.programiz.com/python-programming/online-compiler/)
 - [PEP8 (local and online application)](http://pep8online.com/)
+
+
 
 ## 6. Testing
 
@@ -446,7 +455,7 @@ The following bugs have been recorded and troubleshooted up to the point of subm
     This issue would be revisited should this programme be developed further. 
 
 
-#### 4. onclick attibute within the button tag on the HTML page
+#### 4. onclick attribute within the button tag on the HTML page
 
 - **Context:** 
 
@@ -478,7 +487,7 @@ The TTT programme was deployed locally and online via the use of GitHub (web app
 |-------------|
 |1.	Click the **’+’** icon in the top-right icon on the web browser and select **‘New Repository’**. You will then be directed to a webpage titled ‘Create a new repository’.| 
 |2. Fill out the required areas. Ensure the repository has been assigned a name and has a README.md created. The README file can be added by selecting the **'Add a README file'** option at the bottom of the ‘Create a new repository’ form.|
-|3.  Copy the SSH key from the repo. See blow on how to do this: |
+|3. Copy the SSH key from the repo. See blow on how to do this: |
 
 
 | :key: Implementing SSH Key |
@@ -492,8 +501,8 @@ The TTT programme was deployed locally and online via the use of GitHub (web app
 |3.7 Select the folder you want to clone the repo to.|
 |3.8 In the terminal box, type **‘git clone’**.|
 |3.9 Then copy the SSH key after the git clone command. Then press enter.|
-|3.10 The terminal should present the pathway to the cloned repository. For instance, this ___________ project will display the following in the VSCode’s terminal:| 
-|- **…C:\Users\missm\Documents\GIT\__________>**|
+|3.10 The terminal should present the pathway to the cloned repository. For instance, the TTT programme will display the following in the VSCode’s terminal:| 
+|- **…C:\Users\missm\Documents\GIT\ttt-game>**|
 |3.11 Once cloned, you will be able to edit the repo locally and commit, pull and push changes to the online GitHub repo (remote repository) using terminal commands (e.g. 'git push', 'git add .' and 'git pull').| 
 
 ### :unlock: 7.1.1 Access: GitPod Workspaces
@@ -520,17 +529,18 @@ Below is an overview on how to deploy a project via Heroku. This method was used
 | 1. Once signing up to the free version of Heroku; create a new app via [Heroku’s landing page](https://dashboard.heroku.com/apps). This can be done by clicking the **’New’ button** on the landing page and **’Create a new app’** from the drop-down menu. |
 |2. Fill out the requested information. |
 ||
-|**NOTE:** If the programme has specialised/ secured content (e.g. personal data or uses a API), there is need to supply the appropriate configuration settings. This can be done by accessing the **Settings** page of the app. [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/e3b664e16366444c8d722c5d8340b340/?child=last) provides further guidance on how to apply such settings. However, no configuration settings were set for the __________ programme as it was not needed. |
+|**NOTE:** If the programme has specialised/ secured content (e.g. personal data or uses a API), there is need to supply the appropriate configuration settings. This can be done by accessing the **Settings** page of the app. [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/e3b664e16366444c8d722c5d8340b340/?child=last) provides further guidance on how to apply such settings. However, no configuration settings were set for the programme as it was not needed. |
 ||
-|2.1 In order for the _______ programme to run, the **Heroku/python and Heroku/nodejs** were selected as part of the ‘Build packs’ option. This allowed the python code to run in the terminal whilst being hosted on Heroku.|
+|2.1 In order for the programme to run, the **Heroku/python and Heroku/nodejs** were selected as part of the ‘Build packs’ option. This allowed the python code to run in the terminal whilst being hosted on Heroku.|
 ||
 |**NOTE:** As outlined in  [Code Institute’s](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/e3b664e16366444c8d722c5d8340b340/?child=last) guidance, the **Heroku/python and Heroku/nodejs**  Build packs **must** be selected in this order in order for the code to run optimally. |
 ||
 |3. Once the settings are configured, navigate to the **Deploy page** via the neighbouring tab of the app. On this page choose the appropriate ‘Deployment Method’ (e.g. GitHub). |
 |4. Once selecting the method, log into the respective account and select the repo that is to be shared. |
-|5. Once connected, select either the automatic or manual deployment option. This can be fount on the last two rows of the Deploy page. For the ______programme app, the manual deploy option was selected by clicking the **’Deploy Branch** button.  The domain for the programme can be accessed via the Settings and Deploy pages, this is in the ‘Domains’ and ‘Manual Deploy’ rows of each respective page. |
+|5. Once connected, select either the automatic or manual deployment option. This can be fount on the last two rows of the Deploy page. For the TTT programme app, the manual deploy option was selected by clicking the **’Deploy Branch** button.  The domain for the programme can be accessed via the Settings and Deploy pages, this is in the ‘Domains’ and ‘Manual Deploy’ rows of each respective page. |
 ||
 |**NOTE:** As this is an overview of deploying a programme via Heroku (with Git) - further guidance on deployment practice can be found [here](https://devcenter.heroku.com/articles/git). |
+
 
 
 ## 8. Credits
@@ -579,6 +589,8 @@ Particular mention is paid to the following creators and their content. The reso
     
     [FontAwesome’s CDN](https://kit.fontawesome.com/1699136767.js), was used for it to support the icon elements used on the index page.  
 
+
+
 ## 9. Acknowledgements
 :raised_hands: This project could not have been achieved without the strength given to me by God! 
 
@@ -588,6 +600,8 @@ I would also like to thank;
 
 - :computer: My mentor for the invaluable advice he has given me in relation to this project and overall coding principles. 
 - :books: The Code Institute for the invaluable coding resources that has aided my learnig.
+
+
 
 ## 10. References
 
