@@ -145,7 +145,11 @@ This section provides an overview of the features on the Programme, and where re
 ### **4.1 Programme and Terminal **
 
 **4.1.1 Welcome Message**
-![]()
+
+
+![](docs/readme-content/welcomemessage.png)
+
+
 -	Once loaded, the terminal presents the user with a welcome message and a short description about the game. 
 -	It then prompts the user by asking them if they want to play the game. 
 -	If yes, the game loads the game instructions.  
@@ -159,7 +163,10 @@ This section provides an overview of the features on the Programme, and where re
 |9. | Create and host a game online that can be used on multiple devices (e.g.  phones, tablets, and desktop/laptop devices). |
 
 **4.1.2 Game Instructions**
-![]()
+
+
+![](docs/readme-content/gameinstructions.png)
+
 
 -	The game instructions inform the user on how to play the game.
 -	The user is then prompted by being asked if they want to continue to the gameplay. 
@@ -174,7 +181,11 @@ This section provides an overview of the features on the Programme, and where re
 |7. | Want to create and implement a programme that catches invalid responses and responds to users’ input. |
 
 **4.1.3 Game Board Pieces**
-![]()
+
+
+![](docs/readme-content/boardpieces.png)
+
+
 -	This feature presents the user with the prompt. It asks the user to pick an Emoji from the chart presented in the terminal. 
 -	Once choosing, the computer (AI) picks a random piece also. 
 -	The pieces are called in later functions and is used on the game board.
@@ -186,7 +197,10 @@ This section provides an overview of the features on the Programme, and where re
 |8. | Want to provide the user with a feature that allows them to personalise their response and visualise their movement(s) in the game. |
 
 **4.1.4 Game Board**
-![]()
+
+
+![](docs/readme-content/boardpresented.png)
+
 
 -	This feature presents the use with a game board formed of 9 squares. 
 -	The squares are number from 1-9 starting from the left. 
@@ -200,7 +214,10 @@ This section provides an overview of the features on the Programme, and where re
 |8. | Want to provide the user with a feature that allows them to personalise their response and visualise their movement(s) in the game. |
 
 **4.1.5 Exit Function**
-![]()
+
+
+![](docs/readme-content/exitfunction.png)
+
 
 -	This function is called at different stages of the game. 
 -	The feature gives the player the opportunity to exit the game should they not want to play it anymore.  
@@ -211,20 +228,12 @@ This section provides an overview of the features on the Programme, and where re
 | 6. | Intend to Intend to design a UI that is easy to use and navigate around. |
 |7. | Want to create and implement a programme that catches invalid responses and responds to users’ input. |
 
+
 **4.1.6 Let's Play button**
-![]()
 
--	This function is called at different stages of the game. 
--	The feature gives the player the opportunity to exit the game should they not want to play it anymore.  
--	If they choose to exit the game, the game loops back to the welcome message.
 
-| Goal Number| Description|
-|-----|-----|
-| 6. | Intend to Intend to design a UI that is easy to use and navigate around. |
-|7. | Want to create and implement a programme that catches invalid responses and responds to users’ input.|
+![](docs/readme-content/letsplaybtn.png)
 
-**4.2.7 Let's Play button**
-![]()
 
 -	This function is positioned below the terminal on the landing page, it has been positioned here to aid ease of use for the user. 
 -	When clicking on the button, it resets the terminal. Arguably this function is enabled to tackle potential glitches or crashes. 
@@ -235,7 +244,8 @@ This section provides an overview of the features on the Programme, and where re
 | 6. | Intend to Intend to design a UI that is easy to use and navigate around. |
 |7. | Want to create and implement a programme that catches invalid responses and responds to users’ input. |
 
-### **4.1.8 Social Media Links and decorative icons**
+
+### **4.1.7 Social Media Links and decorative icons**
 
 ![]()
 
@@ -249,6 +259,16 @@ This section provides an overview of the features on the Programme, and where re
 | 6. | Intend to Intend to design a UI that is easy to use and navigate around. |
 |5. | Want to be able to play the game on multiple devices (e.g.  phones, tablets, and desktop/laptop devices). |
 |7. | Want to create and implement a programme that catches invalid responses and responds to users’ input. |
+
+### 4.2 Future Considerations 
+
+In refelction, should the programme be developed further in the future the some of the following features would attempted to be implamented:
+
+1. Allow the player to play the TTT game up to 3 times before declaring a winner. 
+
+2. Creating a HighScore board where players can input their name. This is likely to appeal to re-occouring users of the game.
+
+3. Implement a more intuitive modern interface for the game. This would require a greater use of JavaScript code. Ideally, it would refelect a similar design to other online [Tic-Tac-Toe games](https://playtictactoe.org). 
 
 
 
