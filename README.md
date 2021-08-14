@@ -551,6 +551,8 @@ I would also like to thank;
 
 - **Kumar, V., 2021.** - [How to use a variable from another function in Python - CodeSpeedy](https://www.codespeedy.com/how-to-use-a-variable-from-another-function-in-python/)
 
+- **Monica, I., & Maruseac, M., 2021.** - [Is there a greater than but less than function in python?](https://stackoverflow.com/questions/20308588/is-there-a-greater-than-but-less-than-function-in-python)
+
 - **O’Reilly Online Learning. 2021.** - [Effective Computation in Physics](https://www.oreilly.com/library/view/effective-computation-in/9781491901564/ch04.html)
 
 - **PYnative Python Programming. 2021.** - [Python range() Explained with Examples](https://pynative.com/python-range-function/)
@@ -570,6 +572,8 @@ I would also like to thank;
 - **Unicode.org. 2021.** - [Emoji List, v13.1.](https://unicode.org/emoji/charts/emoji-list.html#1f926_200d_2642_fe0f)
 
 - **W3schools.com. 2021.** - [Python Operators](https://www.w3schools.com/python/python_operators.asp)
+
+
 
 
 
