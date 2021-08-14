@@ -74,21 +74,27 @@ Below are the following goals of both the users and owner, in this case designer
 
 #### **2.5.1 Goals: First-time user** 
 
-1.	Interact with a game that is easy to use. 
-2.	Play a game that is based on strategy and logic.
-3.	Play against an online competitor, such as the computer.
+As a first-time user, I...
+
+1.	Expect to interact with a game that is easy to use. 
+2.	Want to play a game that is based on strategy and logic.
+3.	Intend to play against an online competitor, such as the computer.
 
 #### **2.5.2 Goals: Re-occurring user** 
 
-4.	Beat the computer in a logic game.
-5.	Play the game on multiple devices (e.g.  phones, tablets, and desktop/laptop devices).
+As a re-occuring user, I...
 
-#### **2.5.3 Goals: programme Owner**  
+4.	Want to beat the computer in a logic game.
+5.	Want to be able to play the game on multiple devices (e.g. phones, tablets, and desktop/laptop devices).
 
-6.	Design a UI that is easy to use and navigate around. 
-7.	Create and implement a programme that catches invalid responses and responds to users’ input.
-8. Provide user with a feature that allows them to personalise their response and visualise their movement(s) in the game. 
-9.	Create and host a game online that can be used on multiple devices (e.g.  phones, tablets and desktop/laptop devices).
+#### **2.5.3 Goals: Application creator /Site owner** 
+
+As an Application creator / Site owner, I...
+
+6.	Intend to Intend to design a UI that is easy to use and navigate around. 
+7.	Want to create and implement a programme that catches invalid responses and responds to users’ input.
+8. Want to provide the user with a feature that allows them to personalise their response and visualise their movement(s) in the game. 
+9.	Want to create and host an online game that can be used on multiple devices (e.g.phones, tablets and desktop/laptop devices).
 
 ## 3. Content
 
@@ -142,9 +148,9 @@ This section provides an overview of the features on the Programme, and where re
 
 | Goal Number| Description|
 |-----|-----|
-| 1. | Interact with a game that is easy to use. |
-| 6. | Design a UI that is easy to use and navigate around |
-|7. | Create and implement a programme that catches invalid responses and responds to users’ input. |
+| 1. | Expect to interact with a game that is easy to use. |
+| 6. | Intend to design a UI that is easy to use and navigate around |
+|7. | Want to create and implement a programme that catches invalid responses and responds to users’ input. |
 |9. | Create and host a game online that can be used on multiple devices (e.g.  phones, tablets, and desktop/laptop devices). |
 
 **4.1.2 Game Instructions**
@@ -158,9 +164,9 @@ This section provides an overview of the features on the Programme, and where re
 | Goal Number| Description|
 |-----|-----|
 | ---------------- | ---------------------|
-| 1. | Interact with a game that is easy to use. |
-| 6. | Design a UI that is easy to use and navigate around |
-|7. | Create and implement a programme that catches invalid responses and responds to users’ input. |
+| 1. | Expect to interact with a game that is easy to use. |
+| 6. | Intend to design a UI that is easy to use and navigate around |
+|7. | Want to create and implement a programme that catches invalid responses and responds to users’ input. |
 
 **4.1.3 Game Board Pieces**
 ![]()
@@ -170,9 +176,9 @@ This section provides an overview of the features on the Programme, and where re
 
 | Goal Number| Description|
 |-----|-----|
-| 1. | Interact with a game that is easy to use. |
-| 6. | Design a UI that is easy to use and navigate around |
-|8. | Provide user with a feature that allows them to personalise their response and visualise their movement(s) in the game. |
+| 1. | Expect to interact with a game that is easy to use. |
+| 6. | Intend to design a UI that is easy to use and navigate around |
+|8. | Want to provide the user with a feature that allows them to personalise their response and visualise their movement(s) in the game. |
 
 **4.1.4 Game Board**
 ![]()
@@ -184,9 +190,9 @@ This section provides an overview of the features on the Programme, and where re
 
 | Goal Number| Description|
 |-----|-----|
-| 2. | Play a game that is based on strategy and logic.  |
-| 3.   | Play against an online competitor, such as the computer. |
-|8. | Provide user with a feature that allows them to personalise their response and visualise their movement(s) in the game. |
+| 2. | Want to play a game that is based on strategy and logic.  |
+| 3.   | Intend to play against an online competitor, such as the computer. |
+|8. | Want to provide the user with a feature that allows them to personalise their response and visualise their movement(s) in the game. |
 
 **4.1.5 Exit Function**
 ![]()
@@ -197,8 +203,8 @@ This section provides an overview of the features on the Programme, and where re
 
 | Goal Number| Description|
 |-----|-----|
-| 6. | Design a UI that is easy to use and navigate around. |
-|7. | Create and implement a programme that catches invalid responses and responds to users’ input. |
+| 6. | Intend to Intend to design a UI that is easy to use and navigate around. |
+|7. | Want to create and implement a programme that catches invalid responses and responds to users’ input. |
 
 **4.1.6 Let's Play button**
 ![]()
@@ -209,8 +215,8 @@ This section provides an overview of the features on the Programme, and where re
 
 | Goal Number| Description|
 |-----|-----|
-| 6. | Design a UI that is easy to use and navigate around. |
-|7. | Create and implement a programme that catches invalid responses and responds to users’ input.|
+| 6. | Intend to Intend to design a UI that is easy to use and navigate around. |
+|7. | Want to create and implement a programme that catches invalid responses and responds to users’ input.|
 
 **4.2.7 Let's Play button**
 ![]()
@@ -221,8 +227,8 @@ This section provides an overview of the features on the Programme, and where re
 
 | Goal Number| Description|
 |-----|-----|
-| 6. | Design a UI that is easy to use and navigate around. |
-|7. | Create and implement a programme that catches invalid responses and responds to users’ input. |
+| 6. | Intend to Intend to design a UI that is easy to use and navigate around. |
+|7. | Want to create and implement a programme that catches invalid responses and responds to users’ input. |
 
 ### **4.1.8 Social Media Links and decorative icons**
 
@@ -235,19 +241,21 @@ This section provides an overview of the features on the Programme, and where re
 
 | Goal Number| Description|
 |-----|-----|
-| 6. | Design a UI that is easy to use and navigate around. |
-|5. | Play the game on multiple devices (e.g.  phones, tablets, and desktop/laptop devices). |
-|7. | Create and implement a programme that catches invalid responses and responds to users’ input. |
+| 6. | Intend to Intend to design a UI that is easy to use and navigate around. |
+|5. | Want to be able to play the game on multiple devices (e.g.  phones, tablets, and desktop/laptop devices). |
+|7. | Want to create and implement a programme that catches invalid responses and responds to users’ input. |
 
 ## 5. Technologies Used
 
 ### **5.1 Languages**
 
-- **HTML**: This source code supported the fundamental structure of the programme. 
+- **HTML**: The implementation of this language supported the fundamental structure of the hosting page.
 
-- **CSS**: This source code supported the core styling elements of the programme.
+- **CSS**: The implemenntation of this language supported the core design elements of hosting page. 
 
-- **JavaScript**: This source code supported the dynamic features/capabilities of the programme. 
+- **JavaScript**: This source code supported the terminal's fucntionalities and display in on the hosting page. 
+
+- **Python**: This programming language composed the programme's fucntionalities and operation. 
 
 
 ### **5.2 Applications, Libraries and Resources**
@@ -267,7 +275,7 @@ This section provides an overview of the features on the Programme, and where re
 -   [W3.CSS](https://www.w3schools.com/w3css/default.asp) 
 -   [Youtube](https://www.youtube.com/) 
 
-### **5.3 Testing Applications** 
+### **5.3 Primary Testing Applications** 
 
 The following applications were used to test various aspects of the programme. Meeting these requirements were essential to the programme complying with accessibility, coding and performance standards within the programming industry.
 
@@ -299,7 +307,7 @@ The [Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools) wa
 
 Regarding the Programme’s degree of responsiveness, the programme was accessed on multiple devices (incl. mobile, tablets, desktop, and larger devices) and multiple browsers (incl. FireFox, Google Chrome and Microsoft edge). The TTT game appears to respond appropriately to the changing device screen sizes and altering of browser’s size. Evidence of this is provided below: 
 
-![](IMAGE GOES HERE)
+![](docs/readme-content/appresponsiveness.PNG)
 
 ### **6.5 Bugs**
 
@@ -308,6 +316,7 @@ While there were several bugs that arose through the duration of the project, th
 #### **6.5.1 Fixed bugs**
 
 #### 1. Using the player’s and AI’s chose game piece on the game board
+
 - **Context:** 
 
     Initially, there was difficulty in applying the chosen game piece of the player and AI to the gameboard.
@@ -321,6 +330,7 @@ While there were several bugs that arose through the duration of the project, th
     Assigning the Python keyword -  ‘global’ to the game piece variables resolved the issue. Doing so allowed the variable to be called upon in latter functions. 
 
 #### 2. Manipulating the DOM and directory structure
+
 - **Context:** 
 	
     The repo template used for this project had the .css and .js files places in the root directory. 
@@ -334,6 +344,7 @@ While there were several bugs that arose through the duration of the project, th
     I created sub directories within the parent ‘static’ directory. I then moved the .js and .css files to their respective directories. For the programme to function appropriately, I linked these files in the <head></head> section and the lower section of the index.html. The some index.js and ttt.py files have remained in the root directory as I have yet to find a solution for them to run successfully within a sub directory.  
 
 #### 3. Restructuring print statement within the board_structure() function 
+
 - **Context:** 
 
     When initially running the ttt.py script through the PEP8 Online, the app retuned an error regarding the length of the print statements that formed the game board structure. testing/screenshots/errorboard().png)
@@ -360,24 +371,86 @@ While there were several bugs that arose through the duration of the project, th
 
     This was resolved by using a conditional statement within the AIGamePiece function. The statement makes the computer pick another piece if it is the same as player’s selected piece. To conceal this process from the player, the statement ‘Sorry an error occurred’ is present. This allowed me as the programmer to know the if statement is working. Below is an example:testing/screenshots/pickssamepiecefixed.png) 
 
-#### 5. ‘Play again?’ prompt in moves() function accepted any value.
+#### 5. ‘Play again?’ prompt in moves() function accepted any value
 
 - **Context:** 
 
     Initially, when the game finished, the player would be asked if they wanted to play again. Inputting yes or no, triggered the expected subsequent actions in the programme. However, inputting any other key into this prompt automatically triggered the activation of the exit() function. Though this issue was not as pertinent to the programme as the other bugs mentioned, it was not ideal.
 
+- **Reason**
+
+    This error occoured as initially, a conditional statement was not included in the code. Initialising one would catch the error. 
+
 - **Fix:**
 
-    This issue was resolved by adding an ‘elif’ statement to the pre-existing conditional (if) Specifically, the additional statement states that if the answer inputted to the ‘Play again’ question is anything other than yes or no, the programme will activate the exit function. 
+    This issue was resolved by adding an ‘elif’ statement to the pre-existing conditional (if) Specifically, the additional statement states that if the answer inputted to the ‘Play again’ question is anything other than yes or no, the programme will activate the exit function.
+
+#### 6. If square-number selected in gameplay is out of range, the game crashes
+
+- **Context:** 
+
+    Initially, during game play, if the player entered a number out of range when prompted to place a opice on the board the game would stop running in the terminal. In the IDE, this action would present an ['IndexError'](https://docs.python.org/3/library/exceptions.html). 
+
+![](docs/testing/screenshots/rangeerror.png)
+
+- **Reason**
+
+    This error occoured as initially, as a conditional statement was not included in the code. Initialising one would catch the error. 
+
+- **Fix:**
+
+    This issue was resolved by adding an if statement to the player_move variable within the moves() fucntion. The if statement stated the accepted rand (0-10). If the player enters a value outside of these parameters, an error message would arise and they will be prompted again to enter a correct response.
+
+![](docs/testing/screenshots/rangeerrorfixed.png)
     
-#### **6.5.2 Unfixed bugs*
+#### **6.5.2 Unfixed bugs**
 
 The following bugs have been recorded and troubleshooted up to the point of submission for the project. However, these bugs have yet to be resolved. With further development 
 
 ### 1. Screen doesn't clear after screen refresh in the terminal /deployed site. It does in the virtual/cloud IDE. 
-### 2. exit() function prints input twice before exiting 
-#### 3. If square number selected in input is out of range, the game crashes 
-#### 4. Moving index.js to js sub-directory within static causes the programme to have a 404 error. 
+
+- **Context:** 
+
+    On the delplyed hosting page, when exiting the game, the terminal runs the required functions, but does not clear the screen. This issue does not arise in the local and cloud IDE that are used. On these platforms the terminal clears. Arguably, clicking the **'Let's Play'** button clears the terminal, and the clearing of the screen does not stop the programme fucntionaing - this error is not ideal from a UX perspective.  
+    
+    ![](docs/testing/screenshots/terminalwontclearonexit.png)
+
+    In future development of the programme this could be investigated further to find a solution. 
+
+
+### 2. exit() function prints input twice before exiting
+
+- **Context:** 
+
+    The user can exit the game when the exit() function is activated. They can confirm exiting by pressing any key on their keyboard. While this is helpful, the terminal prints the user's response twice in the terminal. While this does not stop the programme fucntionaing, it's not ideal from a UX perspective.  
+    
+    ![](docs/testing/screenshots/terminalprintstwiceonexit.png)
+
+
+    In future development of the programme this could be investigated further to find a solution. 
+
+- **Potential Fix**
+
+    As a temporary solution, print statement for the exit() function asks the playe to press their 'ENTER' key to exit the game. Doing so does not print any visble value and exits the programme accordingly. 
+
+#### 3. Moving index.js to the js sub-directory causes the programme to load a 404 error. 
+
+
+- **Context:** 
+
+    Althouhg the other .js files in the repo run from within the js subdirectory, the index.js will not do so. As this template has been adapted from Code Insitute's Python Essentials template, the index.js has been left in it's original location of the repo. This choice has been made in order for the programme to fucntion. 
+    
+    This issue would be revisited should this programme be developed further. 
+
+
+#### 4. onclick attibute within the button tag on the HTML page
+
+- **Context:** 
+
+    Akin to unfixed bug 3., when moving the onclick function to an external .js script, the button element would not work. This issue would also be revisited should this programme be developed further.
+
+![](docs/testing/screenshots/onclickerror.png)
+
 
 ## 7. Deployment, Access and Extensions
 
@@ -387,7 +460,7 @@ The TTT programme was deployed locally and online via the use of GitHub (web app
 
 |The Process – :key: SSH Key| 
 |-------------|
-|Note: You will need this key to clone the repo to the local space (e.g. on the desktop).|
+|Note: You can use this key to clone the repo to the local space (e.g. on the desktop).|
 |1.	Download the GitBash application and create a SSH key. How to create a SSH key can be found [here](https://inchoo.net/dev-talk/how-to-generate-ssh-keys-for-git-authorization/).|
 |2.	Sign into [GitHub](https://github.com/).|
 |3.	Click the profile icon in the top-right corner of the GitHub webpage, click **Settings**.|
