@@ -12,15 +12,15 @@ os.system("clear")
 
 # Dictionary of icons that the player and AI can choose from
 GAMEPIECES = {
-    "a": "\U0001F9DE",  # mermaid
-    "b": "\U0001F9D1",  # cook
+    "a": "\U0001F984",  # unicorn
+    "b": "\U0001F47E",  # alien monster
     "c": "\U0001F444",  # mouth
-    "d": "\U0001F63B",  # cat love
+    "d": "\U0001F49B",  # yellow heart
     "e": "\U0001F47B",  # ghost
     "f": "\U0001F916",  # robot head
     "g": "\U0001F47D",  # alien
-    "h": "\U0001F9E0",  # brain
-    "i": "\U0001F4A3",  # bomb
+    "h": "\U0001F596",  # vulcan salute
+    "i": "\U0001F649",  # hear no evil monkey
 }
 
 
@@ -158,10 +158,10 @@ def game_pieces_overview():
     )
     print(
         """
-                            a = \U0001F9DE
-                            b = \U0001F9D1
+                            a = \U0001F984
+                            b = \U0001F47E
                             c = \U0001F444
-                            d = \U0001F63B
+                            d = \U0001F49B
         """
     )
     time.sleep(3)
@@ -175,15 +175,15 @@ def game_pieces_overview():
         """
                             a  |  b  | c
                             -------------
-                            \U0001F9DE | \U0001F9D1  | \U0001F444
+                            \U0001F984 | \U0001F47E  | \U0001F444
 
                             d  |  e  | f
                             -------------
-                            \U0001F63B | \U0001F47B  | \U0001F916
+                            \U0001F49B | \U0001F47B  | \U0001F916
 
                             g  |  h  | i
                             -------------
-                            \U0001F47D | \U0001F9E0  | \U0001F4A3
+                            \U0001F47D | \U0001F596  | \U0001F649
 
         """
     )
