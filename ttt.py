@@ -53,7 +53,7 @@ def welcome_description():
     time.sleep(1)
     print("Can you put AI in it's place to show it who's boss?\n")
     time.sleep(1)
-    print("\nI hope so...\U0001F914\n")
+    print("\nI hope so...\n")
     time.sleep(2)
 
     yes = "y"
