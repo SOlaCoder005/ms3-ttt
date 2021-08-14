@@ -247,8 +247,6 @@ This section provides an overview of the features on the Programme, and where re
 
 ### **4.1.7 Social Media Links and decorative icons**
 
-![]()
-
 -	This function is positioned below the Let’s play button on the landing page; it too has been positioned here to aid ease of use for the user. 
 -	When clicking on the icons, it redirects the player to its respective social media page in an external tab. 
 -	When hovering over the icons, they too turn yellow. This design choice has been selected to indicate to the player that the button triggers an action.
@@ -314,6 +312,12 @@ The following applications were used to test various aspects of the programme. M
 
 ## 6. Testing
 
+The programme script for the TTT programme was ran through the [PEP8 (local and online application)](http://pep8online.com/) validator. The test produced **0 errors**, which can be found [here](https://github.com/SOlaCoder005/ttt-game/blob/main/docs/testing/pep8/PASS_ttt.py_PEP8online.pdf). The script also produced **0 errors** in the PEP8 validator within GitPod. Evidence of this is shown below: 
+
+
+![](docs/testing/screenshots/pep8checklocal.png)
+
+
 ### 6.1 **HTML, CSS and JS Validator Tests**
 
 To ensure that the HTML, CSS and JS source-code adhered to industry standards, each were run through respective validators:
@@ -322,21 +326,23 @@ To ensure that the HTML, CSS and JS source-code adhered to industry standards, e
 - [(Jigsaw) Validator](https://jigsaw.w3.org/css-validator)
 
 
-All the tests produced **_**. Evidence of the tests can be found in the testing repository directory, [testing).
+The W3C and Jigsaw validator produced **0 errors**. Evidence of the tests can be found in the [testing directory](https://github.com/SOlaCoder005/ttt-game/tree/main/docs/testing) of this README.
 
 ### **6.2 WAVE: Programme Accessibility Test**
 
-The [WAVE Accessibility Evaluation Tool](https://wave.webaim.org) was used to evaluate the overall accessibility of TTT programme. It considered factors such as the quantity and suitability of accessibility features used on the Programme (e.g. aria-labels, degree of contrast). The results produced **_**, thus passing the overall test. 
+The [WAVE Accessibility Evaluation Tool](https://wave.webaim.org) was used to evaluate the overall accessibility of TTT programme. It considered factors such as the quantity and suitability of accessibility features used on the Programme (e.g. aria-labels, degree of contrast). The results produced **0 errors**, thus passing the overall test. 
 
 ### **6.3 LIGHTHOUSE: Programme Performance test**
 
-The [Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools) was used to test the performance of the TTT. In relation to performance, the tests indicated that the Programme would operate at an optimal level on desktop devices where each page achieved a score between **91-99 out of 100**. Evidence for the results of each page can be found [here](docs/testing/lighthouse-results).
+The [Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools) was used to test the performance of the TTT. In relation to performance, the tests indicated that the Programme would operate at an optimal level on desktop devices where each page achieved a score between **91-99 out of 100**. Evidence for the results of each page can be found [here](https://github.com/SOlaCoder005/ttt-game/tree/main/docs/testing/lighthouse).
 
 ### **6.4 Programme Responsiveness**
 
 Regarding the Programme’s degree of responsiveness, the programme was accessed on multiple devices (incl. mobile, tablets, desktop, and larger devices) and multiple browsers (incl. FireFox, Google Chrome and Microsoft edge). The TTT game appears to respond appropriately to the changing device screen sizes and altering of browser’s size. Evidence of this is provided below: 
 
+
 ![](docs/readme-content/appresponsiveness.PNG)
+
 
 ### **6.5 Bugs**
 
