@@ -1,4 +1,4 @@
-![](static/docs/readme-content/TTTmockup.PNG)
+![](docs/readme-content/TTTmockup.PNG)
 
 # List of Contents
 
@@ -98,7 +98,7 @@ This section discusses various design elements of the programme. Formulating and
 
 Creating a Flow Chart for the programme helped to highlight the limitations and strengths of the programmes operation. It also allowed a more accurate analysis of which elements were feasible to execute within the project time frame and which could be implemented if the programme could be expanded on in further development. 
 
-![](static/docs/readme-content/TTT-fc.png)
+![](docs/readme-content/TTT-fc.png)
 
 
 ### **3.2 Fonts**
@@ -108,7 +108,7 @@ The following fonts were used for the programmes hosting page:
 - **VT323**
 - **Ubuntu**
 
-![](static/docs/readme-content/fonts.PNG)
+![](docs/readme-content/fonts.PNG)
 
 These fonts were used as the default set by the bowser did not compliment the overall design of the hosting page. 
 
@@ -116,7 +116,7 @@ These fonts were used as the default set by the bowser did not compliment the ov
 
 The following [colours](https://coolors.co/000000-ff6600-ffcc00-03b7b7-9900cc-f5f5f5) were used for the theme of the TTT game's hosting page: 
 
-![](static/docs/readme-content/colorpalette.PNG)
+![](docs/readme-content/colorpalette.PNG)
 
 
 - **#F5F5F5**
@@ -285,7 +285,7 @@ To ensure that the HTML, CSS and JS source-code adhered to industry standards, e
 - [(Jigsaw) Validator](https://jigsaw.w3.org/css-validator)
 
 
-All the tests produced **_**. Evidence of the tests can be found in the testing repository directory, [here](static/docs/testing).
+All the tests produced **_**. Evidence of the tests can be found in the testing repository directory, [testing).
 
 ### **6.2 WAVE: Programme Accessibility Test**
 
@@ -336,9 +336,7 @@ While there were several bugs that arose through the duration of the project, th
 #### 3. Restructuring print statement within the board_structure() function 
 - **Context:** 
 
-    When initially running the ttt.py script through the PEP8 Online, the app retuned an error regarding the length of the print statements that formed the game board structure. 
-
-![](static/docs/testing/screenshots/errorboard().png)
+    When initially running the ttt.py script through the PEP8 Online, the app retuned an error regarding the length of the print statements that formed the game board structure. testing/screenshots/errorboard().png)
 
 - **Reason:** 
 
@@ -352,11 +350,7 @@ While there were several bugs that arose through the duration of the project, th
 
 - **Context:** 
 
-    Initially, the AI sometimes picked the same game piece as the player. While the game would continue to run in these instances, the game would produce a false winner as the programme identifies winning instances by spaces filled by one value type. See below for an example.
-
-![](static/docs/testing/screenshots/pickssamepiece.png)
-
-![](static/docs/testing/screenshots/aipickssamepiece.png)
+    Initially, the AI sometimes picked the same game piece as the player. While the game would continue to run in these instances, the game would produce a false winner as the programme identifies winning instances by spaces filled by one value type. See below for an example.testing/screenshots/pickssamepiece.png)testing/screenshots/aipickssamepiece.png)
 
 - **Reason:** 
 
@@ -364,9 +358,7 @@ While there were several bugs that arose through the duration of the project, th
 
 - **Fix:**
 
-    This was resolved by using a conditional statement within the AIGamePiece function. The statement makes the computer pick another piece if it is the same as player’s selected piece. To conceal this process from the player, the statement ‘Sorry an error occurred’ is present. This allowed me as the programmer to know the if statement is working. Below is an example:
-
-![](static/docs/testing/screenshots/pickssamepiecefixed.png) 
+    This was resolved by using a conditional statement within the AIGamePiece function. The statement makes the computer pick another piece if it is the same as player’s selected piece. To conceal this process from the player, the statement ‘Sorry an error occurred’ is present. This allowed me as the programmer to know the if statement is working. Below is an example:testing/screenshots/pickssamepiecefixed.png) 
 
 #### 5. ‘Play again?’ prompt in moves() function accepted any value.
 
