@@ -109,7 +109,9 @@ This section discusses various design elements of the programme. Formulating and
 
 #### 3.1.2 Flow Chart
 
-Following the advice provide in Dawson's chapter on Object Oriented Programming; A basic algorithm for the TTT programme. The algorithm outlined the core actions that the programme was expected to execute. This can be viewd [here](). Once establishing an algorithm, the logical strategy of the project was investigated further through the use of a flow chart. This process is expanded on in the following section. 
+Following the advice provide in Dawson's chapter on Object Oriented Programming; A basic algorithm for the TTT programme. The algorithm outlined the core actions that the programme was expected to execute. This can be viewd [here](https://github.com/SOlaCoder005/ttt-game/blob/main/docs/readme-content/Algorithm_Psuedocode.pdf). 
+
+Once establishing an algorithm, the operational logistics of the programme was developed further through the use of a flow chart. This process is expanded on in the following section. 
 
 #### 3.1.2 Flow Chart
 
