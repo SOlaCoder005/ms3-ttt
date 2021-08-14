@@ -75,3 +75,4 @@ document.addEventListener("DOMContentLoaded", function () {
     init_socket();
     init_terminal();
 });
+
