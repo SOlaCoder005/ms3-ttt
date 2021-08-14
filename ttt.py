@@ -220,7 +220,7 @@ def moves():
         try:
             # Player's Turn
             player_move = int(input("\n\U0001F449 Human, make a move(1-9):\n"))
-            if 1 < player_move < 10:
+            if 0 < player_move < 10:
 
                 # Wherever player places move, put game piece
                 board.update_square(player_move, GAMEPIECES[PlayerGamePiece])
@@ -457,17 +457,17 @@ class Board():
         """
         print("\n")
         print(
-            " %s | %s | %s " %
+            "  %s  |  %s  |  %s  " %
             (self.squares[1], self.squares[2], self.squares[3])
         )
-        print("-----------")
+        print("-----------------")
         print(
-            " %s | %s | %s " %
+            "  %s  |  %s  |  %s  " %
             (self.squares[4], self.squares[5], self.squares[6])
         )
-        print("-----------")
+        print("-----------------")
         print(
-            " %s | %s | %s " %
+            "  %s  |  %s  |  %s  " %
             (self.squares[7], self.squares[8], self.squares[9])
         )
         print("\n")
