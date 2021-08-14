@@ -2,7 +2,6 @@ var socket = null;
 var term = null;
 var buffer = '';
 
-
 function init_socket() {
     socket = io(window.location.protocol + '//' + window.location.host, {
         path: '/socket.io'
