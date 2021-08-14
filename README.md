@@ -54,6 +54,7 @@ The two scopes above, suggest that trends, needs and competing services should b
 This plane encourages designers to consider how the programme will function and the functional requirements of the game. Given that the game would be built through python script, there was a need to consider how the script would be optimally presented in the terminal.  One of the salient steps to creating the programme was establishing the programme’s flow. Specifically, it was essential to the programme’s success to identify;
 
 1. What actions the programme needs to execute, 
+
 2. What functions were needed, 
 3. Which order the code blocks would need to be executed in, and 
 4. How they would be executed. 
