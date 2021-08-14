@@ -68,6 +68,7 @@ Arguably, these planes encourage designers to focus on building the user interfa
 
 Given current social norms, it can be argued that using Emojis instead of Xs and Os for the game’s board pieces can contribute to increased use of the game due to the popular use of Emojis.  
 Arguably, Emojis have become increasingly relevant to communication practice within many societal cultures. That is, given the rise of technology, Emojis are commonly used in communications by multiple user demographics (i.e. varying in age, culture, gender etc.).  
+
 Moreover, findings from many contemporary studies and [articles](https://www.independent.co.uk/voices/emoji-generational-divide-smiley-b1900591.html) have indicates that Emojis used in conversation can have just as much contextual meaning and connotations as words (Stevenson, 2021). 
 
 ### **2.5 User stories: programme Owner and User goals**
@@ -107,7 +108,7 @@ This section discusses various design elements of the programme. Formulating and
 ### **3.1 Logistics: Flow Chart**
 
 
-#### 3.1.2 Flow Chart
+#### 3.1.1 Creating an algorithm
 
 Following the advice provide in Dawson's chapter on Object Oriented Programming; A basic algorithm for the TTT programme. The algorithm outlined the core actions that the programme was expected to execute. This can be viewd [here](https://github.com/SOlaCoder005/ttt-game/blob/main/docs/readme-content/Algorithm_Psuedocode.pdf). 
 
