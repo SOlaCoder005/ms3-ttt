@@ -103,14 +103,14 @@ Creating a Flow Chart for the programme helped to highlight the limitations and 
 
 ### **3.2 Fonts**
 
+![](docs/readme-content/fonts.PNG)
+
 The following fonts were used for the programmes hosting page:
 
 - **VT323**
 - **Ubuntu**
 
-![](docs/readme-content/fonts.PNG)
-
-These fonts were used as the default set by the bowser did not compliment the overall design of the hosting page. 
+These browser's default fonts did not compliment the overall design of the hosting page. As such, the fonts above were used to compliment the aesthetic tone of the application, maintianing the intended 'reto' tone of the site and game itself.  
 
 ### **3.3 Colour Pallet**
 
