@@ -104,7 +104,14 @@ As an Application creator / Site owner, I...
 
 This section discusses various design elements of the programme. Formulating and executing such elements were integral the development of the programme. Arguably, consideration of these factors echoes the premises of the latter planes of the 5PUXD Model. For instance, when designing the programme, it was essential to identify the required information of the programme (structure) and how users can access this content (skeleton).
 
-### **3.1 Logistics: Flow Chart** 
+### **3.1 Logistics: Flow Chart**
+
+
+#### 3.1.2 Flow Chart
+
+Following the advice provide in Dawson's chapter on Object Oriented Programming; A basic algorithm for the TTT programme. The algorithm outlined the core actions that the programme was expected to execute. This can be viewd [here](). Once establishing an algorithm, the logical strategy of the project was investigated further through the use of a flow chart. This process is expanded on in the following section. 
+
+#### 3.1.2 Flow Chart
 
 Creating a Flow Chart for the programme helped to highlight the limitations and strengths of the programmes operation. It also allowed a more accurate analysis of which elements were feasible to execute within the project time frame and which could be implemented if the programme could be expanded on in further development. 
 
