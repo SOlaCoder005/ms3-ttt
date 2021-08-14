@@ -217,7 +217,7 @@ def moves():
     - If AI makes the wrong turn, it will lose a turn
     """
     while True:
-        try:      
+        try:
             # Player's Turn
             player_move = int(input("\n\U0001F449 Human, make a move(1-9):\n"))
             if 1 < player_move < 10:
@@ -227,7 +227,7 @@ def moves():
 
                 # Once placed, board refreshes
                 refresh_game_board()
-            else: 
+            else:
                 print("\nDid not recognise response. Please try again!\n")
                 time.sleep(.5)
                 continue
@@ -475,8 +475,7 @@ class Board():
     def update_square(self, board_space, player):
         """
         - This updates the Player's and / or AI's move
-        - When functions 
-        -  PlayerGamePiece or AiGamePiece are called,
+        -  When PlayerGamePiece or AiGamePiece are called,
           they trigger the update on the board sqaure
         """
         try:
@@ -543,8 +542,8 @@ board = Board()
 
 
 def main():
-    # welcome_header()
-    # welcome_description()
+    welcome_header()
+    welcome_description()
     r_u_ready_to_play()
     refresh_game_board()
     moves()
