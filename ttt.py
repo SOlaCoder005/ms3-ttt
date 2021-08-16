@@ -106,7 +106,7 @@ def game_guides():
         \U0001F449  To win, you must align your pieces in a row.\n
         \U0001F449  The row can be horizontally, verticaly or diagonally.\n
         \U0001F449  Do this before the AI and you win the game!\n
-        \U0001F449  If both of you run out of moves it you shall daraw a tie!\n
+        \U0001F449  If both of you run out of moves you shall daraw a tie!\n
         """
     )
     time.sleep(3)
