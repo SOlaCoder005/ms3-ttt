@@ -628,9 +628,9 @@ Mention is paid to the following creators and their content. The resources assis
     
     [FontAwesome’s CDN](https://kit.fontawesome.com/1699136767.js), was used for it to support the icon elements used on the index page.  
 
--**Favicon**
+- **Favicon**
 
-The [Favicon](https://favicon.io/emoji-favicons/video-game/) video game emoji was used to establish an icon for the hosting page for the TTT game. Using this icon resolved the icon error in the console. 
+    The [Favicon](https://favicon.io/emoji-favicons/video-game/) video game emoji was used to establish an icon for the hosting page for the TTT game. Using this icon resolved the icon error in the console. 
 
 
 
